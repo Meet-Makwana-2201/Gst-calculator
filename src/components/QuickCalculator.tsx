@@ -10,14 +10,21 @@ export default function QuickCalculator() {
     const [gstRate, setGstRate] = useState(18);
     const [gstAmount, setGstAmount] = useState<number | null>(null);
     const [totalAmount, setTotalAmount] = useState<number | null>(null);
+    const [error, setError] = useState<string>("");
 
     const handleCalculate = () => {
         const amt = parseFloat(amount);
+
+        // Check if the amount is valid (non-empty and positive)
         if (isNaN(amt) || amt <= 0) {
+            setError("Please enter a valid amount greater than zero.");
             setGstAmount(null);
             setTotalAmount(null);
             return;
         }
+
+        setError(""); // Reset error message if valid amount is entered
+
         const gst = (amt * gstRate) / 100;
         const total = amt + gst;
         setGstAmount(gst);
@@ -41,6 +48,7 @@ export default function QuickCalculator() {
                         value={amount}
                         onChange={(e) => setAmount(e.target.value)}
                     />
+                    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
                 </div>
                 <div>
                     <label htmlFor="gstRate" className="block text-sm font-medium text-gray-700 mb-1">
