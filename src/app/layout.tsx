@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GTM from '@/components/GTM';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <GTM />
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV668C3Z"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <Header />
         {children}
         <Footer />
