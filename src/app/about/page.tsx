@@ -49,6 +49,7 @@ export default function About() {
                 <h1 className="text-3xl font-bold">About GSTCalc</h1>
                 <p>GSTCalc helps you quickly calculate GST and Reverse GST amounts based on customizable rates.</p>
                 <p>This is a basic tool for quick calculation. Please verify final figures with official methods for critical uses.</p>
+                <p>That is very helpful to people who need to calculate GST and Reverse GST amounts.</p>
             </section>
         </main>
     )
