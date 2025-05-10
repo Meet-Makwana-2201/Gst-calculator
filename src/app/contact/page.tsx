@@ -13,7 +13,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://yourdomain.com/contact",
+    canonical: "https://easy-gst-calculator.netlify.app/contact",
   },
   openGraph: {
     title: "Contact Us - Get Support or Feedback | GST Calculator",
