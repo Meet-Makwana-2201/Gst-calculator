@@ -17,7 +17,7 @@ export const metadata = {
         },
     },
     alternates: {
-        canonical: "https://yourdomain.com/calculator",
+        canonical: "https://easy-gst-calculator.netlify.app/calculator",
     },
     openGraph: {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
@@ -26,7 +26,7 @@ export const metadata = {
         siteName: "GST Calculator",
         images: [
             {
-                url: "https://yourdomain.com/og-calculator.jpg",
+                url: "https://easy-gst-calculator.netlify.app/og-calculator.jpg",
                 width: 1200,
                 height: 630,
                 alt: "GST Calculator Tool",
