@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "GST Calculator - Instant GST Calculation Online",
   description: "Calculate GST amounts easily with our simple GST calculator. No login required. Instant results. Accurate GST calculations.",
-  keywords: ["GST Calculator", "GST Calculation", "Online GST Calculator", "Instant GST"],
+  keywords: ["GST Calculator", "GST Calculation", "Online GST Calculator", "Instant GST", "reverse gst calculator", "reverse gst calculator india", "reverse gst calculation formula", "reverse calculation of gst", "gst reverse calculation formula", "how to calculate reverse gst", " cleartax reverse gst calculator","gst calculator", "tax calculator", "gst tax calculator", "online gst calculator", "gst calculator online", "free gst calculator"],
   robots: {
     index: true,
     follow: true,

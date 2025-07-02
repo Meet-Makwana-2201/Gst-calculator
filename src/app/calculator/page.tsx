@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export const metadata = {
     title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
     description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-    keywords: ["GST Calculator Tool", "Reverse GST", "Calculate GST Online", "GST Rates"],
+    keywords: ["GST Calculator Tool", "Reverse GST", "Calculate GST Online", "GST Rates", "reverse gst calculator", "reverse gst calculator india", "reverse gst calculation formula", "reverse calculation of gst", "gst reverse calculation formula", "how to calculate reverse gst", " cleartax reverse gst calculator", "gst calculator", "tax calculator", "gst tax calculator", "online gst calculator", "gst calculator online", "free gst calculator"],
     robots: {
         index: true,
         follow: true,

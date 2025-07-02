@@ -1,7 +1,7 @@
 export const metadata = {
     title: "About Us - GST Calculator Platform",
     description: "Learn more about our mission to provide simple and accurate GST calculations for everyone. Fast, reliable, and easy to use!",
-    keywords: ["About GST Calculator", "Our Mission", "Who We Are", "GST Platform"],
+    keywords: ["About GST Calculator", "Our Mission", "Who We Are", "GST Platform", "reverse gst calculator", "reverse gst calculator india", "reverse gst calculation formula", "reverse calculation of gst", "gst reverse calculation formula", "how to calculate reverse gst", " cleartax reverse gst calculator", "gst calculator", "tax calculator", "gst tax calculator", "online gst calculator", "gst calculator online", "free gst calculator"],
     robots: {
         index: true,
         follow: true,
