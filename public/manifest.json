@@ -1,0 +1,42 @@
+{
+  "name": "GST Calculator India - Free Online GST Calculator",
+  "short_name": "GST Calculator",
+  "description": "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Calculator",
+      "short_name": "Calculate",
+      "description": "Open GST Calculator",
+      "url": "/calculator",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "GST Rates",
+      "short_name": "Rates",
+      "description": "View GST Rates Chart",
+      "url": "/gst-rates",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
+

@@ -3,9 +3,26 @@ import ReverseGSTCalculator from "@/components/ReverseGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata = {
-    title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
-    description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-    keywords: ["GST Calculator Tool", "Reverse GST", "Calculate GST Online", "GST Rates", "reverse gst calculator", "reverse gst calculator india", "reverse gst calculation formula", "reverse calculation of gst", "gst reverse calculation formula", "how to calculate reverse gst", " cleartax reverse gst calculator", "gst calculator", "tax calculator", "gst tax calculator", "online gst calculator", "gst calculator online", "free gst calculator"],
+    title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
+    description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool with detailed breakdown. Supports 5%, 12%, 18%, 28% rates.",
+    keywords: [
+        "GST calculator tool India",
+        "GST calculator India",
+        "calculate GST online India",
+        "reverse GST calculator India",
+        "GST calculation tool",
+        "GST rates calculator",
+        "reverse GST calculation formula",
+        "how to calculate reverse GST",
+        "GST calculator 18 percent",
+        "custom GST rate calculator",
+        "GST inclusive calculator",
+        "GST exclusive calculator",
+        "GST calculation formula India",
+        "free GST calculator tool",
+        "online GST calculator India",
+        "GST tax calculator",
+    ],
     robots: {
         index: true,
         follow: true,
@@ -22,7 +39,7 @@ export const metadata = {
     openGraph: {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-        url: "https://yourdomain.com/calculator",
+        url: "https://easy-gst-calculator.netlify.app/calculator",
         siteName: "GST Calculator",
         images: [
             {
@@ -39,8 +56,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-        images: ["https://yourdomain.com/og-calculator.jpg"],
-        creator: "@your_twitter_username",
+        images: ["https://easy-gst-calculator.netlify.app/og-calculator.jpg"],
     },
 };
 

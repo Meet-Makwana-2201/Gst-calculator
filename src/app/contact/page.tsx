@@ -18,11 +18,11 @@ export const metadata = {
   openGraph: {
     title: "Contact Us - Get Support or Feedback | GST Calculator",
     description: "Have questions or need help? Contact us today. We're here to assist you with GST calculations and support requests.",
-    url: "https://yourdomain.com/contact",
+    url: "https://easy-gst-calculator.netlify.app/contact",
     siteName: "GST Calculator",
     images: [
       {
-        url: "https://yourdomain.com/og-contact.jpg",
+        url: "https://easy-gst-calculator.netlify.app/og-contact.jpg",
         width: 1200,
         height: 630,
         alt: "Contact GST Calculator",
@@ -35,8 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Us - Get Support or Feedback | GST Calculator",
     description: "Have questions or need help? Contact us today. We're here to assist you with GST calculations and support requests.",
-    images: ["https://yourdomain.com/og-contact.jpg"],
-    creator: "@your_twitter_username",
+    images: ["https://easy-gst-calculator.netlify.app/og-contact.jpg"],
   },
 };
 
