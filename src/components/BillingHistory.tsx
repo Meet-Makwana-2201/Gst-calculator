@@ -18,10 +18,10 @@ interface CalculationHistory {
 const STORAGE_KEY = 'gst-calculator-history';
 const MAX_HISTORY = 50;
 
-export default function BillingHistory({ currency, formatCurrencyFn }: { currency: 'INR' | 'USD'; formatCurrencyFn: (value: number, currency?: 'INR' | 'USD') => string }) {
+export default function BillingHistory({ formatCurrencyFn }: { formatCurrencyFn: (value: number, currency?: 'INR' | 'USD') => string }) {
   const [history, setHistory] = useState<CalculationHistory[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-  
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -113,13 +113,13 @@ export default function BillingHistory({ currency, formatCurrencyFn }: { currenc
                         {new Date(entry.timestamp).toLocaleString()}
                       </div>
                       <div className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                        {entry.taxType === 'GST' ? `GST ${entry.rate}%` : 
-                         entry.taxType === 'IGST' ? `IGST ${entry.rate}%` : 
-                         `CGST ${entry.rate/2}% + SGST ${entry.rate/2}%`}
+                        {entry.taxType === 'GST' ? `GST ${entry.rate}%` :
+                          entry.taxType === 'IGST' ? `IGST ${entry.rate}%` :
+                            `CGST ${entry.rate / 2}% + SGST ${entry.rate / 2}%`}
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">
-                        Base: {entry.currency === 'INR' ? '₹' : '$'}{formatCurrencyFn(entry.amount, entry.currency)} | 
-                        Tax: {entry.currency === 'INR' ? '₹' : '$'}{formatCurrencyFn(entry.taxAmount, entry.currency)} | 
+                        Base: {entry.currency === 'INR' ? '₹' : '$'}{formatCurrencyFn(entry.amount, entry.currency)} |
+                        Tax: {entry.currency === 'INR' ? '₹' : '$'}{formatCurrencyFn(entry.taxAmount, entry.currency)} |
                         Total: {entry.currency === 'INR' ? '₹' : '$'}{formatCurrencyFn(entry.totalAmount, entry.currency)}
                       </div>
                     </div>

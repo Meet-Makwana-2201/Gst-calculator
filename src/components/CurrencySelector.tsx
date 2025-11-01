@@ -1,10 +1,10 @@
 'use client';
 
 import { useApp } from '@/contexts/AppContext';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 
 export default function CurrencySelector() {
-  const { currency, setCurrency, currencySymbol } = useApp();
+  const { currency, setCurrency } = useApp();
 
   return (
     <div className="flex items-center gap-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">

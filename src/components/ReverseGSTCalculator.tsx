@@ -11,7 +11,7 @@ import TaxTypeSelector from './TaxTypeSelector';
 import CurrencySelector from './CurrencySelector';
 import CopyResultButton from './CopyResultButton';
 import PrintInvoiceButton from './PrintInvoiceButton';
-import ExportButtons from './ExportButtons';
+// import ExportButtons from './ExportButtons';
 
 const GST_RATES = [5, 12, 18, 28];
 const STORAGE_KEY_REVERSE = 'reverse-gst-calculator-rate';
@@ -142,11 +142,11 @@ export default function ReverseGSTCalculator() {
     }
   };
 
-  const handleRateSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedRate = parseFloat(e.target.value);
-    setRate(selectedRate);
-    setErrors(prev => ({ ...prev, rate: undefined }));
-  };
+  // const handleRateSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const selectedRate = parseFloat(e.target.value);
+  //   setRate(selectedRate);
+  //   setErrors(prev => ({ ...prev, rate: undefined }));
+  // };
 
   const calculateReverseGST = () => {
     const amountError = validateAmount(totalAmount);
