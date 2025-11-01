@@ -1,18 +1,65 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://easy-gst-calculator.netlify.app/</loc>
-<lastmod>2025-04-30T06:38:10+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://easy-gst-calculator.netlify.app/calculator</loc>
-<lastmod>2025-04-30T06:38:10+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://easy-gst-calculator.netlify.app/about</loc>
-<lastmod>2025-04-30T06:38:10+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/calculator</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/faq</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/gst-rates</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/blog</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/about</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/contact</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/privacy</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/blog/gst-calculation-for-freelancers-india</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/blog/gst-rate-chart-2025-india</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/blog/gst-calculator-excel-download</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://easy-gst-calculator.netlify.app/blog/difference-between-gst-and-vat</loc>
+        <lastmod>2025-11-01T09:58:42+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
 </urlset>
