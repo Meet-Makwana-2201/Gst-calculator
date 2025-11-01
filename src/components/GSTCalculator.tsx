@@ -142,11 +142,11 @@ export default function GSTCalculator() {
     }
   };
 
-  const handleRateSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedRate = parseFloat(e.target.value);
-    setRate(selectedRate);
-    setErrors(prev => ({ ...prev, rate: undefined }));
-  };
+  // const handleRateSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const selectedRate = parseFloat(e.target.value);
+  //   setRate(selectedRate);
+  //   setErrors(prev => ({ ...prev, rate: undefined }));
+  // };
 
   const calculateGST = () => {
     const amountError = validateAmount(amount);

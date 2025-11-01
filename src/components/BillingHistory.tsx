@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { formatCurrency } from '@/lib/utils';
+// import { formatCurrency } from '@/lib/utils';
 
 interface CalculationHistory {
   id: string;
@@ -21,7 +21,7 @@ const MAX_HISTORY = 50;
 export default function BillingHistory({ currency, formatCurrencyFn }: { currency: 'INR' | 'USD'; formatCurrencyFn: (value: number, currency?: 'INR' | 'USD') => string }) {
   const [history, setHistory] = useState<CalculationHistory[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-
+  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -36,21 +36,21 @@ export default function BillingHistory({ currency, formatCurrencyFn }: { currenc
     }
   }, []);
 
-  const addToHistory = (calc: Omit<CalculationHistory, 'id' | 'timestamp'>) => {
-    const newEntry: CalculationHistory = {
-      ...calc,
-      id: Date.now().toString(),
-      timestamp: Date.now(),
-    };
+  // const addToHistory = (calc: Omit<CalculationHistory, 'id' | 'timestamp'>) => {
+  //   const newEntry: CalculationHistory = {
+  //     ...calc,
+  //     id: Date.now().toString(),
+  //     timestamp: Date.now(),
+  //   };
 
-    setHistory(prev => {
-      const updated = [newEntry, ...prev].slice(0, MAX_HISTORY);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-      }
-      return updated;
-    });
-  };
+  //   setHistory(prev => {
+  //     const updated = [newEntry, ...prev].slice(0, MAX_HISTORY);
+  //     if (typeof window !== 'undefined') {
+  //       localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+  //     }
+  //     return updated;
+  //   });
+  // };
 
   const clearHistory = () => {
     setHistory([]);

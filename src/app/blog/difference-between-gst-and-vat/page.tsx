@@ -192,7 +192,7 @@ export default function BlogPost() {
               Calculate GST Easily
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Whether you're new to GST or transitioning from VAT, our free GST calculator helps you 
+              Whether you&apos;re new to GST or transitioning from VAT, our free GST calculator helps you 
               calculate GST amounts instantly. Supports all GST rates and tax types (CGST, SGST, IGST).
             </p>
             <Link

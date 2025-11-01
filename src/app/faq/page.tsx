@@ -111,7 +111,7 @@ export default function FAQ() {
         <div className="mt-12 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border-2 border-indigo-200 dark:border-indigo-800">
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Still have questions?</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Can't find the answer you're looking for? Please reach out to our support team.
+            Can&apos;t find the answer you&apos;re looking for? Please reach out to our support team.
           </p>
           <a
             href="/contact"

@@ -134,7 +134,7 @@ export default function About() {
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Get in Touch</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            Have questions, suggestions, or found a bug? We'd love to hear from you! Visit our{" "}
+                            Have questions, suggestions, or found a bug? We&apos;d love to hear from you! Visit our{" "}
                             <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
                                 Contact Page
                             </a>{" "}

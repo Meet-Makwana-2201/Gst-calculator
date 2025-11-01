@@ -53,7 +53,7 @@ export default function BlogPost() {
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               As a freelancer in India, you need to register for GST if your annual aggregate turnover 
-              exceeds <strong>₹20 lakhs</strong> (or ₹10 lakhs if you're located in special category states 
+              exceeds <strong>₹20 lakhs</strong> (or ₹10 lakhs if you&apos;re located in special category states 
               like Himachal Pradesh, Uttarakhand, or North-Eastern states).
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -72,7 +72,7 @@ export default function BlogPost() {
               How to Calculate GST as a Freelancer
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Most freelance services fall under the <strong>18% GST rate</strong> category. Here's how to calculate GST:
+              Most freelance services fall under the <strong>18% GST rate</strong> category. Here&apos;s how to calculate GST:
             </p>
             
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
@@ -119,7 +119,7 @@ export default function BlogPost() {
                 <li>✓ Invoice number (sequential)</li>
                 <li>✓ Date of invoice</li>
                 <li>✓ Your name, address, and GSTIN</li>
-                <li>✓ Client's name, address, and GSTIN (if registered)</li>
+                <li>✓ Client&apos;s name, address, and GSTIN (if registered)</li>
                 <li>✓ Description of services</li>
                 <li>✓ Taxable amount</li>
                 <li>✓ GST rate and amount</li>

@@ -37,7 +37,7 @@ export default function BlogPost() {
         <div className="prose prose-lg dark:prose-invert max-w-none space-y-8">
           <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-              ✅ What You'll Learn
+              ✅ What You&apos;ll Learn
             </h2>
             <ul className="space-y-2 text-gray-700 dark:text-gray-300">
               <li>• How to create GST calculator formulas in Excel</li>
@@ -142,7 +142,7 @@ export default function BlogPost() {
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               Our online GST calculator allows you to download your calculations directly as Excel/CSV files. 
-              Simply calculate GST using our tool and click the "Download Sheet" or "Excel" export button.
+              Simply calculate GST using our tool and click the &quot;Download Sheet&quot; or &quot;Excel&quot; export button.
             </p>
             
             <div className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-200 dark:border-indigo-800 mb-4">
@@ -151,8 +151,8 @@ export default function BlogPost() {
               </h3>
               <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300">
                 <li>Enter your amount and GST rate in our calculator</li>
-                <li>Click "Calculate GST" to get results</li>
-                <li>Click the "Excel" or "Download Sheet" button</li>
+                <li>Click &quot;Calculate GST&quot; to get results</li>
+                <li>Click the &quot;Excel&quot; or &quot;Download Sheet&quot; button</li>
                 <li>Your GST calculation will download as a CSV/Excel file</li>
                 <li>Open in Excel and customize as needed</li>
               </ol>

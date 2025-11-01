@@ -1,4 +1,5 @@
 import ShareButtons from "@/components/ShareButtons";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -25,12 +26,12 @@ export default function Footer() {
               <h3 className="font-bold text-lg text-gray-900 dark:text-gray-100">Quick Links</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="/" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2 group">
+                  <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2 group">
                     <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/calculator" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2 group">
