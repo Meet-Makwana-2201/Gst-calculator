@@ -7,7 +7,11 @@ export const metadata = {
   title: "Free GST Calculator India (2025) | Add & Remove GST Online | Instant Calculation",
   description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Supports 5%, 12%, 18%, 28% rates with detailed breakdown.",
   keywords: [
-    "GST calculator India",
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "calculate GST amount online",
     "GST calculator",
     "GST calculation online India",
@@ -35,16 +39,6 @@ export const metadata = {
     "gst billing tools for small business",
     "difference between gst and vat",
   ],
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-    },
-  },
   alternates: {
     canonical: "https://easy-gst-calculator.netlify.app",
   },
@@ -90,22 +84,22 @@ export default function Home() {
             </svg>
             Free • Fast • Accurate
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
             <span className="text-gradient">Calculate GST</span>
             <br />
             <span className="text-gray-900 dark:text-gray-100">in Seconds</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            India&apos;s most trusted <strong>GST calculator India online</strong>. Calculate GST and reverse GST instantly with 
+            India&apos;s most trusted <strong>GST calculator India online</strong>. Calculate GST and reverse GST instantly with
             support for all rates. <strong>Mobile-friendly</strong> and works everywhere. No sign-up, no fees, just accurate calculations with detailed breakdown.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Link href="/calculator">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="px-8 py-6 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover-lift rounded-xl"
               >
                 <span>Get Started</span>
@@ -115,9 +109,9 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="/about">
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                variant="outline"
+                size="lg"
                 className="px-8 py-6 text-lg font-semibold border-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all rounded-xl"
               >
                 Learn More
@@ -272,8 +266,8 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/calculator">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="px-8 py-6 text-lg font-semibold bg-white text-indigo-600 hover:bg-gray-100 shadow-2xl hover:shadow-3xl transition-all hover-lift rounded-xl"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,9 +277,9 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/about">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  variant="outline"
+                  size="lg"
                   className="px-8 py-6 text-lg font-semibold border-2 border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all rounded-xl"
                 >
                   Learn More About Us

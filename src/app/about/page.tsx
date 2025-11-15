@@ -4,6 +4,11 @@ export const metadata = {
     title: "About Us - GST Calculator India | Our Mission & Story",
     description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
     keywords: [
+        "easy gst calculator",
+        "gstcalc",
+        "reverse gst calculator",
+        "reverse gst",
+        "easy reverse gst",
         "About GST Calculator India",
         "GST calculator mission",
         "who built GST calculator",
@@ -65,7 +70,7 @@ export default function About() {
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Who We Are</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            We are a team dedicated to simplifying GST calculations for businesses, professionals, and individuals across India. 
+                            We are a team dedicated to simplifying GST calculations for businesses, professionals, and individuals across India.
                             Our mission is to provide accurate, fast, and completely free GST calculation tools that everyone can access without any barriers.
                         </p>
                     </div>
@@ -73,8 +78,8 @@ export default function About() {
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Why We Built This</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            GST (Goods and Services Tax) calculation can be confusing and time-consuming. Many businesses and individuals struggle 
-                            with manual calculations, leading to errors and wasted time. We recognized this challenge and decided to create a 
+                            GST (Goods and Services Tax) calculation can be confusing and time-consuming. Many businesses and individuals struggle
+                            with manual calculations, leading to errors and wasted time. We recognized this challenge and decided to create a
                             solution that:
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
@@ -120,13 +125,13 @@ export default function About() {
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Our Commitment</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            We are committed to providing the best GST calculation experience possible. This tool is regularly updated 
-                            to ensure accuracy and improve user experience. While we strive for perfection, we recommend verifying 
+                            We are committed to providing the best GST calculation experience possible. This tool is regularly updated
+                            to ensure accuracy and improve user experience. While we strive for perfection, we recommend verifying
                             critical calculations using official methods, especially for tax filing purposes.
                         </p>
                         <p className="text-gray-700 dark:text-gray-300 mt-4">
-                            <strong>Important Note:</strong> This calculator is a helpful tool for quick calculations. For official tax 
-                            purposes and critical business decisions, please consult with a certified tax professional or use official 
+                            <strong>Important Note:</strong> This calculator is a helpful tool for quick calculations. For official tax
+                            purposes and critical business decisions, please consult with a certified tax professional or use official
                             government calculators.
                         </p>
                     </div>

@@ -23,8 +23,13 @@ export const metadata: Metadata = {
     default: "Free GST Calculator India (2025) | Add & Remove GST Online",
     template: "%s | GST Calculator India",
   },
-  description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Free online GST calculator with breakdown.",
+  description: "Fast, Free, accurate and Easy GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Free online GST calculator with breakdown.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST calculator India",
     "GST calculator",
     "calculate GST amount online",
@@ -76,9 +81,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code", // Replace with actual verification code if available
-  },
+  // verification: {
+  //   google: "your-google-verification-code", // Replace with actual verification code if available
+  // },
 };
 
 export default function RootLayout({

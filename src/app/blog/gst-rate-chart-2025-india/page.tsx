@@ -4,6 +4,11 @@ export const metadata = {
   title: "GST Rate Chart India 2025: Complete List with Examples | GST Blog",
   description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services including HSN codes, examples, and recent updates. Your comprehensive GST rate guide.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST rate chart 2025",
     "GST rates India",
     "GST rates list",
@@ -73,8 +78,8 @@ export default function BlogPost() {
               📊 Quick Overview
             </h2>
             <p className="text-gray-700 dark:text-gray-300">
-              India uses a multi-tier GST structure with rates of 0%, 5%, 12%, 18%, and 28%. 
-              The most common rate is 18%, which applies to most goods and services. Understanding 
+              India uses a multi-tier GST structure with rates of 0%, 5%, 12%, 18%, and 28%.
+              The most common rate is 18%, which applies to most goods and services. Understanding
               which rate applies to your product or service is crucial for accurate invoicing.
             </p>
           </div>
@@ -82,13 +87,12 @@ export default function BlogPost() {
           {gstRates.map((rateInfo, index) => (
             <section key={rateInfo.rate} className="p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800">
               <div className="flex items-start gap-4 mb-4">
-                <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${
-                  index === 0 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
-                  index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
-                  index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
-                  index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
-                  'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
-                }`}>
+                <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${index === 0 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
+                    index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
+                      index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
+                        index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
+                          'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
+                  }`}>
                   {rateInfo.rate}
                 </div>
                 <div className="flex-1">
@@ -124,21 +128,21 @@ export default function BlogPost() {
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">1. Check HSN/SAC Code</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Goods have HSN (Harmonized System of Nomenclature) codes, and services have SAC 
+                  Goods have HSN (Harmonized System of Nomenclature) codes, and services have SAC
                   (Services Accounting Code). These codes determine the GST rate.
                 </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">2. Consult Official GST Portal</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  The official GST portal (gst.gov.in) has comprehensive rate lists. Always verify 
+                  The official GST portal (gst.gov.in) has comprehensive rate lists. Always verify
                   the rate for your specific product or service.
                 </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">3. Check Recent Notifications</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  GST rates can change through government notifications. Stay updated with the latest 
+                  GST rates can change through government notifications. Stay updated with the latest
                   GST rate changes and amendments.
                 </p>
               </div>
@@ -153,14 +157,14 @@ export default function BlogPost() {
               <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
                 <h3 className="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">📦 Composite Scheme</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Small businesses with turnover up to ₹1.5 crores can opt for the composition scheme 
+                  Small businesses with turnover up to ₹1.5 crores can opt for the composition scheme
                   with reduced rates (1-6% depending on business type).
                 </p>
               </div>
               <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
                 <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">🏭 Reverse Charge</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  In reverse charge mechanism, the recipient pays GST instead of the supplier. 
+                  In reverse charge mechanism, the recipient pays GST instead of the supplier.
                   Common in certain services and imports.
                 </p>
               </div>
@@ -172,7 +176,7 @@ export default function BlogPost() {
               Need to Calculate GST?
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Use our free GST calculator with all standard rates (5%, 12%, 18%, 28%) and custom rate support. 
+              Use our free GST calculator with all standard rates (5%, 12%, 18%, 28%) and custom rate support.
               Calculate GST instantly for any amount.
             </p>
             <div className="flex flex-wrap gap-3">

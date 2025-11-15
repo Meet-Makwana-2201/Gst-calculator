@@ -6,6 +6,11 @@ export const metadata = {
     title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
     description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool with detailed breakdown. Supports 5%, 12%, 18%, 28% rates.",
     keywords: [
+        "easy gst calculator",
+        "gstcalc",
+        "reverse gst calculator",
+        "reverse gst",
+        "easy reverse gst",
         "GST calculator tool India",
         "GST calculator India",
         "calculate GST online India",
@@ -23,16 +28,6 @@ export const metadata = {
         "online GST calculator India",
         "GST tax calculator",
     ],
-    robots: {
-        index: true,
-        follow: true,
-        nocache: false,
-        googleBot: {
-            index: true,
-            follow: true,
-            noimageindex: false,
-        },
-    },
     alternates: {
         canonical: "https://easy-gst-calculator.netlify.app/calculator",
     },

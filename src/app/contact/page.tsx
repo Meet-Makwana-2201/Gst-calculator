@@ -1,17 +1,16 @@
 export const metadata = {
   title: "Contact Us - Get Support or Feedback | GST Calculator",
   description: "Have questions or need help? Contact us today. We're here to assist you with GST calculations and support requests.",
-  keywords: ["Contact GST Calculator", "Support", "Feedback", "Get Help GST"],
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-    },
-  },
+  keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
+    "Contact GST Calculator",
+    "Support",
+    "Feedback",
+    "Get Help GST"],
   alternates: {
     canonical: "https://easy-gst-calculator.netlify.app/contact",
   },

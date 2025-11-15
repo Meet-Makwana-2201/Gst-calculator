@@ -4,6 +4,11 @@ export const metadata = {
   title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",
   description: "Download free GST calculation Excel templates. Learn how to create your own GST calculator in Excel with formulas, examples, and step-by-step guide.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST calculator Excel",
     "GST Excel template",
     "GST formula Excel",

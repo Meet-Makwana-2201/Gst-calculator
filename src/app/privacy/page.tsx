@@ -4,6 +4,11 @@ export const metadata = {
   title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
   description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "privacy policy GST calculator",
     "data protection",
     "GST calculator privacy",
@@ -141,8 +146,8 @@ export default function Privacy() {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
               >
                 Visit our Contact Page →
@@ -154,7 +159,7 @@ export default function Privacy() {
                 ✅ Summary: Your Data is Safe
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                We don&apos;t collect your calculations. We don&apos;t store your data. We don&apos;t track you. 
+                We don&apos;t collect your calculations. We don&apos;t store your data. We don&apos;t track you.
                 Use our calculator with complete confidence that your privacy is protected.
               </p>
             </div>

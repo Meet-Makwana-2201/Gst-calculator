@@ -4,6 +4,11 @@ export const metadata = {
   title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",
   description: "Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST vs VAT",
     "difference GST VAT",
     "GST replaced VAT",
@@ -40,8 +45,8 @@ export default function BlogPost() {
               🎯 Quick Summary
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              <strong>GST (Goods and Services Tax)</strong> replaced <strong>VAT (Value Added Tax)</strong> 
-              in India on July 1, 2017. GST is a unified tax system that replaced multiple indirect taxes 
+              <strong>GST (Goods and Services Tax)</strong> replaced <strong>VAT (Value Added Tax)</strong>
+              in India on July 1, 2017. GST is a unified tax system that replaced multiple indirect taxes
               including VAT, service tax, excise duty, and others.
             </p>
           </div>
@@ -67,7 +72,7 @@ export default function BlogPost() {
               What is GST?
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              GST is a comprehensive, destination-based tax levied on the supply of goods and services. 
+              GST is a comprehensive, destination-based tax levied on the supply of goods and services.
               Key features:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-4">
@@ -83,7 +88,7 @@ export default function BlogPost() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               Key Differences: GST vs VAT
             </h2>
-            
+
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-gray-300 dark:border-gray-700 mb-4">
                 <thead>
@@ -175,7 +180,7 @@ export default function BlogPost() {
                 <li>Easier interstate trade and expansion</li>
                 <li>Lower overall tax burden for most businesses</li>
               </ul>
-              
+
               <p>
                 <strong>Challenges:</strong>
               </p>
@@ -192,7 +197,7 @@ export default function BlogPost() {
               Calculate GST Easily
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Whether you&apos;re new to GST or transitioning from VAT, our free GST calculator helps you 
+              Whether you&apos;re new to GST or transitioning from VAT, our free GST calculator helps you
               calculate GST amounts instantly. Supports all GST rates and tax types (CGST, SGST, IGST).
             </p>
             <Link

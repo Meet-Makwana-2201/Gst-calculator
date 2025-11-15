@@ -2,6 +2,11 @@ export const metadata = {
   title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",
   description: "Complete guide to GST for freelancers in India. Learn about GST registration, calculation, invoicing, and filing. Essential tips for freelancers working with Indian and international clients.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST for freelancers",
     "GST freelancer India",
     "freelancer GST registration",
@@ -52,8 +57,8 @@ export default function BlogPost() {
               Do Freelancers Need GST Registration?
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              As a freelancer in India, you need to register for GST if your annual aggregate turnover 
-              exceeds <strong>₹20 lakhs</strong> (or ₹10 lakhs if you&apos;re located in special category states 
+              As a freelancer in India, you need to register for GST if your annual aggregate turnover
+              exceeds <strong>₹20 lakhs</strong> (or ₹10 lakhs if you&apos;re located in special category states
               like Himachal Pradesh, Uttarakhand, or North-Eastern states).
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -74,7 +79,7 @@ export default function BlogPost() {
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               Most freelance services fall under the <strong>18% GST rate</strong> category. Here&apos;s how to calculate GST:
             </p>
-            
+
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
               <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Example Calculation:</h3>
               <div className="space-y-2 text-sm font-mono text-gray-700 dark:text-gray-300">
@@ -88,7 +93,7 @@ export default function BlogPost() {
             </div>
 
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              You can use our free <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">GST Calculator</a> to 
+              You can use our free <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">GST Calculator</a> to
               instantly calculate GST amounts for any invoice amount.
             </p>
           </section>
@@ -127,7 +132,7 @@ export default function BlogPost() {
               </ul>
             </div>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Our <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Print Invoice</a> feature 
+              Our <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Print Invoice</a> feature
               helps you create professional GST invoices quickly.
             </p>
           </section>
@@ -186,7 +191,7 @@ export default function BlogPost() {
               Ready to Calculate GST?
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Use our free GST calculator to instantly calculate GST amounts for your freelance invoices. 
+              Use our free GST calculator to instantly calculate GST amounts for your freelance invoices.
               No registration required, works on all devices.
             </p>
             <a

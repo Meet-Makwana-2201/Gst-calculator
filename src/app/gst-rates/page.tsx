@@ -2,6 +2,11 @@ export const metadata = {
   title: "GST Rates Chart India 2025 | Complete GST Rate List | GST Calculator",
   description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services: 0%, 5%, 12%, 18%, 28%. Updated GST rate list with HSN codes and categories.",
   keywords: [
+    "easy gst calculator",
+    "gstcalc",
+    "reverse gst calculator",
+    "reverse gst",
+    "easy reverse gst",
     "GST rates India 2025",
     "GST rate chart",
     "GST rates list",
