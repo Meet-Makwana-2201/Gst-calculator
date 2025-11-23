@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Calculator Body -->
+  <rect x="64" y="32" width="384" height="448" rx="64" fill="url(#grad)" filter="url(#shadow)"/>
+  
+  <!-- Screen -->
+  <rect x="112" y="80" width="288" height="100" rx="20" fill="rgba(255,255,255,0.2)"/>
+  <text x="370" y="150" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="white" text-anchor="end" style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">GST</text>
+  
+  <!-- Buttons Row 1 -->
+  <circle cx="160" cy="240" r="32" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="256" cy="240" r="32" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="352" cy="240" r="32" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Buttons Row 2 -->
+  <circle cx="160" cy="330" r="32" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="256" cy="330" r="32" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="352" cy="330" r="32" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Buttons Row 3 -->
+  <circle cx="160" cy="420" r="32" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="256" cy="420" r="32" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Equals Button (Accent) -->
+  <circle cx="352" cy="420" r="32" fill="#fbbf24"/>
+  <text x="352" y="438" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">=</text>
+</svg>
