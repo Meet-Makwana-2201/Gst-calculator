@@ -16,6 +16,31 @@ export const metadata = {
     "GST vs VAT India",
     "what is difference between GST and VAT",
   ],
+  alternates: {
+    canonical: "/blog/difference-between-gst-and-vat",
+  },
+  openGraph: {
+    title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",
+    description: "Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers.",
+    url: "/blog/difference-between-gst-and-vat",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST vs VAT Differences",
+      },
+    ],
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",
+    description: "Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function BlogPost() {

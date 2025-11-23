@@ -12,18 +12,18 @@ export const metadata = {
     "Feedback",
     "Get Help GST"],
   alternates: {
-    canonical: "https://easy-gst-calculator.netlify.app/contact",
+    canonical: "/contact",
   },
   openGraph: {
     title: "Contact Us - Get Support or Feedback | GST Calculator",
     description: "Have questions or need help? Contact us today. We're here to assist you with GST calculations and support requests.",
-    url: "https://easy-gst-calculator.netlify.app/contact",
+    url: "/contact",
     siteName: "GST Calculator",
     images: [
       {
-        url: "https://easy-gst-calculator.netlify.app/og-contact.jpg",
-        width: 1200,
-        height: 630,
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
         alt: "Contact GST Calculator",
       },
     ],
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Us - Get Support or Feedback | GST Calculator",
     description: "Have questions or need help? Contact us today. We're here to assist you with GST calculations and support requests.",
-    images: ["https://easy-gst-calculator.netlify.app/og-contact.jpg"],
+    images: ["/logo.svg"],
   },
 };
 

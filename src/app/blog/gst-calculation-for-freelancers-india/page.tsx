@@ -14,6 +14,31 @@ export const metadata = {
     "freelancer GST invoice",
     "GST compliance freelancers",
   ],
+  alternates: {
+    canonical: "/blog/gst-calculation-for-freelancers-india",
+  },
+  openGraph: {
+    title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",
+    description: "Complete guide to GST for freelancers in India. Learn about GST registration, calculation, invoicing, and filing. Essential tips for freelancers working with Indian and international clients.",
+    url: "/blog/gst-calculation-for-freelancers-india",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST for Freelancers Guide",
+      },
+    ],
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",
+    description: "Complete guide to GST for freelancers in India. Learn about GST registration, calculation, invoicing, and filing. Essential tips for freelancers working with Indian and international clients.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function BlogPost() {

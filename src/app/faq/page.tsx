@@ -18,6 +18,31 @@ export const metadata = {
     "GST calculator help",
     "GST questions",
   ],
+  alternates: {
+    canonical: "/faq",
+  },
+  openGraph: {
+    title: "FAQ - GST Calculator India | Help & Support",
+    description: "Frequently asked questions about GST calculation, GST rates, IGST, CGST, SGST, and how to use our GST calculator. Get help with all your GST-related queries.",
+    url: "/faq",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST Calculator FAQ",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ - GST Calculator India | Help & Support",
+    description: "Frequently asked questions about GST calculation, GST rates, IGST, CGST, SGST, and how to use our GST calculator. Get help with all your GST-related queries.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function FAQ() {
@@ -76,59 +101,59 @@ export default function FAQ() {
     <>
       <FAQSchema faqs={faqs} />
       <main className="flex flex-col min-h-screen">
-      <section className="flex-1 container mx-auto px-4 py-12 max-w-4xl">
-        <div className="text-center mb-12 space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get answers to common questions about GST calculation, rates, and our calculator tool.
-          </p>
-        </div>
+        <section className="flex-1 container mx-auto px-4 py-12 max-w-4xl">
+          <div className="text-center mb-12 space-y-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Get answers to common questions about GST calculation, rates, and our calculator tool.
+            </p>
+          </div>
 
-        <div className="space-y-6">
-          {faqs.map((faq, index) => (
-            <Card key={index} className="backdrop-blur-xl bg-white/90 dark:bg-gray-900/90 border-2 hover-lift">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                  {faq.question}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="prose prose-sm dark:prose-invert max-w-none">
-                  {faq.answer.split('\n\n').map((paragraph, pIndex) => (
-                    <p key={pIndex} className="text-gray-700 dark:text-gray-300 mb-4 last:mb-0 whitespace-pre-line">
-                      {paragraph.split('\n').map((line, lIndex) => {
-                        if (line.match(/^\*\*/) && line.match(/\*\*$/)) {
-                          const boldText = line.replace(/\*\*/g, '');
-                          return <strong key={lIndex} className="font-semibold">{boldText}</strong>;
-                        }
-                        return <span key={lIndex}>{line}{lIndex < paragraph.split('\n').length - 1 && <br />}</span>;
-                      })}
-                    </p>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <Card key={index} className="backdrop-blur-xl bg-white/90 dark:bg-gray-900/90 border-2 hover-lift">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                    {faq.question}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="prose prose-sm dark:prose-invert max-w-none">
+                    {faq.answer.split('\n\n').map((paragraph, pIndex) => (
+                      <p key={pIndex} className="text-gray-700 dark:text-gray-300 mb-4 last:mb-0 whitespace-pre-line">
+                        {paragraph.split('\n').map((line, lIndex) => {
+                          if (line.match(/^\*\*/) && line.match(/\*\*$/)) {
+                            const boldText = line.replace(/\*\*/g, '');
+                            return <strong key={lIndex} className="font-semibold">{boldText}</strong>;
+                          }
+                          return <span key={lIndex}>{line}{lIndex < paragraph.split('\n').length - 1 && <br />}</span>;
+                        })}
+                      </p>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
-        <div className="mt-12 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border-2 border-indigo-200 dark:border-indigo-800">
-          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Still have questions?</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Can&apos;t find the answer you&apos;re looking for? Please reach out to our support team.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all hover-lift shadow-lg"
-          >
-            Contact Us
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
-        </div>
-      </section>
+          <div className="mt-12 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border-2 border-indigo-200 dark:border-indigo-800">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Still have questions?</h2>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              Can&apos;t find the answer you&apos;re looking for? Please reach out to our support team.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all hover-lift shadow-lg"
+            >
+              Contact Us
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );

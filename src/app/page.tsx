@@ -40,18 +40,18 @@ export const metadata = {
     "difference between gst and vat",
   ],
   alternates: {
-    canonical: "https://easy-gst-calculator.netlify.app",
+    canonical: "/",
   },
   openGraph: {
     title: "GST Calculator - Instant GST Calculation Online",
     description: "Calculate GST amounts easily with our simple GST calculator. No login required. Instant results. Accurate GST calculations.",
-    url: "https://easy-gst-calculator.netlify.app",
+    url: "/",
     siteName: "GST Calculator",
     images: [
       {
-        url: "https://easy-gst-calculator.netlify.app/og-home.jpg",
-        width: 1200,
-        height: 630,
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
         alt: "GST Calculator Preview",
       },
     ],
@@ -62,7 +62,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "GST Calculator - Instant GST Calculation Online",
     description: "Calculate GST amounts easily with our simple GST calculator. No login required. Instant results. Accurate GST calculations.",
-    images: ["https://easy-gst-calculator.netlify.app/og-home.jpg"],
+    images: ["/logo.svg"],
   },
 };
 

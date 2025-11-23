@@ -16,6 +16,31 @@ export const metadata = {
     "Excel GST template",
     "GST calculation sheet",
   ],
+  alternates: {
+    canonical: "/blog/gst-calculator-excel-download",
+  },
+  openGraph: {
+    title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",
+    description: "Download free GST calculation Excel templates. Learn how to create your own GST calculator in Excel with formulas, examples, and step-by-step guide.",
+    url: "/blog/gst-calculator-excel-download",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST Calculator Excel Template",
+      },
+    ],
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",
+    description: "Download free GST calculation Excel templates. Learn how to create your own GST calculator in Excel with formulas, examples, and step-by-step guide.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function BlogPost() {
@@ -88,7 +113,7 @@ export default function BlogPost() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               Excel GST Calculation Formulas
             </h2>
-            
+
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
               <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Basic GST Calculation Formula:</h3>
               <div className="space-y-3 text-sm font-mono">
@@ -146,10 +171,10 @@ export default function BlogPost() {
               Download GST Excel Sheet
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Our online GST calculator allows you to download your calculations directly as Excel/CSV files. 
+              Our online GST calculator allows you to download your calculations directly as Excel/CSV files.
               Simply calculate GST using our tool and click the &quot;Download Sheet&quot; or &quot;Excel&quot; export button.
             </p>
-            
+
             <div className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-200 dark:border-indigo-800 mb-4">
               <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
                 📥 Steps to Download:
@@ -195,7 +220,7 @@ export default function BlogPost() {
               Try Our Online Calculator + Export
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Our free online GST calculator not only calculates GST instantly but also lets you export 
+              Our free online GST calculator not only calculates GST instantly but also lets you export
               results to Excel/CSV. Perfect for quick calculations and maintaining records!
             </p>
             <Link

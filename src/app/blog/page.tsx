@@ -11,6 +11,31 @@ export const metadata = {
     "GST rates 2025",
     "GST calculation guide",
   ],
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "GST Blog - Articles, Guides & Resources | GST Calculator India",
+    description: "Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.",
+    url: "/blog",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST Calculator Blog",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GST Blog - Articles, Guides & Resources | GST Calculator India",
+    description: "Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.",
+    images: ["/logo.svg"],
+  },
 };
 
 interface BlogPost {
@@ -110,7 +135,7 @@ export default function Blog() {
             📚 Stay Updated
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            New articles are added regularly. Bookmark this page to stay informed about GST updates, 
+            New articles are added regularly. Bookmark this page to stay informed about GST updates,
             calculation tips, and best practices for businesses and freelancers.
           </p>
           <div className="flex flex-wrap gap-3">

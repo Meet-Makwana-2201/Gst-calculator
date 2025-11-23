@@ -29,18 +29,18 @@ export const metadata = {
         },
     },
     alternates: {
-        canonical: "https://easy-gst-calculator.netlify.app/about",
+        canonical: "/about",
     },
     openGraph: {
         title: "About Us - GST Calculator India | Our Mission & Story",
         description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
-        url: "https://easy-gst-calculator.netlify.app/about",
+        url: "/about",
         siteName: "GST Calculator",
         images: [
             {
-                url: "https://easy-gst-calculator.netlify.app/og-about.jpg",
-                width: 1200,
-                height: 630,
+                url: "/logo.svg",
+                width: 512,
+                height: 512,
                 alt: "About GST Calculator",
             },
         ],
@@ -51,7 +51,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "About Us - GST Calculator India | Our Mission & Story",
         description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
-        images: ["https://easy-gst-calculator.netlify.app/og-about.jpg"],
+        images: ["/logo.svg"],
     },
 };
 

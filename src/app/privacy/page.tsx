@@ -14,6 +14,31 @@ export const metadata = {
     "GST calculator privacy",
     "no data collection",
   ],
+  alternates: {
+    canonical: "/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
+    description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
+    url: "/privacy",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST Calculator Privacy Policy",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
+    description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function Privacy() {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -18,72 +18,86 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: '#4f46e5',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://easy-gst-calculator.netlify.app'),
   title: {
-    default: "Free GST Calculator India (2025) | Add & Remove GST Online",
+    default: "GST Calculator India - Free Online GST Calculation Tool",
     template: "%s | GST Calculator India",
   },
-  description: "Fast, Free, accurate and Easy GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Free online GST calculator with breakdown.",
+  description: "Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST. Reverse GST calculation supported. Fast, easy, and mobile-friendly.",
   keywords: [
-    "easy gst calculator",
-    "gstcalc",
-    "reverse gst calculator",
-    "reverse gst",
-    "easy reverse gst",
-    "GST calculator India",
     "GST calculator",
-    "calculate GST amount online",
-    "GST calculation online India",
-    "online GST calculator",
+    "GST India",
+    "calculate GST",
+    "reverse GST calculator",
     "GST tax calculator",
-    "reverse GST calculator India",
-    "GST calculation formula",
-    "free GST calculator",
-    "GST calculator 18 percent",
-    "GST amount calculator",
-    "India GST calculator",
-    "GST rate calculator",
-    "GST inclusive calculator",
-    "GST exclusive calculator",
-    "GST calculator for business",
-    "GST calculator app",
-    "how to calculate GST",
-    "GST percentage calculator",
+    "India tax calculator",
+    "online GST calculator",
+    "free GST tool",
+    "GST rates",
+    "IGST calculator",
+    "CGST calculator",
+    "SGST calculator"
   ],
-  authors: [{ name: "GST Calculator Team" }],
-  creator: "GST Calculator",
-  publisher: "GST Calculator",
-  metadataBase: new URL("https://easy-gst-calculator.netlify.app"),
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: "https://easy-gst-calculator.netlify.app",
-    siteName: "GST Calculator India",
-    title: "GST Calculator India - Free Online GST Calculation Tool",
-    description: "Free GST calculator India. Calculate GST amount online instantly. Reverse GST calculator, GST calculation formula. Accurate GST tax calculator.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "GST Calculator India - Free Online GST Calculation Tool",
-    description: "Free GST calculator India. Calculate GST amount online instantly. Reverse GST calculator, GST calculation formula.",
-  },
+  authors: [{ name: "GST Calculator India" }],
+  creator: "GST Calculator India",
+  publisher: "GST Calculator India",
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
-  // verification: {
-  //   google: "your-google-verification-code", // Replace with actual verification code if available
-  // },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: ['/favicon.svg'],
+    apple: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+  },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'GST Calc',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://easy-gst-calculator.netlify.app',
+    title: 'GST Calculator India - Free Online GST Calculation Tool',
+    description: 'Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST.',
+    siteName: 'GST Calculator India',
+    images: [
+      {
+        url: '/logo.svg',
+        width: 512,
+        height: 512,
+        alt: 'GST Calculator India Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GST Calculator India - Free Online GST Calculation Tool',
+    description: 'Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST.',
+    images: ['/logo.svg'],
+    creator: '@gstcalc_india',
+  },
 };
 
 export default function RootLayout({
@@ -93,13 +107,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#6366f1" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="GST Calculator" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

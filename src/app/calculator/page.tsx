@@ -29,18 +29,18 @@ export const metadata = {
         "GST tax calculator",
     ],
     alternates: {
-        canonical: "https://easy-gst-calculator.netlify.app/calculator",
+        canonical: "/calculator",
     },
     openGraph: {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-        url: "https://easy-gst-calculator.netlify.app/calculator",
+        url: "/calculator",
         siteName: "GST Calculator",
         images: [
             {
-                url: "https://easy-gst-calculator.netlify.app/og-calculator.jpg",
-                width: 1200,
-                height: 630,
+                url: "/logo.svg",
+                width: 512,
+                height: 512,
                 alt: "GST Calculator Tool",
             },
         ],
@@ -51,7 +51,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-        images: ["https://easy-gst-calculator.netlify.app/og-calculator.jpg"],
+        images: ["/logo.svg"],
     },
 };
 

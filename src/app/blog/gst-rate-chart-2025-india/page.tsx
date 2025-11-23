@@ -16,6 +16,31 @@ export const metadata = {
     "GST rates 2025",
     "complete GST rates",
   ],
+  alternates: {
+    canonical: "/blog/gst-rate-chart-2025-india",
+  },
+  openGraph: {
+    title: "GST Rate Chart India 2025: Complete List with Examples | GST Blog",
+    description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services including HSN codes, examples, and recent updates. Your comprehensive GST rate guide.",
+    url: "/blog/gst-rate-chart-2025-india",
+    siteName: "GST Calculator",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "GST Rate Chart 2025",
+      },
+    ],
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GST Rate Chart India 2025: Complete List with Examples | GST Blog",
+    description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services including HSN codes, examples, and recent updates. Your comprehensive GST rate guide.",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function BlogPost() {
@@ -88,10 +113,10 @@ export default function BlogPost() {
             <section key={rateInfo.rate} className="p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800">
               <div className="flex items-start gap-4 mb-4">
                 <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${index === 0 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
-                    index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
-                      index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
-                        index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
-                          'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
+                  index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
+                    index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
+                      index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
+                        'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
                   }`}>
                   {rateInfo.rate}
                 </div>
