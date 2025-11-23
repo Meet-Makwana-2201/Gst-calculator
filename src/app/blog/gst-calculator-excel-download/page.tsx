@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "GST Calculator",
     images: [
       {
-        url: "/logo.svg",
+        url: "/blog-excel-calculator.png",
         width: 512,
         height: 512,
         alt: "GST Calculator Excel Template",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",
     description: "Download free GST calculation Excel templates. Learn how to create your own GST calculator in Excel with formulas, examples, and step-by-step guide.",
-    images: ["/logo.svg"],
+    images: ["/blog-excel-calculator.png"],
   },
 };
 
@@ -62,7 +62,7 @@ export default function BlogPost() {
       "@type": "Organization",
       "name": "GST Calculator India"
     },
-    "image": "https://easy-gst-calculator.netlify.app/logo.svg"
+    "image": "https://easy-gst-calculator.netlify.app/blog-excel-calculator.png"
   };
 
   return (
@@ -74,7 +74,7 @@ export default function BlogPost() {
         date="January 8, 2025"
         readTime="5 min read"
         category="Tools & Resources"
-        image="/logo.svg"
+        image="/blog-excel-calculator.png"
         toc={toc}
       >
         <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800">

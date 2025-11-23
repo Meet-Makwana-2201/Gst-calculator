@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "GST Calculator",
     images: [
       {
-        url: "/logo.svg",
+        url: "/blog-freelancer-gst.png",
         width: 512,
         height: 512,
         alt: "GST for Freelancers Guide",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",
     description: "Complete guide to GST for freelancers in India. Learn about GST registration, calculation, invoicing, and filing. Essential tips for freelancers working with Indian and international clients.",
-    images: ["/logo.svg"],
+    images: ["/blog-freelancer-gst.png"],
   },
 };
 
@@ -64,7 +64,7 @@ export default function BlogPost() {
       "@type": "Organization",
       "name": "GST Calculator India"
     },
-    "image": "https://easy-gst-calculator.netlify.app/logo.svg"
+    "image": "https://easy-gst-calculator.netlify.app/blog-freelancer-gst.png"
   };
 
   return (
@@ -76,7 +76,7 @@ export default function BlogPost() {
         date="January 15, 2025"
         readTime="8 min read"
         category="Freelancers"
-        image="/logo.svg"
+        image="/blog-freelancer-gst.png"
         toc={toc}
       >
         <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">

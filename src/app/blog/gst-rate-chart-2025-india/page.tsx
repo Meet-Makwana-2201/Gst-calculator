@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "GST Calculator",
     images: [
       {
-        url: "/logo.svg",
+        url: "/blog-gst-rates-2025.png",
         width: 512,
         height: 512,
         alt: "GST Rate Chart 2025",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "GST Rate Chart India 2025: Complete List with Examples | GST Blog",
     description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services including HSN codes, examples, and recent updates. Your comprehensive GST rate guide.",
-    images: ["/logo.svg"],
+    images: ["/blog-gst-rates-2025.png"],
   },
 };
 
@@ -98,7 +98,7 @@ export default function BlogPost() {
       "@type": "Organization",
       "name": "GST Calculator India"
     },
-    "image": "https://easy-gst-calculator.netlify.app/logo.svg"
+    "image": "https://easy-gst-calculator.netlify.app/blog-gst-rates-2025.png"
   };
 
   return (
@@ -110,7 +110,7 @@ export default function BlogPost() {
         date="January 10, 2025"
         readTime="6 min read"
         category="GST Rates"
-        image="/logo.svg"
+        image="/blog-gst-rates-2025.png"
         toc={toc}
       >
         <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">

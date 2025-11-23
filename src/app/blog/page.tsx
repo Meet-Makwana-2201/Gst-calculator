@@ -103,6 +103,7 @@ const blogPosts: BlogPost[] = [
     date: "January 15, 2025",
     readTime: "8 min read",
     category: "Freelancers",
+    image: "/blog-freelancer-gst.png",
   },
   {
     slug: "gst-rate-chart-2025-india",
@@ -111,6 +112,7 @@ const blogPosts: BlogPost[] = [
     date: "January 10, 2025",
     readTime: "6 min read",
     category: "GST Rates",
+    image: "/blog-gst-rates-2025.png",
   },
   {
     slug: "gst-calculator-excel-download",
@@ -119,6 +121,7 @@ const blogPosts: BlogPost[] = [
     date: "January 8, 2025",
     readTime: "5 min read",
     category: "Tools & Resources",
+    image: "/blog-excel-calculator.png",
   },
   {
     slug: "difference-between-gst-and-vat",
@@ -127,6 +130,7 @@ const blogPosts: BlogPost[] = [
     date: "January 5, 2025",
     readTime: "7 min read",
     category: "GST Basics",
+    image: "/blog-difference-gst-vat.png",
   },
 ];
 

@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "GST Calculator",
     images: [
       {
-        url: "/logo.svg",
+        url: "/blog-difference-gst-vat.png",
         width: 512,
         height: 512,
         alt: "GST vs VAT Differences",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",
     description: "Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers.",
-    images: ["/logo.svg"],
+    images: ["/blog-difference-gst-vat.png"],
   },
 };
 
@@ -63,7 +63,7 @@ export default function BlogPost() {
       "@type": "Organization",
       "name": "GST Calculator India"
     },
-    "image": "https://easy-gst-calculator.netlify.app/logo.svg"
+    "image": "https://easy-gst-calculator.netlify.app/blog-difference-gst-vat.png"
   };
 
   return (
@@ -75,7 +75,7 @@ export default function BlogPost() {
         date="January 5, 2025"
         readTime="7 min read"
         category="GST Basics"
-        image="/logo.svg"
+        image="/blog-difference-gst-vat.png"
         toc={toc}
       >
         <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
