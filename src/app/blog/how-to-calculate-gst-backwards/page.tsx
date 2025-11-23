@@ -65,6 +65,7 @@ export default function BlogPost() {
         <>
             <JsonLd data={jsonLd} />
             <BlogPostWrapper
+                slug="how-to-calculate-gst-backwards"
                 title="How to Calculate GST Backwards (Reverse Calculation)"
                 description="Learn how to calculate GST backwards from the total amount. Use the reverse GST formula to find the base price and tax amount from the MRP."
                 date="January 28, 2025"

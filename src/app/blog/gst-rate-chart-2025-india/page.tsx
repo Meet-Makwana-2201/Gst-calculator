@@ -105,6 +105,7 @@ export default function BlogPost() {
     <>
       <JsonLd data={jsonLd} />
       <BlogPostWrapper
+        slug="gst-rate-chart-2025-india"
         title="GST Rate Chart India 2025: Complete List with Examples"
         description="Your comprehensive guide to all GST rates applicable in India in 2025, with examples and explanations."
         date="January 10, 2025"
@@ -124,50 +125,52 @@ export default function BlogPost() {
           </p>
         </div>
 
-        {gstRates.map((rateInfo, index) => {
-          const colorClasses = [
-            'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400',
-            'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400',
-            'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400',
-            'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400',
-            'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
-          ];
+        {
+          gstRates.map((rateInfo, index) => {
+            const colorClasses = [
+              'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400',
+              'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400',
+              'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400',
+              'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400',
+              'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
+            ];
 
-          const sectionIds = ['0-percent', '5-percent', '12-percent', '18-percent', '28-percent'];
+            const sectionIds = ['0-percent', '5-percent', '12-percent', '18-percent', '28-percent'];
 
-          return (
-            <section key={rateInfo.rate} id={sectionIds[index]} className="p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800">
-              <div className="flex items-start gap-4 mb-4">
-                <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${colorClasses[index]}`}>
-                  {rateInfo.rate}
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                    {rateInfo.rate} GST Rate
-                  </h2>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    {rateInfo.description}
-                  </p>
-                  <div>
-                    <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">
-                      Common Examples:
-                    </h3>
-                    <ul className="grid md:grid-cols-2 gap-2">
-                      {rateInfo.examples.map((example, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-gray-700 dark:text-gray-300 text-sm">
-                          <span className="text-indigo-600 dark:text-indigo-400 mt-1">•</span>
-                          <span>{example}</span>
-                        </li>
-                      ))}
-                    </ul>
+            return (
+              <section key={rateInfo.rate} id={sectionIds[index]} className="p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${colorClasses[index]}`}>
+                    {rateInfo.rate}
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                      {rateInfo.rate} GST Rate
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      {rateInfo.description}
+                    </p>
+                    <div>
+                      <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">
+                        Common Examples:
+                      </h3>
+                      <ul className="grid md:grid-cols-2 gap-2">
+                        {rateInfo.examples.map((example, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-gray-700 dark:text-gray-300 text-sm">
+                            <span className="text-indigo-600 dark:text-indigo-400 mt-1">•</span>
+                            <span>{example}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-          );
-        })}
+              </section>
+            );
+          })
+        }
 
-        <h2 id="find-rate">How to Find the Correct GST Rate</h2>
+        < h2 id="find-rate" > How to Find the Correct GST Rate</h2 >
         <div className="space-y-4">
           <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
             <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">1. Check HSN/SAC Code</h3>
@@ -209,7 +212,7 @@ export default function BlogPost() {
             </p>
           </div>
         </div>
-      </BlogPostWrapper>
+      </BlogPostWrapper >
     </>
   );
 }

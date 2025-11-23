@@ -11,6 +11,8 @@ interface TableOfContentsItem {
     level: 2 | 3;
 }
 
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
+
 interface BlogPostWrapperProps {
     title: string;
     description: string;
@@ -19,6 +21,7 @@ interface BlogPostWrapperProps {
     category?: string;
     image: string;
     toc?: TableOfContentsItem[];
+    slug: string;
     children: React.ReactNode;
 }
 
@@ -30,6 +33,7 @@ export default function BlogPostWrapper({
     category,
     image,
     toc,
+    slug,
     children,
 }: BlogPostWrapperProps) {
     const [activeId, setActiveId] = useState<string>('');
@@ -79,6 +83,11 @@ export default function BlogPostWrapper({
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+            <BreadcrumbJsonLd items={[
+                { name: 'Home', item: 'https://easy-gst-calculator.netlify.app' },
+                { name: 'Blog', item: 'https://easy-gst-calculator.netlify.app/blog' },
+                { name: title, item: `https://easy-gst-calculator.netlify.app/blog/${slug}` }
+            ]} />
             {/* Hero Section */}
             <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
                 <Image

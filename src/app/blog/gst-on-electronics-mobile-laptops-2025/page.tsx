@@ -65,6 +65,7 @@ export default function BlogPost() {
         <>
             <JsonLd data={jsonLd} />
             <BlogPostWrapper
+                slug="gst-on-electronics-mobile-laptops-2025"
                 title="GST on Electronics 2025: Mobile Phones, Laptops & Accessories"
                 description="The Goods and Services Tax (GST) regime has significantly impacted the pricing of electronic goods in India. As we move into 2025, understanding the current GST rates for mobile phones, laptops, and accessories is crucial for both consumers and businesses."
                 date="January 20, 2025"
@@ -152,7 +153,7 @@ export default function BlogPost() {
                 <p>
                     While the 18% rate is standard for most electronics, it&apos;s essential to keep an eye on specific categories like large monitors which attract higher tax. For businesses, leveraging ITC can significantly reduce the effective cost of these assets.
                 </p>
-            </BlogPostWrapper>
+            </BlogPostWrapper >
         </>
     );
 }

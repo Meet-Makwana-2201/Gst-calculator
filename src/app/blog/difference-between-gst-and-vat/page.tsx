@@ -70,8 +70,9 @@ export default function BlogPost() {
     <>
       <JsonLd data={jsonLd} />
       <BlogPostWrapper
+        slug="difference-between-gst-and-vat"
         title="Difference Between GST and VAT: Key Changes Explained"
-        description="Understanding how GST replaced VAT in India and what changed for businesses and consumers."
+        description="Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers."
         date="January 5, 2025"
         readTime="7 min read"
         category="GST Basics"
@@ -209,7 +210,7 @@ export default function BlogPost() {
             <li>Training staff on GST procedures</li>
           </ul>
         </div>
-      </BlogPostWrapper>
+      </BlogPostWrapper >
     </>
   );
 }

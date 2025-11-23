@@ -69,6 +69,7 @@ export default function BlogPost() {
     <>
       <JsonLd data={jsonLd} />
       <BlogPostWrapper
+        slug="gst-calculator-excel-download"
         title="GST Calculator Excel Download: Free Template & Guide"
         description="Learn how to create and use Excel templates for GST calculation. Download ready-to-use templates and formulas."
         date="January 8, 2025"
@@ -210,7 +211,7 @@ export default function BlogPost() {
             </p>
           </div>
         </div>
-      </BlogPostWrapper>
+      </BlogPostWrapper >
     </>
   );
 }

@@ -7,6 +7,7 @@ import GTM from '@/components/GTM';
 import FeedbackWidget from "@/components/FeedbackWidget";
 import { AppProvider } from "@/contexts/AppContext";
 import NavigationProgress from "@/components/NavigationProgress";
+import JsonLd from "@/components/JsonLd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -111,6 +112,16 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AppProvider>
+          <JsonLd data={{
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'GST Calculator India',
+            url: 'https://easy-gst-calculator.netlify.app',
+            logo: 'https://easy-gst-calculator.netlify.app/logo.svg',
+            sameAs: [
+              'https://twitter.com/gstcalc_india',
+            ],
+          }} />
           <GTM />
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV668C3Z"
             height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>

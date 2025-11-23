@@ -1,8 +1,11 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://easy-gst-calculator.netlify.app';
 
+    // Static routes
     const routes = [
         '',
         '/about',
@@ -12,18 +15,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/gst-rates',
         '/privacy',
         '/blog',
-        '/blog/gst-on-electronics-mobile-laptops-2025',
-        '/blog/gst-invoice-format-for-freelancers',
-        '/blog/composition-scheme-vs-regular-gst',
-        '/blog/how-to-calculate-gst-backwards',
-        '/blog/gst-state-codes-list-2025',
-        '/blog/difference-between-gst-and-vat',
-        '/blog/gst-calculation-for-freelancers-india',
-        '/blog/gst-calculator-excel-download',
-        '/blog/gst-rate-chart-2025-india',
     ];
 
-    return routes.map((route) => ({
+    // Get blog posts dynamically
+    const blogDir = path.join(process.cwd(), 'src/app/blog');
+    const blogPosts = fs.readdirSync(blogDir).filter(file => {
+        const filePath = path.join(blogDir, file);
+        return fs.statSync(filePath).isDirectory() && file !== 'page.tsx'; // Exclude page.tsx if it's not a folder (though readdir returns names)
+    }).filter(dir => {
+        // Ensure it has a page.tsx inside
+        return fs.existsSync(path.join(blogDir, dir, 'page.tsx'));
+    });
+
+    const blogRoutes = blogPosts.map(slug => `/blog/${slug}`);
+
+    const allRoutes = [...routes, ...blogRoutes];
+
+    return allRoutes.map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',

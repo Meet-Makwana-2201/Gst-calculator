@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import Image from 'next/image';
 
 export const metadata = {
@@ -156,6 +157,10 @@ export default function Blog() {
   return (
     <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-950">
       <JsonLd data={jsonLd} />
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', item: 'https://easy-gst-calculator.netlify.app' },
+        { name: 'Blog', item: 'https://easy-gst-calculator.netlify.app/blog' }
+      ]} />
 
       {/* Hero Section */}
       <section className="relative py-20 bg-indigo-600 dark:bg-indigo-900 overflow-hidden">

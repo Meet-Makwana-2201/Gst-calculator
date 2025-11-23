@@ -71,6 +71,7 @@ export default function BlogPost() {
     <>
       <JsonLd data={jsonLd} />
       <BlogPostWrapper
+        slug="gst-calculation-for-freelancers-india"
         title="GST Calculation for Freelancers in India: Complete Guide 2025"
         description="Everything you need to know about GST registration, calculation, and compliance as a freelancer in India."
         date="January 15, 2025"
@@ -200,7 +201,7 @@ export default function BlogPost() {
             </p>
           </div>
         </div>
-      </BlogPostWrapper>
+      </BlogPostWrapper >
     </>
   );
 }

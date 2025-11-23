@@ -62,6 +62,7 @@ export default function BlogPost() {
         <>
             <JsonLd data={jsonLd} />
             <BlogPostWrapper
+                slug="gst-state-codes-list-2025"
                 title="GST State Codes List 2025: Complete Reference"
                 description="Every GSTIN (Goods and Services Tax Identification Number) starts with a 2-digit state code. Using the correct state code is mandatory for filing GST returns, generating e-way bills, and claiming Input Tax Credit."
                 date="January 30, 2025"

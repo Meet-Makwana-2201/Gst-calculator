@@ -64,6 +64,7 @@ export default function BlogPost() {
         <>
             <JsonLd data={jsonLd} />
             <BlogPostWrapper
+                slug="gst-invoice-format-for-freelancers"
                 title="GST Invoice Format for Freelancers: The Ultimate Guide"
                 description="As a freelancer registered under GST, issuing a proper tax invoice is mandatory. A compliant invoice not only ensures you follow the law but also projects professionalism to your clients."
                 date="January 22, 2025"

@@ -64,6 +64,7 @@ export default function BlogPost() {
         <>
             <JsonLd data={jsonLd} />
             <BlogPostWrapper
+                slug="composition-scheme-vs-regular-gst"
                 title="Composition Scheme vs Regular GST: Which is Better?"
                 description="Compare Composition Scheme vs Regular GST scheme. Understand the pros and cons, tax rates (1% vs 18%), compliance burden, and input tax credit rules to make the right choice."
                 date="January 25, 2025"
