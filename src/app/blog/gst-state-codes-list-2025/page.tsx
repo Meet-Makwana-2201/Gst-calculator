@@ -165,7 +165,7 @@ export default function BlogPost() {
                         If a GSTIN is <strong>27ABCDE1234F1Z5</strong>:
                     </p>
                     <ul>
-                        <li>The first two digits <strong>"27"</strong> represent the state code (Maharashtra).</li>
+                        <li>The first two digits <strong>&quot;27&quot;</strong> represent the state code (Maharashtra).</li>
                         <li>The next 10 characters are the PAN number.</li>
                     </ul>
                 </div>

@@ -89,7 +89,7 @@ export default function BlogPost() {
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                     <p>
-                        Have you ever looked at a bill with the final amount and wondered, "What was the actual price before tax?" or "How much GST did I pay?" This is where <strong>Reverse GST Calculation</strong> comes in handy.
+                        Have you ever looked at a bill with the final amount and wondered, &quot;What was the actual price before tax?&quot; or &quot;How much GST did I pay?&quot; This is where <strong>Reverse GST Calculation</strong> comes in handy.
                     </p>
 
                     <h2>Why do you need Reverse Calculation?</h2>
@@ -122,7 +122,7 @@ export default function BlogPost() {
 
                     <h2>Example Calculation</h2>
                     <p>
-                        Let's say you bought a smartphone for <strong>₹11,800</strong> (inclusive of 18% GST).
+                        Let&apos;s say you bought a smartphone for <strong>₹11,800</strong> (inclusive of 18% GST).
                     </p>
                     <ol>
                         <li><strong>Identify Total Amount:</strong> ₹11,800</li>
@@ -143,16 +143,16 @@ export default function BlogPost() {
                         </li>
                     </ol>
                     <p>
-                        So, the phone's actual price was ₹10,000, and you paid ₹1,800 as tax.
+                        So, the phone&apos;s actual price was ₹10,000, and you paid ₹1,800 as tax.
                     </p>
 
                     <h2>Using Our Calculator</h2>
                     <p>
-                        You don't need to do this math manually! Our <strong>Reverse GST Calculator</strong> does this instantly.
+                        You don&apos;t need to do this math manually! Our <strong>Reverse GST Calculator</strong> does this instantly.
                     </p>
                     <ol>
                         <li>Go to the <Link href="/calculator" className="text-indigo-600 hover:underline">Calculator</Link> page.</li>
-                        <li>Select the "Reverse GST" tab.</li>
+                        <li>Select the &quot;Reverse GST&quot; tab.</li>
                         <li>Enter the Total Amount.</li>
                         <li>Select the Tax Rate.</li>
                         <li>See the breakdown instantly!</li>

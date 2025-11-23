@@ -168,7 +168,7 @@ export default function BlogPost() {
 
                     <h2>Which one should you choose?</h2>
                     <p>
-                        <strong>Choose Composition Scheme if:</strong> You are a small retailer or restaurant with mostly B2C customers, you don't plan to sell outside your state, and your profit margins are high enough to absorb the tax cost (since you can't collect it).
+                        <strong>Choose Composition Scheme if:</strong> You are a small retailer or restaurant with mostly B2C customers, you don&apos;t plan to sell outside your state, and your profit margins are high enough to absorb the tax cost (since you can&apos;t collect it).
                     </p>
                     <p>
                         <strong>Choose Regular Scheme if:</strong> You are a B2B business, you plan to expand nationally, or you have significant input costs (rent, raw materials) on which you want to claim credit.

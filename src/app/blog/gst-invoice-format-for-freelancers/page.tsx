@@ -109,19 +109,11 @@ export default function BlogPost() {
                         <li><strong>Signature:</strong> Digital or physical signature.</li>
                     </ol>
 
-                    <h2>Export Invoices (For International Clients)</h2>
-                    <p>
-                        If you work with clients outside India, this is considered an <strong>export of services</strong>.
-                    </p>
-                    <ul>
-                        <li><strong>Zero-Rated Supply:</strong> Exports are generally zero-rated, meaning you don't charge GST if you have a Letter of Undertaking (LUT).</li>
-                        <li><strong>Currency:</strong> The invoice can be in foreign currency (e.g., USD), but it's good practice to show the INR equivalent for your records.</li>
-                        <li><strong>Endorsement:</strong> The invoice should carry the endorsement: <em>"SUPPLY MEANT FOR EXPORT UNDER BOND OR LETTER OF UNDERTAKING WITHOUT PAYMENT OF INTEGRATED TAX"</em>.</li>
-                    </ul>
+
 
                     <h2>Digital Signatures</h2>
                     <p>
-                        You don't strictly need a Class 3 Digital Signature Certificate (DSC) for invoices sent via email. A scanned image of your physical signature or a digital sign-off is generally accepted for freelance work, though using a secure digital signature is better for authenticity.
+                        You don&apos;t strictly need a Class 3 Digital Signature Certificate (DSC) for invoices sent via email. A scanned image of your physical signature or a digital sign-off is generally accepted for freelance work, though using a secure digital signature is better for authenticity.
                     </p>
 
                     <h2>Tools for Invoicing</h2>
@@ -146,6 +138,6 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
-        </main>
+        </main >
     );
 }

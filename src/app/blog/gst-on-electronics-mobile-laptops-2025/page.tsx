@@ -162,13 +162,9 @@ export default function BlogPost() {
                     <p>
                         Businesses purchasing electronics for official use can claim <strong>Input Tax Credit (ITC)</strong>. This means the GST paid on laptops, phones, and other office equipment can be set off against the GST liability on their sales.
                     </p>
-                    <p>
-                        <strong>Note:</strong> ITC is generally not available if the electronics are purchased for personal use or if the business is under the Composition Scheme.
-                    </p>
-
                     <h2>Conclusion</h2>
                     <p>
-                        While the 18% rate is standard for most electronics, it's essential to keep an eye on specific categories like large monitors which attract higher tax. For businesses, leveraging ITC can significantly reduce the effective cost of these assets.
+                        While the 18% rate is standard for most electronics, it&apos;s essential to keep an eye on specific categories like large monitors which attract higher tax. For businesses, leveraging ITC can significantly reduce the effective cost of these assets.
                     </p>
                 </div>
 
@@ -184,6 +180,6 @@ export default function BlogPost() {
                     </Link>
                 </div>
             </article>
-        </main>
+        </main >
     );
 }
