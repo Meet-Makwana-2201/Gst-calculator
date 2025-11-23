@@ -12,6 +12,10 @@ import CurrencySelector from './CurrencySelector';
 import CopyResultButton from './CopyResultButton';
 import PrintInvoiceButton from './PrintInvoiceButton';
 import ExportButtons from './ExportButtons';
+import CalculationHistory from './CalculationHistory';
+import { saveCalculation, type CalculationRecord } from '@/lib/calculation-history';
+import { generateCalculationPDF } from '@/lib/pdf-generator';
+import { Download } from 'lucide-react';
 
 const GST_RATES = [5, 12, 18, 28];
 const STORAGE_KEY = 'gst-calculator-rate';
@@ -77,7 +81,7 @@ export default function GSTCalculator() {
 
   const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
-    
+
     // Allow empty input
     if (inputValue === '') {
       setAmount('');
@@ -88,7 +92,7 @@ export default function GSTCalculator() {
 
     // Remove all non-numeric characters except decimal point
     const cleaned = inputValue.replace(/[^0-9.]/g, '');
-    
+
     // Allow only one decimal point
     const parts = cleaned.split('.');
     if (parts.length > 2) {
@@ -105,7 +109,7 @@ export default function GSTCalculator() {
     if (!isNaN(numValue)) {
       const formatted = formatNumberForInput(cleaned);
       setAmount(formatted);
-      
+
       // Validate on blur, not on every keystroke
       const error = validateAmount(formatted);
       if (error) {
@@ -128,7 +132,7 @@ export default function GSTCalculator() {
 
   const handleRateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
-    
+
     if (inputValue === '') {
       setRate(18);
       return;
@@ -162,7 +166,7 @@ export default function GSTCalculator() {
     }
 
     const numAmount = parseFloat(unformatNumber(amount));
-    
+
     let totalTax = 0;
     let cgst = 0;
     let sgst = 0;
@@ -181,9 +185,9 @@ export default function GSTCalculator() {
       sgst = (numAmount * rate) / 200; // Half of rate
       totalTax = cgst + sgst;
     }
-    
+
     const total = numAmount + totalTax;
-    
+
     setGstAmount(gst);
     setCgstAmount(cgst);
     setSgstAmount(sgst);
@@ -191,11 +195,39 @@ export default function GSTCalculator() {
     setTotalAmount(total);
     setShowResults(true);
     setErrors({});
+
+    // Save to history
+    saveCalculation({
+      type: 'add',
+      amount: numAmount,
+      gstRate: rate,
+      gstAmount: totalTax,
+      totalAmount: total,
+    });
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       calculateGST();
+    }
+  };
+
+  const handleRestoreCalculation = (record: CalculationRecord) => {
+    setAmount(formatNumberForInput(record.amount.toString()));
+    setRate(record.gstRate);
+    calculateGST();
+  };
+
+  const handleDownloadPDF = () => {
+    if (gstAmount !== null && totalAmount !== null) {
+      const totalTax = taxType === 'GST' ? gstAmount : taxType === 'IGST' ? igstAmount! : (cgstAmount! + sgstAmount!);
+      generateCalculationPDF({
+        type: 'add',
+        amount: parseFloat(unformatNumber(amount)),
+        gstRate: rate,
+        gstAmount: totalTax,
+        totalAmount: totalAmount,
+      });
     }
   };
 
@@ -221,8 +253,8 @@ export default function GSTCalculator() {
         <div className="space-y-4">
           {/* Amount Input */}
           <div className="space-y-2">
-            <label 
-              htmlFor="gst-amount" 
+            <label
+              htmlFor="gst-amount"
               className="block text-sm font-medium text-foreground"
             >
               Amount (excluding GST) <span className="text-destructive">*</span>
@@ -241,8 +273,8 @@ export default function GSTCalculator() {
               className="text-lg"
             />
             {errors.amount && (
-              <p 
-                id="amount-error" 
+              <p
+                id="amount-error"
                 className="text-sm text-destructive flex items-center gap-1"
                 role="alert"
               >
@@ -254,13 +286,13 @@ export default function GSTCalculator() {
 
           {/* GST Rate Input */}
           <div className="space-y-2">
-            <label 
-              htmlFor="gst-rate" 
+            <label
+              htmlFor="gst-rate"
               className="block text-sm font-medium text-foreground"
             >
               GST Rate (%) <span className="text-destructive">*</span>
             </label>
-            
+
             {/* Quick Rate Buttons */}
             <div className="grid grid-cols-4 gap-2 mb-3">
               {GST_RATES.map((r) => (
@@ -271,18 +303,17 @@ export default function GSTCalculator() {
                     setRate(r);
                     setErrors(prev => ({ ...prev, rate: undefined }));
                   }}
-                  className={`px-4 py-2.5 rounded-lg font-semibold text-sm transition-all transform hover:scale-105 ${
-                    rate === r
+                  className={`px-4 py-2.5 rounded-lg font-semibold text-sm transition-all transform hover:scale-105 ${rate === r
                       ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg scale-105'
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 border-2 border-transparent hover:border-indigo-300 dark:hover:border-indigo-700'
-                  }`}
+                    }`}
                   aria-label={`Select ${r}% GST rate`}
                 >
                   {r}%
                 </button>
               ))}
             </div>
-            
+
             {/* Custom Rate Input */}
             <div className="flex gap-2 flex-wrap items-center">
               <span className="text-sm text-muted-foreground">Or enter custom rate:</span>
@@ -304,8 +335,8 @@ export default function GSTCalculator() {
               />
             </div>
             {errors.rate && (
-              <p 
-                id="rate-error" 
+              <p
+                id="rate-error"
                 className="text-sm text-destructive flex items-center gap-1"
                 role="alert"
               >
@@ -315,7 +346,7 @@ export default function GSTCalculator() {
             )}
           </div>
 
-          <Button 
+          <Button
             onClick={calculateGST}
             className="w-full md:w-auto min-w-[160px] py-6 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover-lift rounded-xl"
             size="lg"
@@ -330,7 +361,7 @@ export default function GSTCalculator() {
 
         {/* Results Section with Animation */}
         {showResults && gstAmount !== null && totalAmount !== null && (
-          <div 
+          <div
             className="mt-8 p-8 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-900/30 dark:via-purple-900/30 dark:to-pink-900/30 rounded-2xl border-2 border-indigo-200 dark:border-indigo-800 shadow-xl space-y-6 animate-slide-in backdrop-blur-sm transform transition-all duration-300"
             role="region"
             aria-live="polite"
@@ -363,13 +394,13 @@ export default function GSTCalculator() {
               {taxType === 'CGST_SGST' && (
                 <>
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">CGST ({rate/2}%)</p>
+                    <p className="text-sm text-muted-foreground">CGST ({rate / 2}%)</p>
                     <p className="text-xl font-bold text-blue-600 dark:text-blue-400">
                       {currencySymbol}{formatCurrency(cgstAmount!, currency)}
                     </p>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">SGST ({rate/2}%)</p>
+                    <p className="text-sm text-muted-foreground">SGST ({rate / 2}%)</p>
                     <p className="text-xl font-bold text-purple-600 dark:text-purple-400">
                       {currencySymbol}{formatCurrency(sgstAmount!, currency)}
                     </p>
@@ -386,7 +417,7 @@ export default function GSTCalculator() {
             {taxType === 'CGST_SGST' && (
               <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                 <p className="text-xs text-blue-700 dark:text-blue-300">
-                  <strong>Note:</strong> CGST ({rate/2}%) + SGST ({rate/2}%) = Total GST ({rate}%)
+                  <strong>Note:</strong> CGST ({rate / 2}%) + SGST ({rate / 2}%) = Total GST ({rate}%)
                 </p>
               </div>
             )}
@@ -396,26 +427,35 @@ export default function GSTCalculator() {
                 <span className="font-medium">
                   {taxType === 'GST' && `GST ${rate}%`}
                   {taxType === 'IGST' && `IGST ${rate}%`}
-                  {taxType === 'CGST_SGST' && `CGST ${rate/2}% + SGST ${rate/2}%`}
+                  {taxType === 'CGST_SGST' && `CGST ${rate / 2}% + SGST ${rate / 2}%`}
                 </span>
               </div>
-              
+
               {/* Action Buttons */}
               <div className="space-y-3 pt-3">
                 <div className="flex flex-wrap gap-3">
-                  <CopyResultButton 
-                    text={`GST Calculation:\nAmount (excl. tax): ${currencySymbol}${formatCurrency(parseFloat(unformatNumber(amount)), currency)}\n${taxType === 'GST' ? `GST (${rate}%)` : taxType === 'IGST' ? `IGST (${rate}%)` : `CGST (${rate/2}%) + SGST (${rate/2}%)`}: ${currencySymbol}${formatCurrency(taxType === 'GST' ? gstAmount! : taxType === 'IGST' ? igstAmount! : (cgstAmount! + sgstAmount!), currency)}\nTotal (incl. tax): ${currencySymbol}${formatCurrency(totalAmount!, currency)}`}
+                  <CopyResultButton
+                    text={`GST Calculation:\nAmount (excl. tax): ${currencySymbol}${formatCurrency(parseFloat(unformatNumber(amount)), currency)}\n${taxType === 'GST' ? `GST (${rate}%)` : taxType === 'IGST' ? `IGST (${rate}%)` : `CGST (${rate / 2}%) + SGST (${rate / 2}%)`}: ${currencySymbol}${formatCurrency(taxType === 'GST' ? gstAmount! : taxType === 'IGST' ? igstAmount! : (cgstAmount! + sgstAmount!), currency)}\nTotal (incl. tax): ${currencySymbol}${formatCurrency(totalAmount!, currency)}`}
                   />
                   <PrintInvoiceButton
                     amount={parseFloat(unformatNumber(amount))}
                     taxAmount={taxType === 'GST' ? gstAmount! : taxType === 'IGST' ? igstAmount! : (cgstAmount! + sgstAmount!)}
                     totalAmount={totalAmount!}
                     rate={rate}
-                    taxType={taxType === 'GST' ? `GST ${rate}%` : taxType === 'IGST' ? `IGST ${rate}%` : `CGST ${rate/2}% + SGST ${rate/2}%`}
+                    taxType={taxType === 'GST' ? `GST ${rate}%` : taxType === 'IGST' ? `IGST ${rate}%` : `CGST ${rate / 2}% + SGST ${rate / 2}%`}
                     currencySymbol={currencySymbol}
                     formatCurrency={formatCurrency}
                     currency={currency}
                   />
+                  <Button
+                    onClick={handleDownloadPDF}
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
+                  >
+                    <Download className="w-4 h-4" />
+                    Download PDF
+                  </Button>
                 </div>
                 <ExportButtons
                   amount={parseFloat(unformatNumber(amount))}
@@ -431,14 +471,17 @@ export default function GSTCalculator() {
 
               <div className="pt-2">
                 <p className="text-xs text-muted-foreground mb-2">Found this helpful? Share it!</p>
-                <ShareButtons 
-                  url="https://easy-gst-calculator.netlify.app/calculator" 
+                <ShareButtons
+                  url="https://easy-gst-calculator.netlify.app/calculator"
                   title={`I just calculated ${taxType}: ${currencySymbol}${formatCurrency(totalAmount!, currency)} total`}
                 />
               </div>
             </div>
           </div>
         )}
+
+        {/* Calculation History */}
+        <CalculationHistory onRestore={handleRestoreCalculation} />
       </CardContent>
     </Card>
   );
