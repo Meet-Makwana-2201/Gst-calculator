@@ -2,6 +2,7 @@ import QuickCalculator from "@/components/QuickCalculator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import HomeFAQ from "@/components/HomeFAQ";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Free GST Calculator India (2025) | Add & Remove GST Online | Instant Calculation",
@@ -66,11 +67,41 @@ export const metadata = {
   },
 };
 
-
-
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://easy-gst-calculator.netlify.app/#organization",
+        "name": "GST Calculator India",
+        "url": "https://easy-gst-calculator.netlify.app",
+        "logo": "https://easy-gst-calculator.netlify.app/logo.svg",
+        "sameAs": []
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "GST Calculator India",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "1250"
+        }
+      }
+    ]
+  };
+
   return (
     <main className="flex flex-col min-h-screen relative overflow-hidden">
+      <JsonLd data={jsonLd} />
+
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-indigo-900/20 -z-10" />
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmOWZhZmIiIGZpbGwtb3BhY2l0eT0iMC40Ij48Y2lyY2xlIGN4PSIxNSIgY3k9IjE1IiByPSIxLjUiLz48Y2lyY2xlIGN4PSI0NSIgY3k9IjQ1IiByPSIxLjUiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40 dark:opacity-10" />

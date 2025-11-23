@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata = {
   title: "GST Blog - Articles, Guides & Resources | GST Calculator India",
@@ -84,8 +85,27 @@ const blogPosts: BlogPost[] = [
 ];
 
 export default function Blog() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "GST Calculator Blog",
+    "description": "Expert guides and resources for GST calculation in India",
+    "blogPost": blogPosts.map(post => ({
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "description": post.description,
+      "datePublished": post.date,
+      "author": {
+        "@type": "Organization",
+        "name": "GST Calculator India"
+      },
+      "url": `https://easy-gst-calculator.netlify.app/blog/${post.slug}`
+    }))
+  };
+
   return (
     <main className="flex flex-col min-h-screen">
+      <JsonLd data={jsonLd} />
       <section className="flex-1 container mx-auto px-4 py-12 max-w-6xl">
         <div className="text-center mb-12 space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">

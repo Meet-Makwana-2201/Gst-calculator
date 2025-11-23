@@ -1,6 +1,7 @@
 import GSTCalculator from "@/components/GSTCalculator";
 import ReverseGSTCalculator from "@/components/ReverseGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
     title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
@@ -11,21 +12,25 @@ export const metadata = {
         "reverse gst calculator",
         "reverse gst",
         "easy reverse gst",
-        "GST calculator tool India",
-        "GST calculator India",
-        "calculate GST online India",
-        "reverse GST calculator India",
-        "GST calculation tool",
-        "GST rates calculator",
-        "reverse GST calculation formula",
-        "how to calculate reverse GST",
+        "calculate GST amount online",
+        "GST calculator",
+        "GST calculation online India",
+        "online GST calculator",
+        "GST tax calculator",
+        "free GST calculator",
         "GST calculator 18 percent",
-        "custom GST rate calculator",
+        "GST amount calculator",
+        "India GST calculator",
+        "reverse GST calculator India",
+        "GST calculation formula",
+        "GST rate calculator",
         "GST inclusive calculator",
         "GST exclusive calculator",
-        "GST calculation formula India",
-        "free GST calculator tool",
-        "online GST calculator India",
+        "how to calculate GST",
+        "GST percentage calculator",
+        "instant GST calculation",
+        "GST calculator for business",
+        "gst calculator india online",
         "GST tax calculator",
     ],
     alternates: {
@@ -55,14 +60,27 @@ export const metadata = {
     },
 };
 
-
-
 export default function CalculatorPage() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GST Calculator Tool",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "featureList": "GST Calculation, Reverse GST, IGST/CGST/SGST Breakdown"
+    };
+
     return (
-        <main className="flex flex-col min-h-screen">
-            <section className="flex-1 container mx-auto px-4 py-8">
+        <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
+            <JsonLd data={jsonLd} />
+            <section className="flex-1 container mx-auto px-4 py-8 md:py-12 max-w-4xl">
                 <Tabs defaultValue="gst" className="w-full">
-                    <TabsList className="mb-6">
+                    <TabsList className="mb-6 grid w-full grid-cols-2">
                         <TabsTrigger value="gst">GST Calculator</TabsTrigger>
                         <TabsTrigger value="reverse-gst">Reverse GST Calculator</TabsTrigger>
                     </TabsList>
