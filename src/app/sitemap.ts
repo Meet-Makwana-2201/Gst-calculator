@@ -15,6 +15,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/gst-rates',
         '/privacy',
         '/blog',
+        '/calculators',
+        '/calculators/gst',
+        '/calculators/percentage',
+        '/calculators/discount',
+        '/calculators/profit-loss',
+        '/calculators/simple-interest',
+        '/calculators/compound-interest',
+        '/calculators/emi',
     ];
 
     // Get blog posts dynamically

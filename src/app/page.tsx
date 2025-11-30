@@ -131,7 +131,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              <Link href="/calculator">
+              <Link href="/calculators/gst">
                 <Button
                   size="lg"
                   className="px-8 py-6 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover-lift rounded-xl"
@@ -481,7 +481,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Link href="/calculator">
+              <Link href="/calculators/gst">
                 <Button
                   size="lg"
                   className="px-8 py-6 text-lg font-semibold bg-white text-indigo-600 hover:bg-gray-100 shadow-2xl hover:shadow-3xl transition-all hover-lift rounded-xl"

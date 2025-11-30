@@ -1,5 +1,5 @@
-import GSTCalculator from "@/components/GSTCalculator";
-import ReverseGSTCalculator from "@/components/ReverseGSTCalculator";
+import GSTCalculator from "@/components/gst/GSTCalculator";
+import ReverseGSTCalculator from "@/components/gst/ReverseGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import JsonLd from "@/components/JsonLd";
 
@@ -34,12 +34,12 @@ export const metadata = {
         "GST tax calculator",
     ],
     alternates: {
-        canonical: "/calculator",
+        canonical: "/calculators/gst",
     },
     openGraph: {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
-        url: "/calculator",
+        url: "/calculators/gst",
         siteName: "GST Calculator",
         images: [
             {

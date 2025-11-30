@@ -45,10 +45,10 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/calculator"
+            href="/calculators"
             className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
           >
-            Calculator
+            Calculators
           </Link>
           <Link
             href="/faq"
