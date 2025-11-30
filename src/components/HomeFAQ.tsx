@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export default function HomeFAQ() {
   const faqs = [
@@ -59,7 +60,7 @@ export default function HomeFAQ() {
               <div className="whitespace-pre-line">
                 {faq.answer.split('\n\n').map((paragraph, pIndex) => (
                   <p key={pIndex} className="mb-2 last:mb-0">
-                    {paragraph.split('**').map((text, tIndex) => 
+                    {paragraph.split('**').map((text, tIndex) =>
                       tIndex % 2 === 1 ? (
                         <strong key={tIndex} className="font-semibold text-gray-900 dark:text-gray-100">{text}</strong>
                       ) : (
@@ -74,7 +75,7 @@ export default function HomeFAQ() {
         ))}
       </Accordion>
       <div className="text-center mt-8">
-        <a
+        <Link
           href="/faq"
           className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium"
         >
@@ -82,7 +83,7 @@ export default function HomeFAQ() {
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );
