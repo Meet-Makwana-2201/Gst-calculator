@@ -90,7 +90,7 @@ export default function Footer() {
               Help others discover this free GST calculator
             </p>
             <ShareButtons
-              url="https://easy-gst-calculator.netlify.app"
+              url="https://onecalculator.online"
               title="GST Calculator India - Free Online GST Calculation Tool"
             />
           </div>

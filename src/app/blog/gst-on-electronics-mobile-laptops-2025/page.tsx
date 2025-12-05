@@ -58,7 +58,7 @@ export default function BlogPost() {
             "@type": "Organization",
             "name": "GST Calculator India"
         },
-        "image": "https://easy-gst-calculator.netlify.app/blog-gst-electronics.png"
+        "image": "https://onecalculator.online/blog-gst-electronics.png"
     };
 
     return (

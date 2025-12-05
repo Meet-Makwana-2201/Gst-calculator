@@ -84,9 +84,9 @@ export default function BlogPostWrapper({
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
             <BreadcrumbJsonLd items={[
-                { name: 'Home', item: 'https://easy-gst-calculator.netlify.app' },
-                { name: 'Blog', item: 'https://easy-gst-calculator.netlify.app/blog' },
-                { name: title, item: `https://easy-gst-calculator.netlify.app/blog/${slug}` }
+                { name: 'Home', item: 'https://onecalculator.online' },
+                { name: 'Blog', item: 'https://onecalculator.online/blog' },
+                { name: title, item: `https://onecalculator.online/blog/${slug}` }
             ]} />
             {/* Hero Section */}
             <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">

@@ -472,7 +472,7 @@ export default function GSTCalculator() {
               <div className="pt-2">
                 <p className="text-xs text-muted-foreground mb-2">Found this helpful? Share it!</p>
                 <ShareButtons
-                  url="https://easy-gst-calculator.netlify.app/calculator"
+                  url="https://onecalculator.online/calculator"
                   title={`I just calculated ${taxType}: ${currencySymbol}${formatCurrency(totalAmount!, currency)} total`}
                 />
               </div>

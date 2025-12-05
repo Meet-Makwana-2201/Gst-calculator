@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://easy-gst-calculator.netlify.app'),
+  metadataBase: new URL('https://onecalculator.online'),
   title: {
     default: "GST Calculator India - Free Online GST Calculation Tool",
     template: "%s | GST Calculator India",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://easy-gst-calculator.netlify.app',
+    url: 'https://onecalculator.online',
     title: 'GST Calculator India - Free Online GST Calculation Tool',
     description: 'Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST.',
     siteName: 'GST Calculator India',
@@ -116,8 +116,8 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'GST Calculator India',
-            url: 'https://easy-gst-calculator.netlify.app',
-            logo: 'https://easy-gst-calculator.netlify.app/logo.svg',
+            url: 'https://onecalculator.online',
+            logo: 'https://onecalculator.online/logo.svg',
             sameAs: [
               'https://twitter.com/gstcalc_india',
             ],

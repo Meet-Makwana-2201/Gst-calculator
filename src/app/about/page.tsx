@@ -152,7 +152,7 @@ export default function About() {
                         <p className="text-gray-700 dark:text-gray-300 mb-4">
                             Found this tool helpful? Share it with your friends, colleagues, and business partners who might benefit from it.
                         </p>
-                        <ShareButtons url="https://easy-gst-calculator.netlify.app" title="GST Calculator India - Free Online GST Calculation Tool" />
+                        <ShareButtons url="https://onecalculator.online" title="GST Calculator India - Free Online GST Calculation Tool" />
                     </div>
                 </div>
             </section>

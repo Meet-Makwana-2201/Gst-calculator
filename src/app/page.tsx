@@ -75,10 +75,10 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://easy-gst-calculator.netlify.app/#organization",
+        "@id": "https://onecalculator.online/#organization",
         "name": "GST Calculator India",
-        "url": "https://easy-gst-calculator.netlify.app",
-        "logo": "https://easy-gst-calculator.netlify.app/logo.svg",
+        "url": "https://onecalculator.online",
+        "logo": "https://onecalculator.online/logo.svg",
         "sameAs": []
       },
       {

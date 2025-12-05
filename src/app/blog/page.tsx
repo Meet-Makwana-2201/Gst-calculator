@@ -58,7 +58,7 @@ export default function Blog() {
         "@type": "Organization",
         "name": "GST Calculator India"
       },
-      "url": `https://easy-gst-calculator.netlify.app/blog/${post.slug}`
+      "url": `https://onecalculator.online/blog/${post.slug}`
     }))
   };
 
@@ -66,8 +66,8 @@ export default function Blog() {
     <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-950">
       <JsonLd data={jsonLd} />
       <BreadcrumbJsonLd items={[
-        { name: 'Home', item: 'https://easy-gst-calculator.netlify.app' },
-        { name: 'Blog', item: 'https://easy-gst-calculator.netlify.app/blog' }
+        { name: 'Home', item: 'https://onecalculator.online' },
+        { name: 'Blog', item: 'https://onecalculator.online/blog' }
       ]} />
 
       {/* Hero Section */}

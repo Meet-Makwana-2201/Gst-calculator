@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://easy-gst-calculator.netlify.app';
+    const baseUrl = 'https://onecalculator.online';
 
     // Static routes
     const routes = [
