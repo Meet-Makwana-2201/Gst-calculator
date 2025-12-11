@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Sitemap: https://onecalculator.online/sitemap.xml
+Host: https://onecalculator.online
