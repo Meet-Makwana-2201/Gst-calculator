@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://easy-gst-calculator.netlify.app/*"
+  to = "https://onecalculator.online/:splat"
+  status = 301
+  force = true
