@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://onecalculator.online/:splat"
-  status = 301
-  force = true
