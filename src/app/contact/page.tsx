@@ -12,7 +12,7 @@ export const metadata = {
     "Feedback",
     "Get Help GST"],
   alternates: {
-    canonical: "/contact",
+    canonical: "https://onecalculator.online/contact",
   },
   openGraph: {
     title: "Contact Us - Get Support or Feedback | GST Calculator",

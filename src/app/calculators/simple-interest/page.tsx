@@ -6,7 +6,7 @@ export const metadata = {
     description: "Free simple interest calculator. Calculate the interest earned on your principal amount over time. Useful for loans and savings.",
     keywords: ["simple interest calculator", "SI calculator", "interest calculator", "loan interest calculator"],
     alternates: {
-        canonical: "/calculators/simple-interest",
+        canonical: "https://onecalculator.online/calculators/simple-interest",
     },
     openGraph: {
         title: "Simple Interest Calculator - Calculate Returns",

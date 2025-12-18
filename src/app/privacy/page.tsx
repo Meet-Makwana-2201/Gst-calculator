@@ -15,7 +15,7 @@ export const metadata = {
     "no data collection",
   ],
   alternates: {
-    canonical: "/privacy",
+    canonical: "https://onecalculator.online/privacy",
   },
   openGraph: {
     title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",

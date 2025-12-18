@@ -18,7 +18,7 @@ export const metadata = {
     "GST calculation sheet",
   ],
   alternates: {
-    canonical: "/blog/gst-calculator-excel-download",
+    canonical: "https://onecalculator.online/blog/gst-calculator-excel-download",
   },
   openGraph: {
     title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",

@@ -7,7 +7,7 @@ import { blogPosts } from "@/lib/blog-data";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Free GST Calculator India (2025) | Add & Remove GST Online | Instant Calculation",
+  title: "Free GST Calculator 2025 | Add & Remove GST Online",
   description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Supports 5%, 12%, 18%, 28% rates with detailed breakdown.",
   keywords: [
     "easy gst calculator",
@@ -43,7 +43,7 @@ export const metadata = {
     "difference between gst and vat",
   ],
   alternates: {
-    canonical: "/",
+    canonical: "https://onecalculator.online/",
   },
   openGraph: {
     title: "GST Calculator - Instant GST Calculation Online",

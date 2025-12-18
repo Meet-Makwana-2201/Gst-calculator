@@ -5,7 +5,7 @@ export const metadata = {
     title: "All Calculators | GST Calculator India",
     description: "List of all available calculators including GST Calculator, Reverse GST Calculator, Percentage, Discount, Profit & Loss, Simple Interest, Compound Interest, and EMI Calculator.",
     alternates: {
-        canonical: "/calculators",
+        canonical: "https://onecalculator.online/calculators",
     },
 };
 

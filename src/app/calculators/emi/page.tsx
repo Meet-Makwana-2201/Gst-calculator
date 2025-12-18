@@ -6,7 +6,7 @@ export const metadata = {
     description: "Calculate your monthly EMI for home loans, car loans, or personal loans. Plan your repayment schedule effectively.",
     keywords: ["EMI calculator", "loan calculator", "home loan emi calculator", "car loan emi calculator"],
     alternates: {
-        canonical: "/calculators/emi",
+        canonical: "https://onecalculator.online/calculators/emi",
     },
     openGraph: {
         title: "EMI Calculator - Plan Your Loans",

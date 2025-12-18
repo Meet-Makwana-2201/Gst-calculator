@@ -15,7 +15,7 @@ export const metadata = {
     "GST calculation guide",
   ],
   alternates: {
-    canonical: "/blog",
+    canonical: "https://onecalculator.online/blog",
   },
   openGraph: {
     title: "GST Blog - Articles, Guides & Resources | GST Calculator India",

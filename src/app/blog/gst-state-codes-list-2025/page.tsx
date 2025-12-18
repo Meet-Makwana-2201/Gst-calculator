@@ -12,7 +12,7 @@ export const metadata = {
         "gst state code 07",
     ],
     alternates: {
-        canonical: "/blog/gst-state-codes-list-2025",
+        canonical: "https://onecalculator.online/blog/gst-state-codes-list-2025",
     },
     openGraph: {
         title: "GST State Codes List 2025: Complete List of 38 Codes",

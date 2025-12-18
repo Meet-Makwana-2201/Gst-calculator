@@ -14,7 +14,7 @@ export const metadata = {
         "gst calculation on mrp",
     ],
     alternates: {
-        canonical: "/blog/how-to-calculate-gst-backwards",
+        canonical: "https://onecalculator.online/blog/how-to-calculate-gst-backwards",
     },
     openGraph: {
         title: "How to Calculate GST Backwards: Reverse Calculation Formula",

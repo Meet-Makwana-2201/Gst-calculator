@@ -18,7 +18,7 @@ export const metadata = {
     "GST compliance freelancers",
   ],
   alternates: {
-    canonical: "/blog/gst-calculation-for-freelancers-india",
+    canonical: "https://onecalculator.online/blog/gst-calculation-for-freelancers-india",
   },
   openGraph: {
     title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",

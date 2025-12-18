@@ -17,7 +17,7 @@ export const metadata = {
         'HSN SAC code',
     ],
     alternates: {
-        canonical: '/gst-rate-finder',
+        canonical: 'https://onecalculator.online/gst-rate-finder',
     },
     openGraph: {
         title: 'GST Rate Finder - Search HSN Codes & Tax Rates',

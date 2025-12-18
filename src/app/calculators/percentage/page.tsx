@@ -6,7 +6,7 @@ export const metadata = {
     description: "Free online percentage calculator. Calculate percentages of numbers easily and accurately. Useful for discounts, tips, and simple math.",
     keywords: ["percentage calculator", "calculate percentage", "math calculator", "percent calculator online"],
     alternates: {
-        canonical: "/calculators/percentage",
+        canonical: "https://onecalculator.online/calculators/percentage",
     },
     openGraph: {
         title: "Percentage Calculator - Calculate Percentages Instantly",

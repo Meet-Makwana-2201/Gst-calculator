@@ -16,7 +16,7 @@ export const metadata = {
     "complete GST rates",
   ],
   alternates: {
-    canonical: "/gst-rates",
+    canonical: "https://onecalculator.online/gst-rates",
   },
   openGraph: {
     title: "GST Rates Chart India 2025 | Complete GST Rate List | GST Calculator",

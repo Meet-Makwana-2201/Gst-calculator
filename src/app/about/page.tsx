@@ -29,7 +29,7 @@ export const metadata = {
         },
     },
     alternates: {
-        canonical: "/about",
+        canonical: "https://onecalculator.online/about",
     },
     openGraph: {
         title: "About Us - GST Calculator India | Our Mission & Story",

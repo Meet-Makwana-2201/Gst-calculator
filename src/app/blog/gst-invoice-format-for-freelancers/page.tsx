@@ -13,7 +13,7 @@ export const metadata = {
         "freelancer billing software",
     ],
     alternates: {
-        canonical: "/blog/gst-invoice-format-for-freelancers",
+        canonical: "https://onecalculator.online/blog/gst-invoice-format-for-freelancers",
     },
     openGraph: {
         title: "GST Invoice Format for Freelancers: Free Template & Guide",

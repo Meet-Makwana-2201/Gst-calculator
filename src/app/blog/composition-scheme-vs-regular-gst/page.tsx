@@ -13,7 +13,7 @@ export const metadata = {
         "regular vs composition gst difference",
     ],
     alternates: {
-        canonical: "/blog/composition-scheme-vs-regular-gst",
+        canonical: "https://onecalculator.online/blog/composition-scheme-vs-regular-gst",
     },
     openGraph: {
         title: "Composition Scheme vs Regular GST: Which is Better for Small Business?",

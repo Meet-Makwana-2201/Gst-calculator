@@ -18,7 +18,7 @@ export const metadata = {
     "what is difference between GST and VAT",
   ],
   alternates: {
-    canonical: "/blog/difference-between-gst-and-vat",
+    canonical: "https://onecalculator.online/blog/difference-between-gst-and-vat",
   },
   openGraph: {
     title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",

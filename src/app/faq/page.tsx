@@ -20,7 +20,7 @@ export const metadata = {
     "GST questions",
   ],
   alternates: {
-    canonical: "/faq",
+    canonical: "https://onecalculator.online/faq",
   },
   openGraph: {
     title: "FAQ - GST Calculator India | Help & Support",

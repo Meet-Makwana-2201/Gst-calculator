@@ -6,7 +6,7 @@ export const metadata = {
     description: "Calculate compound interest with different compounding frequencies (monthly, quarterly, annually). See how your money grows over time.",
     keywords: ["compound interest calculator", "CI calculator", "investment calculator", "savings calculator"],
     alternates: {
-        canonical: "/calculators/compound-interest",
+        canonical: "https://onecalculator.online/calculators/compound-interest",
     },
     openGraph: {
         title: "Compound Interest Calculator - Grow Your Wealth",

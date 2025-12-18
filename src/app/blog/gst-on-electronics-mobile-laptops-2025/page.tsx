@@ -13,7 +13,7 @@ export const metadata = {
         "input tax credit on electronics",
     ],
     alternates: {
-        canonical: "/blog/gst-on-electronics-mobile-laptops-2025",
+        canonical: "https://onecalculator.online/blog/gst-on-electronics-mobile-laptops-2025",
     },
     openGraph: {
         title: "GST on Electronics 2025: Mobile Phones, Laptops & Accessories Rates",

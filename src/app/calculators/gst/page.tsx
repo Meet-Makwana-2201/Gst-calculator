@@ -34,7 +34,7 @@ export const metadata = {
         "GST tax calculator",
     ],
     alternates: {
-        canonical: "/calculators/gst",
+        canonical: "https://onecalculator.online/calculators/gst",
     },
     openGraph: {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",

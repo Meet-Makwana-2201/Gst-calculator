@@ -6,7 +6,7 @@ export const metadata = {
     description: "Calculate profit or loss amount and percentage easily. Essential tool for businesses, traders, and students to determine financial outcomes.",
     keywords: ["profit loss calculator", "profit margin calculator", "business calculator", "loss percentage calculator"],
     alternates: {
-        canonical: "/calculators/profit-loss",
+        canonical: "https://onecalculator.online/calculators/profit-loss",
     },
     openGraph: {
         title: "Profit & Loss Calculator - Calculate Margins",

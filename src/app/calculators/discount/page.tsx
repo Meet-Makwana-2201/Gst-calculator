@@ -6,7 +6,7 @@ export const metadata = {
     description: "Calculate the final price after discount. Find out how much you save on sales and offers. Easy to use discount calculator.",
     keywords: ["discount calculator", "sale price calculator", "shopping calculator", "percentage off calculator"],
     alternates: {
-        canonical: "/calculators/discount",
+        canonical: "https://onecalculator.online/calculators/discount",
     },
     openGraph: {
         title: "Discount Calculator - Calculate Sale Price",
