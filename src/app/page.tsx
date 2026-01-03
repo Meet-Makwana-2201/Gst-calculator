@@ -8,9 +8,15 @@ import Image from "next/image";
 import RelatedTools from "@/components/landing/RelatedTools";
 
 export const metadata = {
-  title: "Free GST Calculator 2025 | Add & Remove GST Online",
-  description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool. Supports 5%, 12%, 18%, 28% rates with detailed breakdown.",
+  title: "All-in-One Financial Calculator Suite | Free GST, EMI & Math Tools",
+  description: "India's most trusted calculator platform. Free tools for GST, Home Loan EMI, Discounts, Profit margins, Interest calculations & more. Privacy-focused, instant results, no login required.",
   keywords: [
+    "financial calculator",
+    "calculator suite",
+    "GST india",
+    "EMI calculator",
+    "discount calculator",
+    "free online tools",
     "easy gst calculator",
     "gstcalc",
     "reverse gst calculator",
@@ -47,16 +53,16 @@ export const metadata = {
     canonical: "https://onecalculator.online/",
   },
   openGraph: {
-    title: "GST Calculator - Instant GST Calculation Online",
-    description: "Calculate GST amounts easily with our simple GST calculator. No login required. Instant results. Accurate GST calculations.",
+    title: "All-in-One Financial Calculator Suite | OneCalculator",
+    description: "India's most trusted calculator platform. Free tools for GST, EMI, Discounts, Profit margins & more. Privacy-focused, instant results.",
     url: "/",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "GST Calculator Preview",
+        alt: "OneCalculator Platform Preview",
       },
     ],
     locale: "en_IN",
@@ -64,8 +70,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GST Calculator - Instant GST Calculation Online",
-    description: "Calculate GST amounts easily with our simple GST calculator. No login required. Instant results. Accurate GST calculations.",
+    title: "All-in-One Financial Calculator Suite | OneCalculator",
+    description: "India's most trusted calculator platform. Free tools for GST, EMI, Discounts, Profit margins & more. Privacy-focused, instant results.",
     images: ["/logo.svg"],
   },
 };
@@ -77,14 +83,14 @@ export default function Home() {
       {
         "@type": "Organization",
         "@id": "https://onecalculator.online/#organization",
-        "name": "GST Calculator India",
+        "name": "OneCalculator",
         "url": "https://onecalculator.online",
         "logo": "https://onecalculator.online/logo.svg",
         "sameAs": []
       },
       {
         "@type": "SoftwareApplication",
-        "name": "GST Calculator India",
+        "name": "OneCalculator - Financial Calculator Suite",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Any",
         "offers": {
@@ -121,14 +127,13 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-              <span className="text-gradient">Calculate GST</span>
+              <span className="text-gradient">All-in-One</span>
               <br />
-              <span className="text-gray-900 dark:text-gray-100">in Seconds</span>
+              <span className="text-gray-900 dark:text-gray-100">Financial Calculator Suite</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              India&apos;s most trusted <strong>GST calculator India online</strong>. Calculate GST and reverse GST instantly with
-              support for all rates. <strong>Mobile-friendly</strong> and works everywhere. No sign-up, no fees, just accurate calculations.
+              From GST to EMI, solve every math problem in seconds. India&apos;s most trusted calculator platform with <strong>free tools for business and personal finance</strong>. No sign-up, no fees, just accurate calculations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">

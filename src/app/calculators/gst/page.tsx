@@ -1,7 +1,7 @@
 import GSTCalculator from "@/components/gst/GSTCalculator";
 import ReverseGSTCalculator from "@/components/gst/ReverseGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import JsonLd from "@/components/JsonLd";
+import { StructuredData, generateSoftwareSchema, generateBreadcrumbSchema } from "@/components/StructuredData";
 
 export const metadata = {
     title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
@@ -61,23 +61,22 @@ export const metadata = {
 };
 
 export default function CalculatorPage() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "GST Calculator Tool",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "Any",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "INR"
-        },
-        "featureList": "GST Calculation, Reverse GST, IGST/CGST/SGST Breakdown"
-    };
+    const softwareSchema = generateSoftwareSchema(
+        "GST Calculator Tool",
+        "Calculate GST, IGST, CGST, and SGST instantly with reverse GST calculation support.",
+        "https://onecalculator.online/calculators/gst"
+    );
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://onecalculator.online" },
+        { name: "Calculators", url: "https://onecalculator.online/calculators" },
+        { name: "GST Calculator", url: "https://onecalculator.online/calculators/gst" },
+    ]);
 
     return (
         <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
-            <JsonLd data={jsonLd} />
+            <StructuredData data={softwareSchema} />
+            <StructuredData data={breadcrumbSchema} />
             <section className="flex-1 container mx-auto px-4 py-8 md:py-12 max-w-4xl">
                 <Tabs defaultValue="gst" className="w-full">
                     <TabsList className="mb-6 grid w-full grid-cols-2">

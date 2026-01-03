@@ -29,13 +29,17 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://onecalculator.online'),
   title: {
-    default: "GST Calculator India - Free Online GST Calculation Tool",
-    template: "%s | GST Calculator India",
+    default: "OneCalculator: Free GST, EMI, & Math Calculators Online",
+    template: "%s | OneCalculator - Free Financial Tools",
   },
-  description: "Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST. Reverse GST calculation supported. Fast, easy, and mobile-friendly.",
+  description: "India's most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations. Privacy-focused & Instant.",
   keywords: [
+    "financial calculator",
+    "GST india",
+    "EMI calculator",
+    "discount calculator",
+    "free online tools",
     "GST calculator",
-    "GST India",
     "calculate GST",
     "reverse GST calculator",
     "GST tax calculator",
@@ -45,11 +49,16 @@ export const metadata: Metadata = {
     "GST rates",
     "IGST calculator",
     "CGST calculator",
-    "SGST calculator"
+    "SGST calculator",
+    "home loan calculator",
+    "profit loss calculator",
+    "percentage calculator",
+    "compound interest calculator",
+    "simple interest calculator"
   ],
-  authors: [{ name: "GST Calculator India" }],
-  creator: "GST Calculator India",
-  publisher: "GST Calculator India",
+  authors: [{ name: "OneCalculator" }],
+  creator: "OneCalculator",
+  publisher: "OneCalculator",
   robots: {
     index: true,
     follow: true,
@@ -74,28 +83,28 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'GST Calc',
+    title: 'OneCalculator',
   },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://onecalculator.online',
-    title: 'GST Calculator India - Free Online GST Calculation Tool',
-    description: 'Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST.',
-    siteName: 'GST Calculator India',
+    title: 'OneCalculator: Free GST, EMI, & Math Calculators Online',
+    description: 'India\'s most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations.',
+    siteName: 'OneCalculator',
     images: [
       {
         url: '/logo.svg',
         width: 512,
         height: 512,
-        alt: 'GST Calculator India Logo',
+        alt: 'OneCalculator Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GST Calculator India - Free Online GST Calculation Tool',
-    description: 'Calculate GST instantly with our free online GST Calculator for India. Accurate results for IGST, CGST, and SGST.',
+    title: 'OneCalculator: Free GST, EMI, & Math Calculators Online',
+    description: 'India\'s most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations.',
     images: ['/logo.svg'],
     creator: '@gstcalc_india',
   },
@@ -115,7 +124,7 @@ export default function RootLayout({
           <JsonLd data={{
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'GST Calculator India',
+            name: 'OneCalculator',
             url: 'https://onecalculator.online',
             logo: 'https://onecalculator.online/logo.svg',
             sameAs: [
