@@ -5,6 +5,7 @@ import HomeFAQ from "@/components/HomeFAQ";
 import JsonLd from "@/components/JsonLd";
 import { blogPosts } from "@/lib/blog-data";
 import Image from "next/image";
+import RelatedTools from "@/components/landing/RelatedTools";
 
 export const metadata = {
   title: "Free GST Calculator 2025 | Add & Remove GST Online",
@@ -464,6 +465,9 @@ export default function Home() {
           <HomeFAQ />
         </div>
       </section>
+
+      {/* Related Tools Section */}
+      <RelatedTools />
 
       {/* CTA Section */}
       <section className="py-20 md:py-28 px-4 relative z-10 overflow-hidden">
