@@ -1,4 +1,5 @@
 import CompoundInterestCalculator from "@/components/calculators/CompoundInterestCalculator";
+import CompoundInterestCalculatorContent from "@/components/calculators/CompoundInterestCalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,10 @@ export default function CompoundInterestPage() {
                     </p>
                 </div>
                 <CompoundInterestCalculator />
+            </section>
+
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <CompoundInterestCalculatorContent />
             </section>
         </main>
     );

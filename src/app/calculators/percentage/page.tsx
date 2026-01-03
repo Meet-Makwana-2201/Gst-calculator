@@ -1,4 +1,5 @@
 import PercentageCalculator from "@/components/calculators/PercentageCalculator";
+import PercentageCalculatorContent from "@/components/calculators/PercentageCalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,10 @@ export default function PercentagePage() {
                     </p>
                 </div>
                 <PercentageCalculator />
+            </section>
+
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <PercentageCalculatorContent />
             </section>
         </main>
     );

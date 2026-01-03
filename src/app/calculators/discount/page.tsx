@@ -1,4 +1,5 @@
 import DiscountCalculator from "@/components/calculators/DiscountCalculator";
+import DiscountCalculatorContent from "@/components/calculators/DiscountCalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,10 @@ export default function DiscountPage() {
                     </p>
                 </div>
                 <DiscountCalculator />
+            </section>
+
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <DiscountCalculatorContent />
             </section>
         </main>
     );

@@ -1,4 +1,5 @@
 import SimpleInterestCalculator from "@/components/calculators/SimpleInterestCalculator";
+import SimpleInterestCalculatorContent from "@/components/calculators/SimpleInterestCalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,10 @@ export default function SimpleInterestPage() {
                     </p>
                 </div>
                 <SimpleInterestCalculator />
+            </section>
+
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <SimpleInterestCalculatorContent />
             </section>
         </main>
     );

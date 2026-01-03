@@ -1,4 +1,5 @@
 import ProfitLossCalculator from "@/components/calculators/ProfitLossCalculator";
+import ProfitLossCalculatorContent from "@/components/calculators/ProfitLossCalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,10 @@ export default function ProfitLossPage() {
                     </p>
                 </div>
                 <ProfitLossCalculator />
+            </section>
+
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <ProfitLossCalculatorContent />
             </section>
         </main>
     );

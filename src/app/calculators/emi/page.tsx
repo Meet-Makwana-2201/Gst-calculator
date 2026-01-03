@@ -1,4 +1,5 @@
 import EMICalculator from "@/components/calculators/EMICalculator";
+import EMICalculatorContent from "@/components/calculators/EMICalculatorContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -43,6 +44,11 @@ export default function EMIPage() {
                     </p>
                 </div>
                 <EMICalculator />
+            </section>
+
+            {/* SEO Content Section */}
+            <section className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <EMICalculatorContent />
             </section>
         </main>
     );
