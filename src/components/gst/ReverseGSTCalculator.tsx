@@ -420,7 +420,7 @@ export default function ReverseGSTCalculator() {
               <div className="pt-2">
                 <p className="text-xs text-muted-foreground mb-2">Found this helpful? Share it!</p>
                 <ShareButtons
-                  url="https://onecalculator.online/calculator"
+                  url="https://onecalculator.online/calculators"
                   title={`Reverse GST Calculation: Original ${currencySymbol}${formatCurrency(originalAmount!, currency)}, Tax ${currencySymbol}${formatCurrency(taxType === 'GST' ? gstAmount! : taxType === 'IGST' ? igstAmount! : (cgstAmount! + sgstAmount!), currency)}`}
                 />
               </div>

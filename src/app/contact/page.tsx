@@ -43,7 +43,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <div>
-      <h2 className="text-2xl mb-4">Contact Us</h2>
+      <h1 className="text-2xl mb-4">Contact Us</h1>
       <p>If you have any questions or need support, please reach out to us.</p>
       <form className="mt-4">
         <div className="mb-4">

@@ -78,6 +78,7 @@ export default function CalculatorPage() {
             <StructuredData data={softwareSchema} />
             <StructuredData data={breadcrumbSchema} />
             <section className="flex-1 container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+                <h1 className="sr-only">GST Calculator Tool</h1>
                 <Tabs defaultValue="gst" className="w-full">
                     <TabsList className="mb-6 grid w-full grid-cols-2">
                         <TabsTrigger value="gst">GST Calculator</TabsTrigger>
