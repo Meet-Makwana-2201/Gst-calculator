@@ -10,6 +10,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "mastering-gst-calculator",
+        title: "Mastering the GST Calculator: A Comprehensive Guide for Businesses in 2026",
+        description: "A technical and practical guide to understanding GST calculations, formulas, and compliance for developers and finance professionals in 2026.",
+        date: "January 8, 2026",
+        readTime: "8 min read",
+        category: "Finance",
+        image: "/blog-mastering-gst.png",
+    },
+    {
         slug: "gst-state-codes-list-2025",
         title: "GST State Codes List 2025: Complete Guide for E-way Bills",
         description: "Complete list of GST State Codes in India (01-37). Essential for GST registration, e-way bills, and filing returns.",
