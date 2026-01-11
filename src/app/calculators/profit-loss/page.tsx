@@ -5,7 +5,13 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
     title: "Profit & Loss Calculator | Calculate Profit Margin & Percentage",
     description: "Calculate profit or loss amount and percentage easily. Essential tool for businesses, traders, and students to determine financial outcomes.",
-    keywords: ["profit loss calculator", "profit margin calculator", "business calculator", "loss percentage calculator"],
+    keywords: [
+        "profit and loss calculator",
+        "profit margin calculator",
+        "loss percentage calculator",
+        "profit formula",
+        "calculate profit"
+    ],
     alternates: {
         canonical: "https://onecalculator.online/calculators/profit-loss",
     },

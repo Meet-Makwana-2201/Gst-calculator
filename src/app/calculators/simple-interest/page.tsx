@@ -5,7 +5,13 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
     title: "Simple Interest Calculator | Calculate SI & Total Amount",
     description: "Free simple interest calculator. Calculate the interest earned on your principal amount over time. Useful for loans and savings.",
-    keywords: ["simple interest calculator", "SI calculator", "interest calculator", "loan interest calculator"],
+    keywords: [
+        "simple interest calculator",
+        "calculate simple interest",
+        "simple interest formula",
+        "simple interest example",
+        "simple interest online"
+    ],
     alternates: {
         canonical: "https://onecalculator.online/calculators/simple-interest",
     },

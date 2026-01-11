@@ -5,7 +5,13 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
     title: "EMI Calculator | Calculate Loan EMI Online",
     description: "Calculate your monthly EMI for home loans, car loans, or personal loans. Plan your repayment schedule effectively.",
-    keywords: ["EMI calculator", "loan calculator", "home loan emi calculator", "car loan emi calculator"],
+    keywords: [
+        "EMI calculator",
+        "home loan EMI calculator",
+        "loan EMI calculator",
+        "EMI formula",
+        "EMI interest calculator",
+    ],
     alternates: {
         canonical: "https://onecalculator.online/calculators/emi",
     },

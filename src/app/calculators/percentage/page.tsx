@@ -5,7 +5,14 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
     title: "Percentage Calculator | Calculate Percentages Online",
     description: "Free online percentage calculator. Calculate percentages of numbers easily and accurately. Useful for discounts, tips, and simple math.",
-    keywords: ["percentage calculator", "calculate percentage", "math calculator", "percent calculator online"],
+    keywords: [
+        "percentage calculator",
+        "calculate percentage",
+        "percentage formula",
+        "percent increase calculator",
+        "percentage of a number",
+        "percentage calculator online"
+    ],
     alternates: {
         canonical: "https://onecalculator.online/calculators/percentage",
     },

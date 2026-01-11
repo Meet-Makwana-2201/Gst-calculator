@@ -11,25 +11,24 @@ import {
 import { ToolCard } from "@/components/calculators/ToolCard";
 
 export const metadata: Metadata = {
-    title: "Financial Calculators & Tools Dashboard | OneCalculator",
+    title: "Free Online Financial & Math Calculators — GST, EMI, Interest, Percentage | OneCalculator",
     description:
-        "Access our comprehensive suite of free financial calculators. Calculate GST, EMI, interest, discounts, profit & loss, and more. Fast, accurate, and privacy-focused tools for business and personal finance.",
+        "Access free online calculators for GST, EMI, interest, percentage and financial math — easy, fast, and accurate results for business and personal finance.",
     alternates: {
         canonical: "https://onecalculator.online/calculators",
     },
     keywords: [
+        "online calculators",
         "financial calculators",
-        "GST calculator",
-        "EMI calculator",
-        "interest calculator",
-        "discount calculator",
-        "profit loss calculator",
+        "free online calculators",
+        "GST EMI interest calculator",
+        "all calculators in one place",
         "free online tools",
     ],
     openGraph: {
-        title: "Financial Calculators & Tools Dashboard | OneCalculator",
+        title: "Free Online Financial & Math Calculators — GST, EMI, Interest, Percentage | OneCalculator",
         description:
-            "Free, accurate financial calculators for business and personal use. Calculate GST, EMI, interest, and more instantly.",
+            "Access free online calculators for GST, EMI, interest, percentage and financial math — easy, fast, and accurate results for business and personal finance.",
         url: "https://onecalculator.online/calculators",
         type: "website",
     },
@@ -49,7 +48,7 @@ export default function CalculatorsPage() {
                 ></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
-                        Financial Calculators & Tools
+                        Online Financial & Math Calculators (Free & Easy)
                     </h1>
                     <p className="text-xl md:text-2xl text-indigo-100 max-w-3xl mx-auto mb-10">
                         Powerful, accurate, and free tools to help you make smarter

@@ -5,7 +5,14 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
     title: "Compound Interest Calculator | Calculate CI & Returns",
     description: "Calculate compound interest with different compounding frequencies (monthly, quarterly, annually). See how your money grows over time.",
-    keywords: ["compound interest calculator", "CI calculator", "investment calculator", "savings calculator"],
+    keywords: [
+        "compound interest calculator",
+        "compound interest formula",
+        "compound interest monthly",
+        "compound interest example",
+        "calculate compound interest",
+
+    ],
     alternates: {
         canonical: "https://onecalculator.online/calculators/compound-interest",
     },
