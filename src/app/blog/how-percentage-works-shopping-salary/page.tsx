@@ -6,6 +6,11 @@ export const metadata = {
     title: "How Percentage Works in Shopping, Salary & Business (2026 Guide)",
     description: "Master percentage calculations used in daily life. Learn how to calculate discounts, salary hikes, taxes, and profit margins with real-world examples.",
     keywords: [
+        "percentage calculator",
+        "calculate percentage",
+        "percentage increase calculator",
+        "percentage decrease calculator",
+        "what is percentage",
         "how percentage works",
         "calculate discount",
         "salary hike calculation",

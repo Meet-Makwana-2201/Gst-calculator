@@ -6,7 +6,10 @@ export const metadata = {
     title: "Simple vs Compound Interest — Which Is Better for You? (2026 Guide)",
     description: "Discover the key differences between simple and compound interest. Learn which one benefits you more for loans, investments, and long-term savings in 2026.",
     keywords: [
+        "simple vs compound interest",
         "simple interest vs compound interest",
+        "difference between simple and compound interest",
+        "compound vs simple interest examples",
         "simple interest formula",
         "compound interest formula",
         "interest calculation guide",

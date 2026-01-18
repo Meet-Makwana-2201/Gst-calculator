@@ -7,6 +7,10 @@ export const metadata = {
     description: "Discover the top financial tools you need in 2026. From GST and EMI to Compound Interest, stay ahead of your finances with our suite of free professional calculators.",
     keywords: [
         "best financial calculators 2026",
+        "free online financial calculators",
+        "best financial calculators online",
+        "financial calculator list",
+        "online finance tools",
         "free online calculators",
         "GST calculator online",
         "EMI calculator free",

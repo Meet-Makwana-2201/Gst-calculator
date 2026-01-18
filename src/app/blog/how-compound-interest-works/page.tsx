@@ -6,7 +6,10 @@ export const metadata = {
     title: "How Compound Interest Works — The Easiest Guide with Examples (2026)",
     description: "Learn how compound interest creates exponential wealth. Understand the Rule of 72, compounding frequency, and real-life examples for retirement and education funds.",
     keywords: [
+        "compound interest calculator",
+        "compound interest formula",
         "how compound interest works",
+        "compound interest examples",
         "compound interest guide",
         "power of compounding",
         "Rule of 72",
