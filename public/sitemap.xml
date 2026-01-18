@@ -41,11 +41,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://onecalculator.online/calculators</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://onecalculator.online/calculators/gst</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -77,6 +72,31 @@
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/emi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/best-free-online-financial-calculators-2026</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/how-percentage-works-shopping-salary</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/how-compound-interest-works</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/simple-vs-compound-interest</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/what-is-emi-calculator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
