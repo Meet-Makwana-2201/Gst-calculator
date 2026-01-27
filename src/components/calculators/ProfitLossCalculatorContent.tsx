@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function ProfitLossCalculatorContent() {
     const faqSchema = {
@@ -26,7 +27,7 @@ export default function ProfitLossCalculatorContent() {
                 "name": "How do I calculate markup vs margin?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Markup is profit as a percentage of cost: (Selling Price - Cost) / Cost × 100. Margin is profit as a percentage of selling price: (Selling Price - Cost) / Selling Price × 100. Example: Cost ₹100, Selling Price ₹150. Markup = (150-100)/100 × 100 = 50%. Margin = (150-100)/150 × 100 = 33.33%. Markup is always higher than margin for the same transaction."
+                    "text": "Markup is profit as a percentage of cost: (Selling Price - Cost) / Cost × 100. Margin is profit as a percentage of selling price: (Selling Price - Cost) / Selling Price × 100. Example: Cost ₹100, Selling Price ₹150. Markup = (150-100)/100 × 100 = 50%. Margin = (150-100)/150 × 100 = 33.33%. Markup is always higher than margin for the same transaction. Use our <Link href=\"/calculators/percentage\" className=\"text-indigo-600 hover:underline\">percentage calculator</Link> for complex growth scenarios."
                 }
             }
         ]
@@ -166,6 +167,7 @@ export default function ProfitLossCalculatorContent() {
                                 <p className="text-gray-600 dark:text-gray-300 text-sm font-mono bg-gray-100 dark:bg-gray-900 p-2 rounded">
                                     Gross Margin = [(Revenue - COGS) / Revenue] × 100
                                 </p>
+                                <p className="text-xs mt-2 text-gray-500 italic">Don't forget to account for <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST</Link> in your pricing strategy.</p>
                             </div>
 
                             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
@@ -214,6 +216,50 @@ export default function ProfitLossCalculatorContent() {
                             <p className="text-gray-600 dark:text-gray-300">
                                 Markup is profit as a percentage of cost: (Selling Price - Cost) / Cost × 100. Margin is profit as a percentage of selling price: (Selling Price - Cost) / Selling Price × 100. Example: Cost ₹100, Selling Price ₹150. Markup = (150-100)/100 × 100 = 50%. Margin = (150-100)/150 × 100 = 33.33%. Markup is always higher than margin for the same transaction.
                             </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Business Growth Resources Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Business Growth Resources
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Essential Business Tools:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/calculators/gst" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> GST Calculator (India)
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/percentage" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Percentage Growth Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/discount" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Discount & Offer Calculator
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Guides for Entrepreneurs:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/blog/mastering-gst-calculator" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Mastering Business Tax Compliance
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/gst-calculation-for-freelancers-india" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Profit Maximization for Freelancers
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>

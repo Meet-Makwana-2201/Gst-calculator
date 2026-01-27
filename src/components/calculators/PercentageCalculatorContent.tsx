@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function PercentageCalculatorContent() {
     const faqSchema = {
@@ -125,8 +126,8 @@ export default function PercentageCalculatorContent() {
                                     Business & Finance
                                 </h3>
                                 <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                                    <li>• Calculate profit margins and markups</li>
-                                    <li>• Determine sales tax and discounts</li>
+                                    <li>• Calculate <Link href="/calculators/profit-loss" className="text-indigo-600 hover:underline">profit margins</Link> and markups</li>
+                                    <li>• Determine sales tax and <Link href="/calculators/discount" className="text-indigo-600 hover:underline">discounts</Link></li>
                                     <li>• Analyze revenue growth rates</li>
                                     <li>• Track expense percentages</li>
                                 </ul>
@@ -613,6 +614,50 @@ export default function PercentageCalculatorContent() {
                                 </p>
                             </div>
                         </details>
+                    </div>
+                </section>
+
+                {/* Related Resources & Tools Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Percentage Tools & Guides
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Calculator Tools:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/calculators/discount" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Discount Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/profit-loss" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Profit & Loss Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/gst" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> GST Calculator India
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Educational Guides:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/blog/how-percentage-works-shopping-salary" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> How Percentage Works in Real Life
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/best-free-online-financial-calculators-2026" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Top Financial Calculators for 2026
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

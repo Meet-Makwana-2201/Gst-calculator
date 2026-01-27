@@ -2,6 +2,7 @@ import GSTCalculator from "@/components/gst/GSTCalculator";
 import ReverseGSTCalculator from "@/components/gst/ReverseGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { StructuredData, generateSoftwareSchema, generateBreadcrumbSchema } from "@/components/StructuredData";
+import Link from "next/link";
 
 export const metadata = {
     title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
@@ -125,7 +126,7 @@ export default function CalculatorPage() {
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                                     Example: If total is ₹1,180 and GST is 18%:<br />
                                     Original = 1180 / (1 + 0.18) = ₹1,000<br />
-                                    GST = 1180 - 1000 = ₹180
+                                    GST = 1180 - 1000 = ₹180. Read our detailed guide on <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">how to calculate GST backwards</Link>.
                                 </p>
                             </div>
                         </div>
@@ -321,7 +322,7 @@ export default function CalculatorPage() {
                             </table>
                         </div>
                         <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 italic">
-                            Note: GST rates are subject to change. Always verify current rates from official GST portal.
+                            Note: GST rates are subject to change. Use our <Link href="/gst-rate-finder" className="text-indigo-600 hover:underline">GST Rate Finder</Link> to find specific rates by product or HSN code.
                         </p>
                     </div>
 
@@ -349,7 +350,7 @@ export default function CalculatorPage() {
                                     </li>
                                     <li className="flex items-start">
                                         <span className="text-indigo-600 mr-2">•</span>
-                                        <span>Reverse calculate when clients provide total amount</span>
+                                        <span>Reverse calculate when clients provide total amount. See our <Link href="/blog/gst-calculation-for-freelancers-india" className="text-indigo-600 hover:underline">GST guide for Indian freelancers</Link>.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -779,6 +780,27 @@ export default function CalculatorPage() {
                                     GST amounts should be rounded to two decimal places. The final invoice total can be rounded to the nearest rupee as per GST rules.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    {/* Related Tools Section */}
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                            Related Financial Tools
+                        </h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <Link href="/calculators/percentage" className="p-4 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors">
+                                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Percentage Calculator</h3>
+                                <p className="text-xs text-gray-500 mt-1">Calculate percentages, increases, and decreases.</p>
+                            </Link>
+                            <Link href="/calculators/discount" className="p-4 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors">
+                                <h3 className="font-semibold text-gray-900 dark:text-gray-100">Discount Calculator</h3>
+                                <p className="text-xs text-gray-500 mt-1">Find out how much you save on sales.</p>
+                            </Link>
+                            <Link href="/calculators/emi" className="p-4 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors">
+                                <h3 className="font-semibold text-gray-900 dark:text-gray-100">EMI Calculator</h3>
+                                <p className="text-xs text-gray-500 mt-1">Calculate your monthly loan repayments.</p>
+                            </Link>
                         </div>
                     </div>
                 </div>

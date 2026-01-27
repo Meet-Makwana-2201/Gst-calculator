@@ -113,7 +113,7 @@ export default function BlogPost() {
 
                 <h3 id="discounts">Shopping & Discounts</h3>
                 <p>
-                    This is where most of us interact with percentages the most. Retailers use percentages to make offers look attractive. However, "Up to 70% Off" is very different from "Flat 50% Off." When you see a discount, your brain needs to quickly perform a calculation: <strong>Original Price × (Discount Rate / 100) = Savings</strong>.
+                    This is where most of us interact with percentages the most. Retailers use percentages to make offers look attractive. However, "Up to 70% Off" is very different from "Flat 50% Off." When you see a discount, your brain needs to quickly perform a calculation: <strong>Original Price × (Discount Rate / 100) = Savings</strong>. Use our <Link href="/calculators/discount" className="text-indigo-600 hover:underline">Discount Calculator</Link> to find the final price in seconds.
                 </p>
                 <p>
                     In 2026, many shoppers are using "stackable" discounts—where you get a store discount plus a credit card cashback. Understanding how these percentages layer (usually sequentially, not cumulatively) can save you from a nasty surprise at the checkout counter.
@@ -132,7 +132,7 @@ export default function BlogPost() {
                     For business owners and freelancers, percentages are the lifeblood of the balance sheet. <strong>GST (Goods and Services Tax)</strong> is calculated as a percentage of the transaction value. If you don't calculate this correctly, you're either losing money or risking a legal audit.
                 </p>
                 <p>
-                    Similarly, <strong>Profit Margin</strong> is expressed as a percentage of revenue. A business might make ₹1 Crore in sales, but if its profit margin is only 2%, it's in a much more precarious position than a business making ₹50 Lakhs with a 30% margin. Percentages tell you the <em>quality</em> of the business, not just the size.
+                    Similarly, <strong>Profit Margin</strong> is expressed as a percentage of revenue. A business might make ₹1 Crore in sales, but if its profit margin is only 2%, it's in a much more precarious position than a business making ₹50 Lakhs with a 30% margin. Percentages tell you the <em>quality</em> of the business, not just the size. Track your business health with our <Link href="/calculators/profit-loss" className="text-indigo-600 hover:underline">Profit & Loss Calculator</Link>.
                 </p>
 
                 <h2 id="increase-decrease">Increase vs. Decrease Explained</h2>

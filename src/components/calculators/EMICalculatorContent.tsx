@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function EMICalculatorContent() {
     const faqSchema = {
@@ -128,7 +129,7 @@ export default function EMICalculatorContent() {
                                         <strong>Shorter Tenure:</strong> Higher monthly EMI but lower total interest paid. You become debt-free faster and save money in the long run.
                                     </li>
                                     <li>
-                                        <strong>Longer Tenure:</strong> Lower monthly EMI but higher total interest paid. This provides more breathing room in your monthly budget but costs more over time.
+                                        <strong>Longer Tenure:</strong> Lower monthly EMI but higher total interest paid. This provides more breathing room in your monthly budget but costs more over time. It effectively acts like <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline">compound interest</Link> working against you.
                                     </li>
                                 </ul>
                                 <p className="text-gray-600 dark:text-gray-300 mt-3">
@@ -511,6 +512,45 @@ export default function EMICalculatorContent() {
                                 </p>
                             </div>
                         </details>
+                    </div>
+                </section>
+
+                {/* Keep Learning Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Keep Learning
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="space-y-4">
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 italic">Detailed Guides:</h3>
+                            <ul className="space-y-2">
+                                <li>
+                                    <Link href="/blog/what-is-emi-calculator" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Essential Guide to EMI Components
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/simple-vs-compound-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Simple vs Compound Interest: Which is better?
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="space-y-4">
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 italic">Related Tools:</h3>
+                            <ul className="space-y-2">
+                                <li>
+                                    <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Compound Interest Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/simple-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Simple Interest Calculator
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function DiscountCalculatorContent() {
     const faqSchema = {
@@ -125,7 +126,7 @@ export default function DiscountCalculatorContent() {
                                     Compare Discounts
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                                    Don&apos;t just look at the percentage—calculate the actual savings. A 50% discount on a ₹100 item saves ₹50, while a 10% discount on a ₹1000 item saves ₹100. Always compare final prices, not just discount percentages.
+                                    Don&apos;t just look at the percentage—calculate the actual savings. A 50% discount on a ₹100 item saves ₹50, while a 10% discount on a ₹1000 item saves ₹100. Always compare final prices, not just discount percentages. Use our <Link href="/calculators/percentage" className="text-indigo-600 hover:underline">Percentage Calculator</Link> for complex math.
                                 </p>
                             </div>
 
@@ -152,7 +153,7 @@ export default function DiscountCalculatorContent() {
                                     Consider Total Cost
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                                    Factor in shipping, taxes, and handling fees. A 30% discount with ₹200 shipping might cost more than a 20% discount with free shipping. Always calculate the final out-of-pocket amount.
+                                    Factor in shipping, taxes, and handling fees. A 30% discount with ₹200 shipping might cost more than a 20% discount with free shipping. Always calculate the final out-of-pocket amount, including <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST</Link>.
                                 </p>
                             </div>
                         </div>
@@ -190,6 +191,50 @@ export default function DiscountCalculatorContent() {
                             <p className="text-gray-600 dark:text-gray-300">
                                 Successive discounts are applied one after another, not added together. For example, 20% + 10% discount doesn&apos;t equal 30% off. First apply 20% discount, then apply 10% to the reduced price. If an item costs ₹1000: after 20% off it&apos;s ₹800, then 10% off ₹800 = ₹720 final price (28% total discount, not 30%).
                             </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Shopping & Savings Resources Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Smart Shopping Resources
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Recommended Tools:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/calculators/percentage" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Percentage Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/gst" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> GST Calculator India
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/profit-loss" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Profit & Loss Calculator
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Shopping Guides:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/blog/how-percentage-works-shopping-salary" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Guide: Percentage in Shopping & Salary
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/gst-on-electronics-mobile-laptops-2025" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> GST Rates on Electronics 2025
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>

@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function SimpleInterestCalculatorContent() {
     const faqSchema = {
@@ -120,9 +121,12 @@ export default function SimpleInterestCalculatorContent() {
 
                 <section className="space-y-4">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-                        Simple Interest vs Compound Interest
+                        Simple Interest vs <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline">Compound Interest</Link>
                     </h2>
                     <div className="prose prose-lg dark:prose-invert max-w-none">
+                        <p className="text-gray-600 dark:text-gray-300">
+                            Understanding the difference between simple and compound interest is crucial for financial planning. While simple interest is linear, compound interest allows for exponential growth. Read our <Link href="/blog/simple-vs-compound-interest" className="text-indigo-600 hover:underline">detailed comparison</Link>.
+                        </p>
                         <div className="overflow-x-auto">
                             <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
                                 <thead className="bg-gray-100 dark:bg-gray-900">
@@ -781,6 +785,50 @@ export default function SimpleInterestCalculatorContent() {
                                 </p>
                             </div>
                         </details>
+                    </div>
+                </section>
+
+                {/* Related Tools & Guides Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Explore Related Tools & Guides
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Recommended Tools:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Compound Interest Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/emi" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Home & Personal Loan EMI Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/percentage" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Percentage Calculator
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Educational Guides:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/blog/simple-vs-compound-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Simple vs Compound Interest Guide
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/what-is-emi-calculator" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Understanding EMI Calculations
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

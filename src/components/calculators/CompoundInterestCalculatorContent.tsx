@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function CompoundInterestCalculatorContent() {
     const faqSchema = {
@@ -10,7 +11,7 @@ export default function CompoundInterestCalculatorContent() {
                 "name": "What is the power of compounding?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The power of compounding refers to earning interest on both your principal and previously earned interest, creating exponential growth over time. Albert Einstein allegedly called it the 'eighth wonder of the world'. For example, ₹1 lakh invested at 10% annually: after 10 years with simple interest = ₹2 lakhs, but with compound interest = ₹2.59 lakhs—an extra ₹59,000 from compounding alone."
+                    "text": "The power of compounding refers to earning interest on both your principal and previously earned interest, creating exponential growth over time. Albert Einstein allegedly called it the 'eighth wonder of the world'. For example, ₹1 lakh invested at 10% annually: after 10 years with <Link href=\"/calculators/simple-interest\" className=\"text-indigo-600 hover:underline\">simple interest</Link> = ₹2 lakhs, but with compound interest = ₹2.59 lakhs—an extra ₹59,000 from compounding alone. Read more about <Link href=\"/blog/how-compound-interest-works\" className=\"text-indigo-600 hover:underline\">how compound interest works</Link>."
                 }
             },
             {
@@ -747,6 +748,45 @@ export default function CompoundInterestCalculatorContent() {
                                 </p>
                             </div>
                         </details>
+                    </div>
+                </section>
+
+                {/* Related Resources Section */}
+                <section className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                        Compound Interest Resources
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Learn More:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/blog/how-compound-interest-works" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> The Math Behind Compounding
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/simple-vs-compound-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Comparison: Simple vs Compound Interest
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4 italic">Calculators You'll Love:</h3>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/calculators/simple-interest" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Simple Interest Calculator
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/calculators/emi" className="text-indigo-600 hover:underline flex items-center">
+                                        <span className="mr-2">→</span> Loan EMI Calculator
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

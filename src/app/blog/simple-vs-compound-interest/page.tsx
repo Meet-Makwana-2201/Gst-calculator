@@ -210,6 +210,8 @@ export default function BlogPost() {
                 </p>
                 <ul>
                     <li>Check out our <Link href="/calculators/emi" className="text-indigo-600 hover:underline font-bold">EMI Calculator</Link> to see how interest impacts your monthly loan repayments.</li>
+                    <li>Calculate growth with our <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline font-bold">Compound Interest Calculator</Link>.</li>
+                    <li>For linear loans, use the <Link href="/calculators/simple-interest" className="text-indigo-600 hover:underline font-bold">Simple Interest Calculator</Link>.</li>
                     <li>Use our <Link href="/calculators/percentage" className="text-indigo-600 hover:underline font-bold">Percentage Calculator</Link> for quick interest rate comparisons.</li>
                 </ul>
 
