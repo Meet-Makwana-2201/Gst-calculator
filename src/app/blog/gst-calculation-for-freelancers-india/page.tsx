@@ -24,7 +24,7 @@ export const metadata = {
     title: "GST Calculation for Freelancers in India: Complete Guide 2025 | GST Blog",
     description: "Complete guide to GST for freelancers in India. Learn about GST registration, calculation, invoicing, and filing. Essential tips for freelancers working with Indian and international clients.",
     url: "/blog/gst-calculation-for-freelancers-india",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/blog-freelancer-gst.png",

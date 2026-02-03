@@ -21,7 +21,7 @@ export const metadata = {
     title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
     description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
     url: "/privacy",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",

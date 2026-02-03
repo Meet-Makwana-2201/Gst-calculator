@@ -24,7 +24,7 @@ export const metadata = {
     title: "GST Calculator Excel Download: Free Template & Guide | GST Blog",
     description: "Download free GST calculation Excel templates. Learn how to create your own GST calculator in Excel with formulas, examples, and step-by-step guide.",
     url: "/blog/gst-calculator-excel-download",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/blog-excel-calculator.png",

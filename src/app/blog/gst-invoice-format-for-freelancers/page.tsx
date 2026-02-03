@@ -19,7 +19,7 @@ export const metadata = {
         title: "GST Invoice Format for Freelancers: Free Template & Guide",
         description: "Learn how to create a compliant GST invoice for freelancers in India. Download free Excel templates and understand mandatory fields, export invoices, and digital signatures.",
         url: "/blog/gst-invoice-format-for-freelancers",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/blog-gst-invoice.png",

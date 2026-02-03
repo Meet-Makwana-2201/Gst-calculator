@@ -24,7 +24,7 @@ export const metadata = {
     title: "GST Rate Chart India 2025: Complete List with Examples | GST Blog",
     description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services including HSN codes, examples, and recent updates. Your comprehensive GST rate guide.",
     url: "/blog/gst-rate-chart-2025-india",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/blog-gst-rates-2025.png",

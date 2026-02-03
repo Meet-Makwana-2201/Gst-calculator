@@ -22,7 +22,7 @@ export const metadata = {
     title: "GST Rates Chart India 2025 | Complete GST Rate List | GST Calculator",
     description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services: 0%, 5%, 12%, 18%, 28%. Updated GST rate list with HSN codes and categories.",
     url: "/gst-rates",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
@@ -143,10 +143,10 @@ export default function GSTRates() {
             >
               <div className="flex items-start gap-4 mb-4">
                 <div className={`flex-shrink-0 w-20 h-20 rounded-xl flex items-center justify-center font-bold text-2xl ${index === 0 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
-                    index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
-                      index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
-                        index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
-                          'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
+                  index === 1 ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' :
+                    index === 2 ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400' :
+                      index === 3 ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400' :
+                        'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
                   }`}>
                   {rateInfo.rate}
                 </div>

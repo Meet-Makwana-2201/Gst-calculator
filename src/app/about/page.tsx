@@ -35,7 +35,7 @@ export const metadata = {
         title: "About Us - GST Calculator India | Our Mission & Story",
         description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
         url: "/about",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/logo.svg",

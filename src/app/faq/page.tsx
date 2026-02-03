@@ -26,7 +26,7 @@ export const metadata = {
     title: "FAQ - GST Calculator India | Help & Support",
     description: "Frequently asked questions about GST calculation, GST rates, IGST, CGST, SGST, and how to use our GST calculator. Get help with all your GST-related queries.",
     url: "/faq",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",

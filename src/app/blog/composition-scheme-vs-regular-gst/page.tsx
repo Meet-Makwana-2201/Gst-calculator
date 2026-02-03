@@ -19,7 +19,7 @@ export const metadata = {
         title: "Composition Scheme vs Regular GST: Which is Better for Small Business?",
         description: "Compare Composition Scheme vs Regular GST scheme. Understand the pros and cons, tax rates (1% vs 18%), compliance burden, and input tax credit rules to make the right choice.",
         url: "/blog/composition-scheme-vs-regular-gst",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/blog-composition-vs-regular.png",

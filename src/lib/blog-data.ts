@@ -83,11 +83,11 @@ export const blogPosts: BlogPost[] = [
     },
     {
         slug: "how-to-calculate-gst-backwards",
-        title: "How to Calculate GST Backwards (Reverse Calculation)",
-        description: "Learn how to calculate GST backwards from the total amount. Use the reverse GST formula to find the base price.",
-        date: "January 28, 2025",
-        readTime: "4 min read",
-        category: "Guides",
+        title: "How to Calculate GST Backwards (Reverse GST) – Step-by-Step Guide",
+        description: "Master reverse GST calculation with step-by-step examples for 5%, 12%, 18%, and 28% rates. Learn the formula to extract base price from MRP.",
+        date: "February 3, 2025",
+        readTime: "8 min read",
+        category: "GST Guide",
         image: "/blog-reverse-gst.png",
     },
     {

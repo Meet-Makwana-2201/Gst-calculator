@@ -41,7 +41,7 @@ export const metadata = {
         title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
         description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
         url: "/calculators/gst",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/logo.svg",

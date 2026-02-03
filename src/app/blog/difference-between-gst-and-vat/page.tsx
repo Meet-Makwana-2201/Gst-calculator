@@ -24,7 +24,7 @@ export const metadata = {
     title: "Difference Between GST and VAT: Key Changes Explained | GST Blog",
     description: "Understand the key differences between GST and VAT systems in India. Learn how GST replaced VAT, what changed, and what it means for businesses and consumers.",
     url: "/blog/difference-between-gst-and-vat",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/blog-difference-gst-vat.png",

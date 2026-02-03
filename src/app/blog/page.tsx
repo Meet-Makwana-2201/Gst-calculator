@@ -21,7 +21,7 @@ export const metadata = {
     title: "GST Blog - Articles, Guides & Resources | GST Calculator India",
     description: "Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.",
     url: "/blog",
-    siteName: "GST Calculator",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",

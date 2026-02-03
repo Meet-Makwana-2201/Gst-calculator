@@ -18,7 +18,7 @@ export const metadata = {
         title: "GST State Codes List 2025: Complete List of 38 Codes",
         description: "Find the complete list of GST State Codes for 2025. Correct state codes are mandatory for filing GST returns and generating e-way bills. Check your state code here.",
         url: "/blog/gst-state-codes-list-2025",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/blog-gst-state-codes.png",

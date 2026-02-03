@@ -19,7 +19,7 @@ export const metadata = {
         title: "GST on Electronics 2025: Mobile Phones, Laptops & Accessories Rates",
         description: "Complete guide to GST rates on electronics in India for 2025. Know the tax rates for mobile phones (12% vs 18%), laptops, computers, and accessories.",
         url: "/blog/gst-on-electronics-mobile-laptops-2025",
-        siteName: "GST Calculator",
+        siteName: "OneCalculator",
         images: [
             {
                 url: "/blog-gst-electronics.png",
