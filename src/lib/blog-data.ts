@@ -10,6 +10,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "state-code-38-gst-ladakh",
+        title: "State Code 38 in GST – Meaning, Usage, and Examples",
+        description: "Learn about GST State Code 38 for Ladakh. Understand how to use state code 38 in GST invoices, GSTIN format, and avoid common errors.",
+        date: "February 3, 2025",
+        readTime: "5 min read",
+        category: "GST Guide",
+        image: "/blog-state-code-38.png",
+    },
+    {
         slug: "best-free-online-financial-calculators-2026",
         title: "Best Free Online Financial Calculators for 2026",
         description: "Discover the top financial tools you need in 2026. From GST and EMI to Compound Interest, stay ahead of your finances with our suite of free professional calculators.",
