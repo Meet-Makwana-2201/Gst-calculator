@@ -206,7 +206,7 @@ export default function BlogPostWrapper({
                                 Use our free, accurate GST calculator for instant results.
                             </p>
                             <Link
-                                href="/calculator"
+                                href="/calculators"
                                 className="block w-full py-3 px-4 bg-white text-indigo-600 text-center font-bold rounded-xl hover:bg-indigo-50 transition-colors shadow-md"
                             >
                                 Open Calculator
