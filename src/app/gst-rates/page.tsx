@@ -190,7 +190,7 @@ export default function GSTRates() {
 
         <div className="mt-8 text-center">
           <a
-            href="/calculator"
+            href="/calculators"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all hover-lift shadow-lg"
           >
             Calculate GST Now
