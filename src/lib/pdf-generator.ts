@@ -1,7 +1,7 @@
 import jsPDF from 'jspdf';
 
 interface CalculationData {
-    type: 'add' | 'reverse';
+    type: 'add' | 'reverse' | 'remove';
     amount: number;
     gstRate: number;
     gstAmount: number;
@@ -38,9 +38,11 @@ export const generateCalculationPDF = (data: CalculationData): void => {
         day: 'numeric',
     });
 
+    const typeLabel = data.type === 'add' ? 'Add GST' : data.type === 'remove' ? 'Remove GST' : 'Reverse GST';
+
     doc.setFontSize(10);
     doc.text(`Date: ${currentDate}`, 20, 55);
-    doc.text(`Calculation Type: ${data.type === 'add' ? 'Add GST' : 'Reverse GST'}`, 20, 62);
+    doc.text(`Calculation Type: ${typeLabel}`, 20, 62);
 
     // Calculation Details Box
     doc.setDrawColor(229, 231, 235); // Gray-200
@@ -83,7 +85,10 @@ export const generateCalculationPDF = (data: CalculationData): void => {
         doc.text(`Total Amount:`, 25, yPos);
         doc.text(`₹${data.totalAmount.toFixed(2)}`, 150, yPos, { align: 'right' });
     } else {
-        doc.text(`Total Amount (Inclusive):`, 25, yPos);
+        const inputLabel = data.type === 'remove' ? 'Price Including GST:' : 'Total Amount (Inclusive):';
+        const resultLabel = data.type === 'remove' ? 'Original Price (Excl. GST):' : 'Original Amount:';
+
+        doc.text(inputLabel, 25, yPos);
         doc.text(`₹${data.amount.toFixed(2)}`, 150, yPos, { align: 'right' });
 
         yPos += lineHeight;
@@ -103,7 +108,7 @@ export const generateCalculationPDF = (data: CalculationData): void => {
         yPos += 5;
         doc.setFontSize(14);
         doc.setTextColor(...primaryColor);
-        doc.text(`Original Amount:`, 25, yPos);
+        doc.text(resultLabel, 25, yPos);
         doc.text(`₹${data.totalAmount.toFixed(2)}`, 150, yPos, { align: 'right' });
     }
 

@@ -126,7 +126,7 @@ export default function BlogPost() {
         </div>
 
         <p>
-          You can use our free <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">GST Calculator</a> to
+          You can use our free <a href="/calculators" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">GST Calculator</a> to
           instantly calculate GST amounts for any invoice amount.
         </p>
 

@@ -130,7 +130,7 @@ export default function GSTRateFinderPage() {
                             <p className="text-indigo-100 mb-6">
                                 Use our calculator to compute GST amounts instantly with the rates you found.
                             </p>
-                            <Link href="/calculator">
+                            <Link href="/calculators">
                                 <Button className="bg-white text-indigo-600 hover:bg-indigo-50 font-bold">
                                     Open GST Calculator
                                 </Button>

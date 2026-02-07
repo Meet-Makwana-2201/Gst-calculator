@@ -1,6 +1,6 @@
 export interface CalculationRecord {
     id: string;
-    type: 'add' | 'reverse';
+    type: 'add' | 'reverse' | 'remove';
     amount: number;
     gstRate: number;
     gstAmount: number;

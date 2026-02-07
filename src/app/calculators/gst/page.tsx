@@ -1,45 +1,37 @@
 import GSTCalculator from "@/components/gst/GSTCalculator";
 import ReverseGSTCalculator from "@/components/gst/ReverseGSTCalculator";
+import RemoveGSTCalculator from "@/components/gst/RemoveGSTCalculator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { StructuredData, generateSoftwareSchema, generateBreadcrumbSchema } from "@/components/StructuredData";
 import Link from "next/link";
 
 export const metadata = {
-    title: "GST Calculator Tool India (2025) | Add & Remove GST | IGST/CGST/SGST Breakdown",
-    description: "Fast and accurate GST calculator for India. Calculate GST, reverse GST, IGST, CGST, SGST instantly. No login, works on mobile. Simple and fast GST tool with detailed breakdown. Supports 5%, 12%, 18%, 28% rates.",
+    title: "GST Calculator – Add & Remove GST Instantly",
+    description: "Fast and accurate GST calculator for India. Add or remove GST instantly, calculate CGST, SGST, IGST, and reverse GST with examples. Supports 5%, 12%, 18%, and 28% rates.",
     keywords: [
-        "GST calculator",
-        "GST calculator India",
-        "GST tax calculator",
-        "CGST SGST calculator",
-        "GST reverse calculator",
+        "gst calculator",
+        "gst calculator india",
         "reverse gst calculator",
-        "reverse gst",
-        "easy reverse gst",
-        "calculate GST amount online",
-        "GST calculation online India",
-        "online GST calculator",
-        "free GST calculator",
-        "GST calculator 18 percent",
-        "GST amount calculator",
-        "India GST calculator",
-        "reverse GST calculator India",
-        "GST calculation formula",
-        "GST rate calculator",
-        "GST inclusive calculator",
-        "GST exclusive calculator",
-        "how to calculate GST",
-        "GST percentage calculator",
-        "instant GST calculation",
-        "GST calculator for business",
-        "gst calculator india online",
+        "remove gst from price",
+        "minus gst calculator",
+        "gst tax calculator",
+        "cgst sgst igst calculator",
+        "calculate gst online",
+        "gst calculation online india",
+        "online gst calculator",
+        "free gst calculator",
+        "gst 18 percent calculator",
+        "reverse gst formula",
+        "gst back calculation",
+        "remove gst online"
     ],
+
     alternates: {
         canonical: "https://onecalculator.online/calculators/gst",
     },
     openGraph: {
-        title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
-        description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
+        title: "GST Calculator Tool - Add, Remove & Reverse GST Easily",
+        description: "Use our GST calculator to add GST, remove GST from price, and calculate reverse GST amounts quickly and accurately. Customize GST rates as needed.",
         url: "/calculators/gst",
         siteName: "OneCalculator",
         images: [
@@ -55,8 +47,8 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "GST Calculator Tool - Calculate GST, Reverse GST Easily",
-        description: "Use our GST calculator to calculate GST and reverse GST amounts quickly and accurately. Customize GST rates as needed.",
+        title: "GST Calculator Tool - Add, Remove & Reverse GST Easily",
+        description: "Use our GST calculator to add GST, remove GST from price, and calculate reverse GST amounts quickly and accurately. Customize GST rates as needed.",
         images: ["/logo.svg"],
     },
 };
@@ -64,7 +56,7 @@ export const metadata = {
 export default function CalculatorPage() {
     const softwareSchema = generateSoftwareSchema(
         "GST Calculator Tool",
-        "Calculate GST, IGST, CGST, and SGST instantly with reverse GST calculation support.",
+        "Calculate GST, IGST, CGST, and SGST instantly with add GST, remove GST, and reverse GST calculation support.",
         "https://onecalculator.online/calculators/gst"
     );
 
@@ -129,6 +121,40 @@ export default function CalculatorPage() {
                                     GST = 1180 - 1000 = ₹180. Read our detailed guide on <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">how to calculate GST backwards</Link>.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    {/* How to Remove GST Section */}
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                            How to Remove GST From a Total Price
+                        </h2>
+                        <div className="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+                            <p>
+                                Many business owners, freelancers, and smart shoppers often need to calculate the original base price of a product after the tax has already been added to the final bill. Whether you are looking for a reliable <strong>minus GST calculator</strong> or prefer to do the math yourself, understanding how to extract the tax component from an all-inclusive price is essential for accurate accounting and transparent financial tracking.
+                            </p>
+                            <p>
+                                This process, often called a <strong>reverse GST calculation</strong>, allows you to "back-calculate" the value of goods or services. By learning how to <strong>remove GST from price</strong> totals, you can easily separate the actual cost of an item from the government tax portion. This is particularly helpful when you need to claim input tax credits or when you are comparing prices across different vendors.
+                            </p>
+
+                            <div className="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-xl border border-indigo-100 dark:border-indigo-800">
+                                <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400 mb-3">The Formula:</h3>
+                                <ul className="space-y-2 font-mono text-sm md:text-base">
+                                    <li><span className="font-bold">Original Price</span> = Total Price ÷ (1 + GST Rate ÷ 100)</li>
+                                    <li><span className="font-bold">GST Amount</span> = Total Price – Original Price</li>
+                                </ul>
+                            </div>
+
+                            <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Example Calculation:</h3>
+                                <p>
+                                    Suppose you purchased a smartphone for ₹23,600, which includes an 18% GST rate. To find the original cost before tax, you would calculate: ₹23,600 ÷ 1.18 = ₹20,000. In this case, the GST amount removed from the final price is ₹3,600.
+                                </p>
+                            </div>
+
+                            <p className="text-sm">
+                                For more tips on handling different tax slabs and advanced bookkeeping, feel free to check out our <Link href="/blog/mastering-gst-calculator" className="text-indigo-600 hover:underline font-semibold text-base">detailed guide</Link> on navigating Indian tax laws.
+                            </p>
                         </div>
                     </div>
 

@@ -10,6 +10,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "how-to-minus-gst-from-price",
+        title: "How to Minus GST From a Price (Step-by-Step Guide)",
+        description: "Master the art of removing GST from any amount. Learn the correct formula, view detailed examples, and avoid common errors in reverse GST calculation.",
+        date: "February 7, 2026",
+        readTime: "10 min read",
+        category: "GST Guide",
+        image: "/blog-reverse-gst.png",
+    },
+    {
         slug: "state-code-38-gst-ladakh",
         title: "State Code 38 in GST – Meaning, Usage, and Examples",
         description: "Learn about GST State Code 38 for Ladakh. Understand how to use state code 38 in GST invoices, GSTIN format, and avoid common errors.",

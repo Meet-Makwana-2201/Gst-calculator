@@ -157,7 +157,7 @@ export default function Blog() {
             </div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="/calculator"
+                href="/calculators"
                 className="px-8 py-4 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Open Calculator
