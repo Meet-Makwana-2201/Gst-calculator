@@ -10,6 +10,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "gst-on-electronics-laptops-india-2026",
+        title: "GST on Electronics in India (Laptop, Mobile, Accessories) – Latest Rates 2026",
+        description: "Complete guide to GST rates on electronics in India for 2026. Know the latest GST on laptop (18%), mobile phones, tablets, and accessories with examples and free calculator.",
+        date: "February 10, 2026",
+        readTime: "11 min read",
+        category: "Consumer Electronics",
+        image: "/blog-gst-electronics.png",
+    },
+    {
         slug: "how-to-minus-gst-from-price",
         title: "How to Minus GST From a Price (Step-by-Step Guide)",
         description: "Master the art of removing GST from any amount. Learn the correct formula, view detailed examples, and avoid common errors in reverse GST calculation.",
