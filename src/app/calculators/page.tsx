@@ -7,6 +7,12 @@ import {
     Wallet,
     PiggyBank,
     Home,
+    Minus,
+    BarChart3,
+    Coins,
+    ShoppingCart,
+    Gem,
+    ShieldCheck,
 } from "lucide-react";
 import { ToolCard } from "@/components/calculators/ToolCard";
 
@@ -79,6 +85,15 @@ export default function CalculatorsPage() {
                             accentColor="text-indigo-600 dark:text-indigo-400"
                         />
                         <ToolCard
+                            href="/calculators/remove-gst"
+                            icon={Minus}
+                            title="Remove GST Calculator"
+                            description="Quickly extract the base price and tax amount from any GST-inclusive total."
+                            gradientFrom="from-orange-500"
+                            gradientTo="to-red-600"
+                            accentColor="text-orange-600 dark:text-orange-400"
+                        />
+                        <ToolCard
                             href="/calculators/profit-loss"
                             icon={TrendingUp}
                             title="Profit & Loss Calculator"
@@ -95,6 +110,24 @@ export default function CalculatorsPage() {
                             gradientFrom="from-green-500"
                             gradientTo="to-emerald-600"
                             accentColor="text-green-600 dark:text-green-400"
+                        />
+                        <ToolCard
+                            href="/calculators/margin"
+                            icon={BarChart3}
+                            title="Margin Calculator"
+                            description="Calculate markup and margin to set the perfect selling price for your products."
+                            gradientFrom="from-emerald-500"
+                            gradientTo="to-teal-600"
+                            accentColor="text-emerald-600 dark:text-emerald-400"
+                        />
+                        <ToolCard
+                            href="/calculators/amazon-seller-profit"
+                            icon={ShoppingCart}
+                            title="Amazon Seller Profit"
+                            description="Analyze marketplace fees and landing costs to find your true net profit per unit."
+                            gradientFrom="from-orange-600"
+                            gradientTo="to-red-600"
+                            accentColor="text-orange-600 dark:text-orange-400"
                         />
                     </div>
                 </div>
@@ -131,6 +164,42 @@ export default function CalculatorsPage() {
                             gradientFrom="from-purple-500"
                             gradientTo="to-indigo-600"
                             accentColor="text-purple-600 dark:text-purple-400"
+                        />
+                        <ToolCard
+                            href="/calculators/loan"
+                            icon={Calculator}
+                            title="Loan Calculator"
+                            description="Estimate monthly EMIs and total interest payout for home, car, or personal loans."
+                            gradientFrom="from-blue-600"
+                            gradientTo="to-indigo-600"
+                            accentColor="text-blue-600 dark:text-blue-400"
+                        />
+                        <ToolCard
+                            href="/calculators/sip"
+                            icon={Coins}
+                            title="SIP Calculator"
+                            description="Forecast the future value of your monthly mutual fund investments with compounding."
+                            gradientFrom="from-purple-600"
+                            gradientTo="to-indigo-600"
+                            accentColor="text-purple-600 dark:text-purple-400"
+                        />
+                        <ToolCard
+                            href="/calculators/lumpsum"
+                            icon={Gem}
+                            title="Lumpsum Calculator"
+                            description="See how your one-time investment grows over time with expected annual returns."
+                            gradientFrom="from-indigo-600"
+                            gradientTo="to-purple-600"
+                            accentColor="text-indigo-600 dark:text-indigo-400"
+                        />
+                        <ToolCard
+                            href="/calculators/emi-preclosure"
+                            icon={ShieldCheck}
+                            title="EMI Preclosure"
+                            description="Calculate how much interest you save and tenure you reduce by making extra payments."
+                            gradientFrom="from-blue-700"
+                            gradientTo="to-cyan-600"
+                            accentColor="text-blue-700 dark:text-blue-400"
                         />
                     </div>
                 </div>

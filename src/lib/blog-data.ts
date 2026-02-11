@@ -10,6 +10,15 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "remove-gst-calculator",
+        title: "Remove GST Calculator – Minus GST from Price Instantly",
+        description: "Use our free Remove GST Calculator to minus GST from price instantly. Learn the reverse GST calculation formula, see examples, and extract the base price in seconds.",
+        date: "February 11, 2026",
+        readTime: "7 min read",
+        category: "GST Guide",
+        image: "/blog-reverse-gst.png",
+    },
+    {
         slug: "gst-on-electronics-laptops-india-2026",
         title: "GST on Electronics in India (Laptop, Mobile, Accessories) – Latest Rates 2026",
         description: "Complete guide to GST rates on electronics in India for 2026. Know the latest GST on laptop (18%), mobile phones, tablets, and accessories with examples and free calculator.",

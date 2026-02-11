@@ -73,15 +73,19 @@ export default function CalculatorPage() {
             <section className="flex-1 container mx-auto px-4 py-8 md:py-12 max-w-4xl">
                 <h1 className="sr-only">GST Calculator Tool</h1>
                 <Tabs defaultValue="gst" className="w-full">
-                    <TabsList className="mb-6 grid w-full grid-cols-2">
+                    <TabsList className="mb-6 grid w-full grid-cols-3">
                         <TabsTrigger value="gst">GST Calculator</TabsTrigger>
-                        <TabsTrigger value="reverse-gst">Reverse GST Calculator</TabsTrigger>
+                        <TabsTrigger value="reverse-gst">Reverse GST</TabsTrigger>
+                        <TabsTrigger value="remove-gst">Remove GST</TabsTrigger>
                     </TabsList>
                     <TabsContent value="gst">
                         <GSTCalculator />
                     </TabsContent>
                     <TabsContent value="reverse-gst">
                         <ReverseGSTCalculator />
+                    </TabsContent>
+                    <TabsContent value="remove-gst">
+                        <RemoveGSTCalculator />
                     </TabsContent>
                 </Tabs>
 
