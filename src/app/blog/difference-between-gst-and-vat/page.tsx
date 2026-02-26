@@ -79,11 +79,11 @@ export default function BlogPost() {
         image="/blog-difference-gst-vat.png"
         toc={toc}
       >
-        <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+        <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-200 dark:border-cyan-800">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">
             🎯 Quick Summary
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-3">
+          <p className="text-slate-700 dark:text-slate-300 mb-3">
             <strong>GST (Goods and Services Tax)</strong> replaced <strong>VAT (Value Added Tax)</strong>
             in India on July 1, 2017. GST is a unified tax system that replaced multiple indirect taxes
             including VAT, service tax, excise duty, and others.
@@ -118,44 +118,44 @@ export default function BlogPost() {
         <h2 id="key-differences">Key Differences: GST vs VAT</h2>
 
         <div className="overflow-x-auto">
-          <table className="w-full border-collapse border border-gray-300 dark:border-gray-700 mb-4">
+          <table className="w-full border-collapse border border-slate-300 dark:border-slate-700 mb-4">
             <thead>
-              <tr className="bg-indigo-600 text-white">
-                <th className="border border-gray-300 dark:border-gray-700 p-3 text-left">Aspect</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-3 text-left">VAT</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-3 text-left">GST</th>
+              <tr className="bg-cyan-700 text-white">
+                <th className="border border-slate-300 dark:border-slate-700 p-3 text-left">Aspect</th>
+                <th className="border border-slate-300 dark:border-slate-700 p-3 text-left">VAT</th>
+                <th className="border border-slate-300 dark:border-slate-700 p-3 text-left">GST</th>
               </tr>
             </thead>
-            <tbody className="bg-white dark:bg-gray-900">
+            <tbody className="bg-white dark:bg-slate-900">
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Scope</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Only goods</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Goods + Services</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Scope</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Only goods</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Goods + Services</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Tax Structure</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">State-level only</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">CGST + SGST (intrastate) or IGST (interstate)</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Tax Structure</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">State-level only</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">CGST + SGST (intrastate) or IGST (interstate)</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Tax Rates</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Varied by state</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Uniform across India (5%, 12%, 18%, 28%)</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Tax Rates</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Varied by state</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Uniform across India (5%, 12%, 18%, 28%)</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Input Credit</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Limited</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Seamless across goods and services</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Input Credit</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Limited</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Seamless across goods and services</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Cascading Effect</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Present (tax on tax)</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Eliminated</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Cascading Effect</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Present (tax on tax)</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Eliminated</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-700 p-3 font-semibold">Compliance</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Multiple registrations</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-3">Single registration, unified returns</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3 font-semibold">Compliance</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Multiple registrations</td>
+                <td className="border border-slate-300 dark:border-slate-700 p-3">Single registration, unified returns</td>
               </tr>
             </tbody>
           </table>
@@ -165,25 +165,25 @@ export default function BlogPost() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h3 className="font-semibold text-green-900 dark:text-green-100 mb-2">✅ Unified System</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               One tax system replaces multiple taxes (VAT, service tax, excise, etc.), simplifying compliance.
             </p>
           </div>
-          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-            <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">💰 Better Input Credit</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
+            <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">💰 Better Input Credit</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Seamless credit across goods and services reduces overall tax burden.
             </p>
           </div>
-          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-            <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">🌐 Interstate Trade</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800">
+            <h3 className="font-semibold text-teal-900 dark:text-teal-100 mb-2">🌐 Interstate Trade</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               IGST system makes interstate transactions simpler and more efficient.
             </p>
           </div>
           <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
             <h3 className="font-semibold text-orange-900 dark:text-orange-100 mb-2">📊 Transparency</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Digital invoicing and online returns increase transparency and reduce fraud.
             </p>
           </div>
@@ -214,3 +214,6 @@ export default function BlogPost() {
     </>
   );
 }
+
+
+

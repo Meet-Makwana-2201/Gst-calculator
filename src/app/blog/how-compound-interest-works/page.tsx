@@ -108,7 +108,7 @@ export default function BlogPost() {
                 <p>
                     One of the most useful mental shortcuts in finance is the <strong>Rule of 72</strong>. It’s a simple way to estimate how long it will take for your money to double at any given interest rate, assuming the interest is compounded.
                 </p>
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <p className="font-bold mb-2">Rule of 72 Formula:</p>
                     <p className="font-mono bg-white dark:bg-black/20 p-2 rounded">
                         Years to double = 72 ÷ Annual Interest Rate
@@ -170,8 +170,8 @@ export default function BlogPost() {
                 </p>
 
                 <div className="space-y-6 my-8">
-                    <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 dark:border-blue-800">
-                        <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-2">Example 1: The Retirement Sprint</h4>
+                    <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-100 dark:border-cyan-800">
+                        <h4 className="font-bold text-cyan-800 dark:text-cyan-300 mb-2">Example 1: The Retirement Sprint</h4>
                         <p className="text-sm italic mb-4">"Starting at age 25 vs. age 35"</p>
                         <p>
                             Imagine Two friends, Rahul and Priya. Rahul starts investing ₹10,000 a month at age 25. Priya waits until she's 35 to start, but she invests ₹20,000 a month—twice as much as Rahul. Both earn an 8% annual return.
@@ -191,8 +191,8 @@ export default function BlogPost() {
                         </p>
                     </div>
 
-                    <div className="p-6 bg-purple-50 dark:bg-purple-900/20 rounded-xl border border-purple-100 dark:border-purple-800">
-                        <h4 className="font-bold text-purple-800 dark:text-purple-300 mb-2">Example 3: Wealth Building with Small Changes</h4>
+                    <div className="p-6 bg-teal-50 dark:bg-teal-900/20 rounded-xl border border-teal-100 dark:border-teal-800">
+                        <h4 className="font-bold text-teal-800 dark:text-teal-300 mb-2">Example 3: Wealth Building with Small Changes</h4>
                         <p>
                             Many people think they need large sums to build wealth. But what if you just saved your daily coffee expense—say ₹200 a day? That's ₹6,000 a month. Over 30 years at 12% interest, that "small" habit turns into <strong>₹2.1 Crore</strong>. Compounding turns mundane daily choices into life-altering wealth.
                         </p>
@@ -204,7 +204,7 @@ export default function BlogPost() {
                     Visualizing these numbers on your own can be difficult. That's why we've designed a specialized tool to help you model your financial future.
                 </p>
                 <p>
-                    To get the most out of our <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline font-bold">Compound Interest Calculator</Link>, try the "What If" method:
+                    To get the most out of our <Link href="/calculators/compound-interest" className="text-cyan-700 hover:underline font-bold">Compound Interest Calculator</Link>, try the "What If" method:
                 </p>
                 <ol className="list-decimal list-inside space-y-2 my-4">
                     <li>Input your current savings as the Principal.</li>
@@ -236,14 +236,14 @@ export default function BlogPost() {
                     </div>
                 </div>
 
-                <div className="mt-12 p-8 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                <div className="mt-12 p-8 bg-gradient-to-br from-cyan-700 to-teal-600 rounded-2xl text-white shadow-xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
                     <h2 className="text-2xl font-bold mb-4 relative z-10">Start Your Wealth Journey Today</h2>
                     <p className="leading-relaxed mb-6 relative z-10">
                         The best time to start compounding was 20 years ago. The second best time is <strong>today</strong>. Don't wait for a "perfect" amount to start; just start. Let time be your greatest ally in building the life you've always dreamed of.
                     </p>
                     <div className="flex flex-wrap gap-4 relative z-10">
-                        <Link href="/calculators" className="px-6 py-3 bg-white text-indigo-700 rounded-xl font-bold hover:bg-indigo-50 transition-all">
+                        <Link href="/calculators" className="px-6 py-3 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all">
                             Explore Financial Tools
                         </Link>
                     </div>
@@ -252,3 +252,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

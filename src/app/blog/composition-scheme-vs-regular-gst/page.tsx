@@ -84,8 +84,8 @@ export default function BlogPost() {
 
                 <h2 id="comparison">Comparison Table</h2>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700 text-sm">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700 text-sm">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Feature</th>
                                 <th className="p-3 text-left">Regular Scheme</th>
@@ -93,27 +93,27 @@ export default function BlogPost() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Tax Rate</td>
                                 <td className="p-3">Standard rates (5%, 12%, 18%, 28%)</td>
                                 <td className="p-3">Lower fixed rates (1% for traders/manufacturers, 5% for restaurants, 6% for service providers)</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Input Tax Credit (ITC)</td>
                                 <td className="p-3 text-green-600 font-bold">Available</td>
                                 <td className="p-3 text-red-600 font-bold">Not Available</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Inter-state Sales</td>
                                 <td className="p-3">Allowed</td>
                                 <td className="p-3">Not Allowed (Can only sell within state)</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Tax Invoice</td>
                                 <td className="p-3">Must issue Tax Invoice</td>
                                 <td className="p-3">Cannot issue Tax Invoice (Bill of Supply instead)</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Returns</td>
                                 <td className="p-3">Monthly (GSTR-1, GSTR-3B)</td>
                                 <td className="p-3">Quarterly (CMP-08) & Annual</td>
@@ -162,3 +162,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

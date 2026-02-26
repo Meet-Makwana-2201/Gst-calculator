@@ -113,7 +113,7 @@ export default function BlogPost() {
 
                 <h3 id="discounts">Shopping & Discounts</h3>
                 <p>
-                    This is where most of us interact with percentages the most. Retailers use percentages to make offers look attractive. However, "Up to 70% Off" is very different from "Flat 50% Off." When you see a discount, your brain needs to quickly perform a calculation: <strong>Original Price × (Discount Rate / 100) = Savings</strong>. Use our <Link href="/calculators/discount" className="text-indigo-600 hover:underline">Discount Calculator</Link> to find the final price in seconds.
+                    This is where most of us interact with percentages the most. Retailers use percentages to make offers look attractive. However, "Up to 70% Off" is very different from "Flat 50% Off." When you see a discount, your brain needs to quickly perform a calculation: <strong>Original Price × (Discount Rate / 100) = Savings</strong>. Use our <Link href="/calculators/discount" className="text-cyan-700 hover:underline">Discount Calculator</Link> to find the final price in seconds.
                 </p>
                 <p>
                     In 2026, many shoppers are using "stackable" discounts—where you get a store discount plus a credit card cashback. Understanding how these percentages layer (usually sequentially, not cumulatively) can save you from a nasty surprise at the checkout counter.
@@ -132,14 +132,14 @@ export default function BlogPost() {
                     For business owners and freelancers, percentages are the lifeblood of the balance sheet. <strong>GST (Goods and Services Tax)</strong> is calculated as a percentage of the transaction value. If you don't calculate this correctly, you're either losing money or risking a legal audit.
                 </p>
                 <p>
-                    Similarly, <strong>Profit Margin</strong> is expressed as a percentage of revenue. A business might make ₹1 Crore in sales, but if its profit margin is only 2%, it's in a much more precarious position than a business making ₹50 Lakhs with a 30% margin. Percentages tell you the <em>quality</em> of the business, not just the size. Track your business health with our <Link href="/calculators/profit-loss" className="text-indigo-600 hover:underline">Profit & Loss Calculator</Link>.
+                    Similarly, <strong>Profit Margin</strong> is expressed as a percentage of revenue. A business might make ₹1 Crore in sales, but if its profit margin is only 2%, it's in a much more precarious position than a business making ₹50 Lakhs with a 30% margin. Percentages tell you the <em>quality</em> of the business, not just the size. Track your business health with our <Link href="/calculators/profit-loss" className="text-cyan-700 hover:underline">Profit & Loss Calculator</Link>.
                 </p>
 
                 <h2 id="increase-decrease">Increase vs. Decrease Explained</h2>
                 <p>
                     One of the most confusing parts of percentages is calculating the "Percentage Change." This happens when you want to know how much something has grown or shrunk relative to its starting point.
                 </p>
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <p className="font-bold mb-2">Percentage Change Formula:</p>
                     <p className="font-mono bg-white dark:bg-black/20 p-2 rounded text-sm">
                         ((New Value - Old Value) / Old Value) × 100
@@ -185,7 +185,7 @@ export default function BlogPost() {
                     While the math is simple once you know the formulas, using a dedicated tool avoids human error—especially when dealing with decimals or multi-step calculations like "Percentage of a Percentage."
                 </p>
                 <p>
-                    Our <Link href="/calculators/percentage" className="text-indigo-600 hover:underline font-bold">Percentage Calculator</Link> allows you to:
+                    Our <Link href="/calculators/percentage" className="text-cyan-700 hover:underline font-bold">Percentage Calculator</Link> allows you to:
                 </p>
                 <ul className="list-disc list-inside space-y-2 my-4">
                     <li>Find what X percent of Y is (Great for tips and taxes)</li>
@@ -211,12 +211,12 @@ export default function BlogPost() {
                     </div>
                 </div>
 
-                <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl text-white shadow-xl">
+                <div className="mt-12 p-8 bg-gradient-to-r from-cyan-700 to-teal-600 rounded-3xl text-white shadow-xl">
                     <h2 className="text-2xl font-bold mb-4">Master Your Numbers</h2>
                     <p className="mb-6">
                         Percentages are more than just math; they are a lens through which you can view your financial health. By mastering these simple concepts, you protect your earnings and maximize your savings.
                     </p>
-                    <Link href="/calculators/percentage" className="inline-block px-8 py-3 bg-white text-indigo-700 rounded-xl font-bold hover:bg-blue-50 transition-all">
+                    <Link href="/calculators/percentage" className="inline-block px-8 py-3 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all">
                         Try the Percentage Calculator
                     </Link>
                 </div>
@@ -224,3 +224,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

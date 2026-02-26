@@ -159,13 +159,13 @@ export default function BlogPost() {
                     <li><strong>GST Exclusive:</strong> This is the &quot;Base Price&quot; or &quot;Taxable Value.&quot; It is the value of the product before any tax is added.</li>
                 </ul>
                 <p>
-                    &quot;Removing GST&quot; or performing a <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">reverse GST calculation</Link> is the process of working backward from the inclusive price to find the original exclusive price.
+                    &quot;Removing GST&quot; or performing a <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">reverse GST calculation</Link> is the process of working backward from the inclusive price to find the original exclusive price.
                 </p>
                 <p>
                     For example, if you pay ₹1,180 for a service that has an 18% GST rate, the ₹1,180 is the inclusive amount. The GST isn&apos;t just 18% of 1,180; it&apos;s 18% of the <em>original</em> price. Finding that original price (which is ₹1,000 in this case) is what we call minusing or removing GST.
                 </p>
 
-                <div className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800 my-8">
+                <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-100 dark:border-cyan-800 my-8">
                     <p className="text-lg font-semibold text-center mb-2 italic">Pro Tip</p>
                     <p className="text-center">
                         Always remember: The GST amount is calculated on the <strong>Base Price</strong>, not the <strong>Total Price</strong>. This is why the reverse calculation is slightly more complex than simple subtraction.
@@ -179,16 +179,16 @@ export default function BlogPost() {
                 <p>
                     The correct <strong>reverse GST calculation</strong> formula is:
                 </p>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         Base Price = Total Price / [1 + (GST Rate / 100)]
                     </p>
                 </div>
                 <p>
                     Once you have the Base Price, you can easily find the GST amount by either subtracting the Base Price from the Total Price or by applying the GST rate to the Base Price.
                 </p>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         GST Amount = Total Price - Base Price
                     </p>
                 </div>
@@ -282,13 +282,13 @@ export default function BlogPost() {
 
                 <h2 id="how-to-use-calculator">How to Use a Minus GST Calculator</h2>
                 <p>
-                    While the manual formula is great for understanding, using a <strong>minus GST calculator</strong> is faster and prevents human error. Our tool at <Link href="/calculators/gst" className="text-indigo-600 hover:underline">onecalculator.online</Link> is designed specifically for this.
+                    While the manual formula is great for understanding, using a <strong>minus GST calculator</strong> is faster and prevents human error. Our tool at <Link href="/calculators/gst" className="text-cyan-700 hover:underline">onecalculator.online</Link> is designed specifically for this.
                 </p>
                 <p>
-                    Here is how you can use it to <Link href="/calculators/gst" className="text-indigo-600 hover:underline">remove GST online</Link> in seconds:
+                    Here is how you can use it to <Link href="/calculators/gst" className="text-cyan-700 hover:underline">remove GST online</Link> in seconds:
                 </p>
                 <ol>
-                    <li><strong>Navigate to the tool:</strong> Head over to our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator</Link>.</li>
+                    <li><strong>Navigate to the tool:</strong> Head over to our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator</Link>.</li>
                     <li><strong>Enter the Total Amount:</strong> Type in the full amount you paid (inclusive of tax).</li>
                     <li><strong>Select the GST Rate:</strong> Choose the applicable percentage (5, 12, 18, or 28).</li>
                     <li><strong>Select &apos;GST Inclusive&apos; or &apos;Subtract GST&apos;:</strong> Most modern calculators have a toggle. Since you want to minus GST, ensure you select the option that indicates the price already includes tax.</li>
@@ -325,7 +325,7 @@ export default function BlogPost() {
                     Knowing <strong>how to minus GST from price</strong> is not just a math exercise; it is a necessity in several business scenarios:
                 </p>
                 <ul>
-                    <li><strong>Filing GSTR-1:</strong> When you sell goods at an inclusive price, you must <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">calculate GST backwards</Link> to extract the &quot;Taxable Value&quot; to report separately on the GST portal.</li>
+                    <li><strong>Filing GSTR-1:</strong> When you sell goods at an inclusive price, you must <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">calculate GST backwards</Link> to extract the &quot;Taxable Value&quot; to report separately on the GST portal.</li>
                     <li><strong>Claiming ITC:</strong> If you are a business owner, you need to know the exact amount of GST you paid to claim it as Input Tax Credit.</li>
                     <li><strong>Budgeting & Pricing:</strong> If you want to sell a product at a &quot;fixed&quot; MRP of ₹99, you need to know how much base price you are actually getting after the government takes its share.</li>
                     <li><strong>Inventory Valuation:</strong> Accountants typically value inventory at the base price (cost of goods) rather than the tax-inclusive price.</li>
@@ -358,15 +358,15 @@ export default function BlogPost() {
                     The formula remains the same: <strong>Base Price = Total / 1.28</strong>. This will extract the original price before the 28% GST was added.
                 </p>
 
-                <div className="p-8 md:p-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl text-white shadow-2xl my-12 text-center">
+                <div className="p-8 md:p-12 bg-gradient-to-br from-cyan-700 to-teal-600 rounded-3xl text-white shadow-2xl my-12 text-center">
                     <h2 className="text-3xl font-bold mb-6 text-white">Save Time with Our GST Tools</h2>
-                    <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
+                    <p className="text-cyan-100 text-lg mb-8 max-w-2xl mx-auto">
                         Calculating GST backwards manually can be tedious. Use our free, professional GST calculator to get instant results for both inclusive and exclusive prices.
                     </p>
                     <div className="flex justify-center">
                         <Link
                             href="/calculators/gst"
-                            className="px-10 py-4 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                            className="px-10 py-4 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             Use our free GST Calculator at onecalculator.online →
                         </Link>
@@ -387,3 +387,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

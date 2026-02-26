@@ -17,75 +17,43 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-      ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-lg border-b border-gray-200/50 dark:border-gray-800/50'
-      : 'bg-white/60 dark:bg-gray-900/60 backdrop-blur-md border-b border-gray-200/30 dark:border-gray-800/30'
-      }`}>
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2 group">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'border-b border-slate-200/70 bg-white/85 shadow-[0_8px_32px_-20px_rgba(15,23,42,0.45)] backdrop-blur-xl dark:border-slate-800/70 dark:bg-slate-900/85'
+          : 'border-b border-slate-200/50 bg-white/70 backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/70'
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
+        <Link href="/" className="group flex items-center gap-2">
           <Image
             src="/logo.svg"
-            alt="GST Calculator Logo"
+            alt="OneCalculator Logo"
             width={40}
             height={40}
-            className="w-10 h-10 rounded-xl shadow-lg group-hover:shadow-xl transition-all group-hover:scale-105"
+            className="h-10 w-10 rounded-xl shadow-md transition-all group-hover:scale-105 group-hover:shadow-lg"
           />
           <div className="flex flex-col">
-            <span className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-              GST Calculator
+            <span className="text-xl font-bold text-slate-900 transition-colors group-hover:text-cyan-700 dark:text-slate-100 dark:group-hover:text-cyan-400 md:text-2xl">
+              OneCalculator
             </span>
-            <span className="text-xs font-normal text-indigo-600 dark:text-indigo-400">India</span>
+            <span className="text-xs font-normal text-cyan-700 dark:text-cyan-400">GST and finance tools</span>
           </div>
         </Link>
-        <nav className="hidden md:flex items-center space-x-1">
-          <Link
-            href="/"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            Home
-          </Link>
-          <Link
-            href="/calculators"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            Calculators
-          </Link>
-          <Link
-            href="/faq"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="/gst-rates"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            GST Rates
-          </Link>
-          <Link
-            href="/blog"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/about"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            About
-          </Link>
-          <Link
-            href="/contact"
-            className="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all font-medium"
-          >
-            Contact
-          </Link>
+        <nav className="hidden items-center space-x-1 md:flex">
+          <Link href="/" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">Home</Link>
+          <Link href="/calculators" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">Calculators</Link>
+          <Link href="/faq" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">FAQ</Link>
+          <Link href="/gst-rates" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">GST Rates</Link>
+          <Link href="/blog" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">Blog</Link>
+          <Link href="/about" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">About</Link>
+          <Link href="/contact" className="rounded-lg px-4 py-2 font-medium text-slate-700 transition-all hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-cyan-900/20 dark:hover:text-cyan-400">Contact</Link>
           <ThemeToggle />
         </nav>
-        <div className="md:hidden flex items-center gap-2">
+        <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
-          <button className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button className="rounded-lg p-2 text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>

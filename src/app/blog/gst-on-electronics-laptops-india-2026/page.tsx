@@ -146,7 +146,7 @@ export default function BlogPost() {
                     The Goods and Services Tax, commonly known as GST, replaced the older VAT and excise duty system in 2017. Since then, the <strong>electronics GST rate in India</strong> has been a topic of frequent discussion among buyers and sellers alike. A clear understanding of these rates ensures that you are never overcharged, your invoices are accurate, and you can plan your budget accordingly.
                 </p>
                 <p>
-                    In this guide, we break down the latest GST rates for laptops, mobile phones, tablets, and accessories as applicable in 2026. We also cover how GST works in online shopping, common mistakes people make, and how to calculate the exact tax on any electronic item using a simple formula or a free <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator at onecalculator.online</Link>.
+                    In this guide, we break down the latest GST rates for laptops, mobile phones, tablets, and accessories as applicable in 2026. We also cover how GST works in online shopping, common mistakes people make, and how to calculate the exact tax on any electronic item using a simple formula or a free <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator at onecalculator.online</Link>.
                 </p>
 
                 {/* Section: GST Rate on Laptops */}
@@ -199,8 +199,8 @@ export default function BlogPost() {
                 </p>
 
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Accessory</th>
                                 <th className="p-3 text-left">HSN Code</th>
@@ -208,47 +208,47 @@ export default function BlogPost() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Keyboard</td>
                                 <td className="p-3">8471</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Mouse</td>
                                 <td className="p-3">8471</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Wired Headphones / Earphones</td>
                                 <td className="p-3">8518</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Wireless Earbuds / Bluetooth Headphones</td>
                                 <td className="p-3">8518</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Charger / USB Cable</td>
                                 <td className="p-3">8504 / 8544</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Monitor (up to 32 inches)</td>
                                 <td className="p-3">8528</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Monitor (above 32 inches)</td>
                                 <td className="p-3">8528</td>
                                 <td className="p-3">28%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Power Bank</td>
                                 <td className="p-3">8507</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Printer / Scanner</td>
                                 <td className="p-3">8443</td>
                                 <td className="p-3">18%</td>
@@ -289,20 +289,20 @@ export default function BlogPost() {
                 </p>
 
                 <h3>Formula to Add GST</h3>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         Total Price = Base Price × (1 + GST Rate / 100)
                     </p>
                 </div>
 
                 <h3>Formula to Remove GST from a Price</h3>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         Base Price = Total Price / (1 + GST Rate / 100)
                     </p>
                 </div>
                 <p>
-                    For 18% GST, the division factor is 1.18. For a detailed walkthrough on reverse GST, read our guide on <Link href="/blog/how-to-minus-gst-from-price" className="text-indigo-600 hover:underline">how to minus GST from price</Link>.
+                    For 18% GST, the division factor is 1.18. For a detailed walkthrough on reverse GST, read our guide on <Link href="/blog/how-to-minus-gst-from-price" className="text-cyan-700 hover:underline">how to minus GST from price</Link>.
                 </p>
 
                 <h3>Step-by-Step Method</h3>
@@ -313,7 +313,7 @@ export default function BlogPost() {
                     <li>Add the tax amount to the base price to get the total price.</li>
                 </ol>
                 <p>
-                    Alternatively, skip the manual math and use the free <Link href="/calculators/gst" className="text-indigo-600 hover:underline">laptop GST calculator on onecalculator.online</Link> for instant, accurate results.
+                    Alternatively, skip the manual math and use the free <Link href="/calculators/gst" className="text-cyan-700 hover:underline">laptop GST calculator on onecalculator.online</Link> for instant, accurate results.
                 </p>
 
                 {/* Section: Examples */}
@@ -369,7 +369,7 @@ export default function BlogPost() {
 
                 <h3>3. Misreading the GST Invoice</h3>
                 <p>
-                    On a proper GST invoice, you will see either CGST + SGST (for local purchases) or IGST (for out-of-state purchases). Some people add CGST and SGST to the base price separately and think they are paying double tax. In reality, 9% CGST + 9% SGST equals the same 18% total. This is important to understand when you <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">calculate GST backwards</Link> from an invoice.
+                    On a proper GST invoice, you will see either CGST + SGST (for local purchases) or IGST (for out-of-state purchases). Some people add CGST and SGST to the base price separately and think they are paying double tax. In reality, 9% CGST + 9% SGST equals the same 18% total. This is important to understand when you <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">calculate GST backwards</Link> from an invoice.
                 </p>
 
                 {/* Section: FAQs */}
@@ -377,7 +377,7 @@ export default function BlogPost() {
 
                 <h3>Q1: How much GST is charged on a laptop in India?</h3>
                 <p>
-                    The <strong>GST on laptop</strong> in India is <strong>18%</strong>. This applies to all types of laptops including gaming, business, student, and ultrabook models. The rate falls under HSN code 8471. You can verify the exact tax on any laptop price using a <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator</Link>.
+                    The <strong>GST on laptop</strong> in India is <strong>18%</strong>. This applies to all types of laptops including gaming, business, student, and ultrabook models. The rate falls under HSN code 8471. You can verify the exact tax on any laptop price using a <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator</Link>.
                 </p>
 
                 <h3>Q2: Is GST included in the MRP of electronics?</h3>
@@ -397,7 +397,7 @@ export default function BlogPost() {
 
                 <h3>Q5: How do I remove GST from the price of an electronic item?</h3>
                 <p>
-                    To remove 18% GST, divide the total price by 1.18. For example, a laptop priced at ₹59,000 has a base price of ₹59,000 / 1.18 = ₹50,000. The GST component is ₹9,000. For a step-by-step explanation, read our detailed guide on <Link href="/blog/how-to-minus-gst-from-price" className="text-indigo-600 hover:underline">how to remove GST from price</Link>.
+                    To remove 18% GST, divide the total price by 1.18. For example, a laptop priced at ₹59,000 has a base price of ₹59,000 / 1.18 = ₹50,000. The GST component is ₹9,000. For a step-by-step explanation, read our detailed guide on <Link href="/blog/how-to-minus-gst-from-price" className="text-cyan-700 hover:underline">how to remove GST from price</Link>.
                 </p>
 
                 <h3>Q6: Does GST apply on second-hand or refurbished laptops?</h3>
@@ -406,15 +406,15 @@ export default function BlogPost() {
                 </p>
 
                 {/* CTA Section */}
-                <div className="p-8 md:p-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl text-white shadow-2xl my-12 text-center">
+                <div className="p-8 md:p-12 bg-gradient-to-br from-cyan-700 to-teal-600 rounded-3xl text-white shadow-2xl my-12 text-center">
                     <h2 className="text-3xl font-bold mb-6 text-white">Calculate GST on Any Electronic Item Instantly</h2>
-                    <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
+                    <p className="text-cyan-100 text-lg mb-8 max-w-2xl mx-auto">
                         Stop doing manual math. Use our free, professional GST Calculator to find the exact GST on laptops, phones, accessories, and any other product in seconds.
                     </p>
                     <div className="flex justify-center">
                         <Link
                             href="/calculators/gst"
-                            className="px-10 py-4 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                            className="px-10 py-4 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             Free GST Calculator on onecalculator.online →
                         </Link>
@@ -433,9 +433,12 @@ export default function BlogPost() {
                     For businesses, the ability to claim Input Tax Credit on these purchases is a significant advantage that can reduce operational costs. And for individual buyers, being aware of the tax breakdown in your invoice ensures transparency and protects you from being overcharged.
                 </p>
                 <p>
-                    Next time you buy any electronic item, use the free <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator at onecalculator.online</Link> to verify the exact tax component. It takes just a few seconds and gives you complete clarity on your purchase.
+                    Next time you buy any electronic item, use the free <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator at onecalculator.online</Link> to verify the exact tax component. It takes just a few seconds and gives you complete clarity on your purchase.
                 </p>
             </BlogPostWrapper>
         </>
     );
 }
+
+
+

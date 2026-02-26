@@ -86,8 +86,8 @@ export default function BlogPost() {
 
                 <h2 id="list">Complete List of GST State Codes</h2>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700 text-sm">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700 text-sm">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Code</th>
                                 <th className="p-3 text-left">State / Union Territory</th>
@@ -134,8 +134,8 @@ export default function BlogPost() {
                                 { code: "38", state: "Ladakh" },
                                 { code: "97", state: "Other Territory" },
                             ].map((item) => (
-                                <tr key={item.code} className="border-t border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                                    <td className="p-3 font-mono font-bold text-indigo-600 dark:text-indigo-400">{item.code}</td>
+                                <tr key={item.code} className="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                                    <td className="p-3 font-mono font-bold text-cyan-700 dark:text-cyan-400">{item.code}</td>
                                     <td className="p-3">{item.state}</td>
                                 </tr>
                             ))}
@@ -154,3 +154,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

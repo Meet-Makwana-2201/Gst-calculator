@@ -106,7 +106,7 @@ export default function BlogPost() {
                     For developers looking to implement this logic, here are the core formulas used in professional calculation engines.
                 </p>
                 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <h4 className="font-bold mb-2">1. Adding GST (Tax Exclusive)</h4>
                     <p className="font-mono bg-white dark:bg-black/20 p-2 rounded">
                         GST Amount = (Base Price × GST Rate) / 100
@@ -115,7 +115,7 @@ export default function BlogPost() {
                     </p>
                 </div>
 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <h4 className="font-bold mb-2">2. Removing GST (Tax Inclusive)</h4>
                     <p className="font-mono bg-white dark:bg-black/20 p-2 rounded">
                         Original Cost = Total Price × (100 / (100 + GST Rate))
@@ -165,10 +165,13 @@ export default function BlogPost() {
                 <div className="mt-12 p-6 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
                     <h2 className="text-xl font-bold mb-4">Conclusion</h2>
                     <p>
-                        Mastering GST calculations is fundamental for business health. By leveraging accurate online tools like the <Link href="/calculators/gst" className="text-indigo-600 hover:underline">OneCalculator GST tool</Link>, you ensure compliance and profitability in the 2026 fiscal year.
+                        Mastering GST calculations is fundamental for business health. By leveraging accurate online tools like the <Link href="/calculators/gst" className="text-cyan-700 hover:underline">OneCalculator GST tool</Link>, you ensure compliance and profitability in the 2026 fiscal year.
                     </p>
                 </div>
             </BlogPostWrapper>
         </>
     );
 }
+
+
+

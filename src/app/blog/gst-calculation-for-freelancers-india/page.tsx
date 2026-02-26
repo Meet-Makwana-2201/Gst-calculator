@@ -80,11 +80,11 @@ export default function BlogPost() {
         image="/blog-freelancer-gst.png"
         toc={toc}
       >
-        <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+        <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-200 dark:border-cyan-800">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">
             🎯 Key Takeaways
           </h2>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <ul className="space-y-2 text-slate-700 dark:text-slate-300">
             <li>• GST registration is mandatory if your annual turnover exceeds ₹20 lakhs (₹10 lakhs for special category states)</li>
             <li>• Freelancers can use our free GST calculator to calculate GST on invoices</li>
             <li>• Understanding GST helps you quote accurate prices to clients</li>
@@ -113,12 +113,12 @@ export default function BlogPost() {
           Most freelance services fall under the <strong>18% GST rate</strong> category. Here&apos;s how to calculate GST:
         </p>
 
-        <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Example Calculation:</h3>
-          <div className="space-y-2 text-sm font-mono text-gray-700 dark:text-gray-300">
+        <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg mb-4">
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">Example Calculation:</h3>
+          <div className="space-y-2 text-sm font-mono text-slate-700 dark:text-slate-300">
             <div>Service Charge = ₹50,000</div>
             <div>GST Rate = 18%</div>
-            <div className="border-t border-gray-300 dark:border-gray-700 pt-2 mt-2">
+            <div className="border-t border-slate-300 dark:border-slate-700 pt-2 mt-2">
               <div>GST Amount = ₹50,000 × 18% = ₹9,000</div>
               <div className="font-bold mt-2">Total Invoice Amount = ₹59,000</div>
             </div>
@@ -126,7 +126,7 @@ export default function BlogPost() {
         </div>
 
         <p>
-          You can use our free <a href="/calculators" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">GST Calculator</a> to
+          You can use our free <a href="/calculators" className="text-cyan-700 dark:text-cyan-400 hover:underline font-medium">GST Calculator</a> to
           instantly calculate GST amounts for any invoice amount.
         </p>
 
@@ -145,7 +145,7 @@ export default function BlogPost() {
           A proper GST invoice must include:
         </p>
         <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg mb-4">
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <ul className="space-y-2 text-slate-700 dark:text-slate-300">
             <li>✓ Invoice number (sequential)</li>
             <li>✓ Date of invoice</li>
             <li>✓ Your name, address, and GSTIN</li>
@@ -157,7 +157,7 @@ export default function BlogPost() {
           </ul>
         </div>
         <p>
-          Our <a href="/calculator" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Print Invoice</a> feature
+          Our <a href="/calculator" className="text-cyan-700 dark:text-cyan-400 hover:underline font-medium">Print Invoice</a> feature
           helps you create professional GST invoices quickly.
         </p>
 
@@ -176,27 +176,27 @@ export default function BlogPost() {
 
         <h2 id="tips">Tips for Freelancers</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
-            <h3 className="font-semibold text-indigo-900 dark:text-indigo-100 mb-2">💡 Quote GST-Inclusive Prices</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
+            <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">💡 Quote GST-Inclusive Prices</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               When quoting to clients, mention whether your price includes GST or not to avoid confusion.
             </p>
           </div>
-          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-            <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">📱 Use Our Mobile Calculator</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800">
+            <h3 className="font-semibold text-teal-900 dark:text-teal-100 mb-2">📱 Use Our Mobile Calculator</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Our calculator works great on mobile, so you can calculate GST on the go during client meetings.
             </p>
           </div>
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h3 className="font-semibold text-green-900 dark:text-green-100 mb-2">💰 Track Your Calculations</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Use our billing history feature to keep track of all your GST calculations and invoices.
             </p>
           </div>
           <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
             <h3 className="font-semibold text-orange-900 dark:text-orange-100 mb-2">📊 Export for Records</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Export your calculations to CSV or Excel for easy record-keeping and tax filing.
             </p>
           </div>
@@ -205,3 +205,6 @@ export default function BlogPost() {
     </>
   );
 }
+
+
+

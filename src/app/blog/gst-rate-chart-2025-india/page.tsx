@@ -114,11 +114,11 @@ export default function BlogPost() {
         image="/blog-gst-rates-2025.png"
         toc={toc}
       >
-        <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+        <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-200 dark:border-cyan-800">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">
             📊 Quick Overview
           </h2>
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-slate-700 dark:text-slate-300">
             India uses a multi-tier GST structure with rates of 0%, 5%, 12%, 18%, and 28%.
             The most common rate is 18%, which applies to most goods and services. Understanding
             which rate applies to your product or service is crucial for accurate invoicing.
@@ -129,35 +129,35 @@ export default function BlogPost() {
           gstRates.map((rateInfo, index) => {
             const colorClasses = [
               'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400',
-              'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400',
-              'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400',
-              'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400',
+              'bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-400',
+              'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400',
+              'bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-400',
               'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
             ];
 
             const sectionIds = ['0-percent', '5-percent', '12-percent', '18-percent', '28-percent'];
 
             return (
-              <section key={rateInfo.rate} id={sectionIds[index]} className="p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800">
+              <section key={rateInfo.rate} id={sectionIds[index]} className="p-6 rounded-2xl border-2 bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center font-bold text-xl ${colorClasses[index]}`}>
                     {rateInfo.rate}
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                    <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
                       {rateInfo.rate} GST Rate
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    <p className="text-slate-600 dark:text-slate-400 mb-4">
                       {rateInfo.description}
                     </p>
                     <div>
-                      <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">
+                      <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wide">
                         Common Examples:
                       </h3>
                       <ul className="grid md:grid-cols-2 gap-2">
                         {rateInfo.examples.map((example, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-gray-700 dark:text-gray-300 text-sm">
-                            <span className="text-indigo-600 dark:text-indigo-400 mt-1">•</span>
+                          <li key={idx} className="flex items-start gap-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <span className="text-cyan-700 dark:text-cyan-400 mt-1">•</span>
                             <span>{example}</span>
                           </li>
                         ))}
@@ -172,23 +172,23 @@ export default function BlogPost() {
 
         < h2 id="find-rate" > How to Find the Correct GST Rate</h2 >
         <div className="space-y-4">
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">1. Check HSN/SAC Code</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">1. Check HSN/SAC Code</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Goods have HSN (Harmonized System of Nomenclature) codes, and services have SAC
               (Services Accounting Code). These codes determine the GST rate.
             </p>
           </div>
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">2. Consult Official GST Portal</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">2. Consult Official GST Portal</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               The official GST portal (gst.gov.in) has comprehensive rate lists. Always verify
               the rate for your specific product or service.
             </p>
           </div>
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">3. Check Recent Notifications</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">3. Check Recent Notifications</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               GST rates can change through government notifications. Stay updated with the latest
               GST rate changes and amendments.
             </p>
@@ -199,14 +199,14 @@ export default function BlogPost() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
             <h3 className="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">📦 Composite Scheme</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Small businesses with turnover up to ₹1.5 crores can opt for the composition scheme
               with reduced rates (1-6% depending on business type).
             </p>
           </div>
           <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
             <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">🏭 Reverse Charge</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               In reverse charge mechanism, the recipient pays GST instead of the supplier.
               Common in certain services and imports.
             </p>
@@ -216,3 +216,6 @@ export default function BlogPost() {
     </>
   );
 }
+
+
+

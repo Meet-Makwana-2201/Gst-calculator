@@ -138,7 +138,7 @@ export default function BlogPost() {
             >
                 {/* Introduction */}
                 <p>
-                    In India&apos;s GST system, every state and union territory is assigned a unique two-digit code. This <strong>GST state code</strong> forms the first two digits of every GSTIN (Goods and Services Tax Identification Number) and plays a critical role in tax compliance. Using an <Link href="/calculators/gst" className="text-indigo-600 hover:underline">online GST calculator</Link> can help you compute taxes accurately once you have the correct state code.
+                    In India&apos;s GST system, every state and union territory is assigned a unique two-digit code. This <strong>GST state code</strong> forms the first two digits of every GSTIN (Goods and Services Tax Identification Number) and plays a critical role in tax compliance. Using an <Link href="/calculators/gst" className="text-cyan-700 hover:underline">online GST calculator</Link> can help you compute taxes accurately once you have the correct state code.
                 </p>
                 <p>
                     When filing GST returns, generating e-invoices, or claiming Input Tax Credit (ITC), the correct <strong>GST invoice state code</strong> is mandatory. A simple error in the state code can lead to return mismatches, rejected ITC claims, and even penalties.
@@ -160,7 +160,7 @@ export default function BlogPost() {
                     <li><strong>State Code 38</strong> was newly assigned to Ladakh</li>
                 </ul>
 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <p className="text-lg font-semibold text-center mb-2">Quick Reference</p>
                     <p className="text-center font-mono text-xl">
                         State Code 38 = Ladakh (Union Territory)
@@ -168,7 +168,7 @@ export default function BlogPost() {
                 </div>
 
                 <p>
-                    Any business registered in Ladakh under GST will have a GSTIN that starts with <strong>&quot;38&quot;</strong>. This is crucial for determining the Place of Supply and applying the correct tax rates (CGST + UTGST for local sales, or IGST for inter-state sales). If you need to extract the base price from a GST-inclusive amount, check our guide on <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">how to calculate GST backwards</Link>.
+                    Any business registered in Ladakh under GST will have a GSTIN that starts with <strong>&quot;38&quot;</strong>. This is crucial for determining the Place of Supply and applying the correct tax rates (CGST + UTGST for local sales, or IGST for inter-state sales). If you need to extract the base price from a GST-inclusive amount, check our guide on <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">how to calculate GST backwards</Link>.
                 </p>
 
                 {/* Why State Codes Matter */}
@@ -209,7 +209,7 @@ export default function BlogPost() {
                 <p>
                     In your invoice, the &quot;Place of Supply&quot; field should show:
                 </p>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 my-4">
+                <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 my-4">
                     <p className="font-mono text-center">
                         38 - Ladakh
                     </p>
@@ -226,31 +226,31 @@ export default function BlogPost() {
 
                 <h3>Example Invoice Entry</h3>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700 text-sm">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700 text-sm">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Field</th>
                                 <th className="p-3 text-left">Value</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Customer GSTIN</td>
                                 <td className="p-3 font-mono">38AABCU9603R1ZM</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Place of Supply</td>
                                 <td className="p-3">38 - Ladakh</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Taxable Value</td>
                                 <td className="p-3">₹50,000</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">IGST @ 18%</td>
                                 <td className="p-3">₹9,000</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Invoice Total</td>
                                 <td className="p-3 font-bold">₹59,000</td>
                             </tr>
@@ -264,8 +264,8 @@ export default function BlogPost() {
                     Many beginners confuse the state code with GSTIN. Here&apos;s a clear comparison:
                 </p>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700 text-sm">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700 text-sm">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Aspect</th>
                                 <th className="p-3 text-left">State Code</th>
@@ -273,30 +273,30 @@ export default function BlogPost() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Definition</td>
                                 <td className="p-3">2-digit code representing a state/UT</td>
                                 <td className="p-3">15-digit unique identification number</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Format</td>
                                 <td className="p-3 font-mono">38</td>
                                 <td className="p-3 font-mono">38AABCU9603R1ZM</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Purpose</td>
                                 <td className="p-3">Identifies location/state</td>
                                 <td className="p-3">Identifies specific registered taxpayer</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Position</td>
                                 <td className="p-3">First 2 digits of GSTIN</td>
                                 <td className="p-3">Complete 15-character string</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold">Example for Ladakh</td>
-                                <td className="p-3 font-mono text-indigo-600 dark:text-indigo-400">38</td>
-                                <td className="p-3 font-mono"><span className="text-indigo-600 dark:text-indigo-400">38</span>AABCU9603R1ZM</td>
+                                <td className="p-3 font-mono text-cyan-700 dark:text-cyan-400">38</td>
+                                <td className="p-3 font-mono"><span className="text-cyan-700 dark:text-cyan-400">38</span>AABCU9603R1ZM</td>
                             </tr>
                         </tbody>
                     </table>
@@ -330,7 +330,7 @@ export default function BlogPost() {
 
                 <h3>5. Incorrect Place of Supply Selection</h3>
                 <p>
-                    Selecting the wrong place of supply can result in wrong tax calculation (IGST instead of CGST+UTGST or vice versa). Always cross-verify the customer&apos;s GSTIN before invoicing. Use our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator</Link> to verify your tax calculations are correct.
+                    Selecting the wrong place of supply can result in wrong tax calculation (IGST instead of CGST+UTGST or vice versa). Always cross-verify the customer&apos;s GSTIN before invoicing. Use our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator</Link> to verify your tax calculations are correct.
                 </p>
 
                 {/* FAQs */}
@@ -371,7 +371,7 @@ export default function BlogPost() {
                 </p>
 
                 {/* Call to Action */}
-                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl border border-indigo-100 dark:border-indigo-800 my-8">
+                <div className="p-6 bg-gradient-to-r from-cyan-50 to-teal-50 dark:from-cyan-900/30 dark:to-teal-900/30 rounded-xl border border-cyan-100 dark:border-cyan-800 my-8">
                     <h3 className="text-xl font-bold text-center mb-3">Calculate GST Quickly and Accurately</h3>
                     <p className="text-center mb-4">
                         Need to calculate GST for your invoices? Use our free GST calculator to get instant, accurate results.
@@ -379,7 +379,7 @@ export default function BlogPost() {
                     <div className="text-center">
                         <Link
                             href="/calculators/gst"
-                            className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 !text-white font-semibold rounded-lg transition-colors"
+                            className="inline-block px-6 py-3 bg-cyan-700 hover:bg-cyan-800 !text-white font-semibold rounded-lg transition-colors"
                         >
                             Check GST easily using onecalculator.online GST Calculator →
                         </Link>
@@ -405,18 +405,21 @@ export default function BlogPost() {
                 </p>
 
                 {/* Related Tools Section */}
-                <div className="p-5 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700 my-6">
+                <div className="p-5 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-700 my-6">
                     <h3 className="text-lg font-semibold mb-3">Related Financial Tools</h3>
                     <p className="mb-3">
-                        Beyond GST calculations, managing your business finances requires various tools. Explore our <Link href="/calculators" className="text-indigo-600 hover:underline">free online calculators</Link> for all your financial needs:
+                        Beyond GST calculations, managing your business finances requires various tools. Explore our <Link href="/calculators" className="text-cyan-700 hover:underline">free online calculators</Link> for all your financial needs:
                     </p>
                     <ul>
-                        <li>Calculate loan payments with our <Link href="/calculators/emi" className="text-indigo-600 hover:underline">EMI calculator</Link></li>
-                        <li>Compute interest earnings using the <Link href="/calculators/simple-interest" className="text-indigo-600 hover:underline">simple interest calculator</Link></li>
-                        <li>Learn <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">reverse GST calculation</Link> to extract base prices from MRP</li>
+                        <li>Calculate loan payments with our <Link href="/calculators/emi" className="text-cyan-700 hover:underline">EMI calculator</Link></li>
+                        <li>Compute interest earnings using the <Link href="/calculators/simple-interest" className="text-cyan-700 hover:underline">simple interest calculator</Link></li>
+                        <li>Learn <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">reverse GST calculation</Link> to extract base prices from MRP</li>
                     </ul>
                 </div>
             </BlogPostWrapper>
         </>
     );
 }
+
+
+

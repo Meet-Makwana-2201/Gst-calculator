@@ -121,7 +121,7 @@ export default function BlogPost() {
                     Banks use a standardized mathematical formula to calculate EMI. While it might look complex at first, understanding it helps you see exactly how your monthly payment is determined.
                 </p>
 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <h4 className="font-bold mb-2">EMI Formula</h4>
                     <p className="font-mono bg-white dark:bg-black/20 p-2 rounded text-sm">
                         EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]
@@ -160,12 +160,12 @@ export default function BlogPost() {
                         <li><strong>Monthly Interest Rate (R):</strong> 8.5 ÷ 12 ÷ 100 = 0.00708</li>
                         <li><strong>Loan Tenure:</strong> 20 years (240 months)</li>
                     </ul>
-                    <div className="mt-4 p-3 bg-indigo-100 dark:bg-indigo-900/30 rounded">
+                    <div className="mt-4 p-3 bg-cyan-100 dark:bg-cyan-900/30 rounded">
                         <p className="font-bold">Calculation:</p>
                         <p className="font-mono text-sm mt-2">
                             EMI = [50,00,000 × 0.00708 × (1.00708)^240] / [(1.00708)^240 - 1]
                         </p>
-                        <p className="font-bold text-lg mt-3 text-indigo-700 dark:text-indigo-300">
+                        <p className="font-bold text-lg mt-3 text-cyan-700 dark:text-cyan-300">
                             Monthly EMI: ₹43,391
                         </p>
                         <p className="mt-2 text-sm">
@@ -187,12 +187,12 @@ export default function BlogPost() {
                         <li><strong>Monthly Interest Rate (R):</strong> 9.5 ÷ 12 ÷ 100 = 0.00792</li>
                         <li><strong>Loan Tenure:</strong> 5 years (60 months)</li>
                     </ul>
-                    <div className="mt-4 p-3 bg-indigo-100 dark:bg-indigo-900/30 rounded">
+                    <div className="mt-4 p-3 bg-cyan-100 dark:bg-cyan-900/30 rounded">
                         <p className="font-bold">Calculation:</p>
                         <p className="font-mono text-sm mt-2">
                             EMI = [8,00,000 × 0.00792 × (1.00792)^60] / [(1.00792)^60 - 1]
                         </p>
-                        <p className="font-bold text-lg mt-3 text-indigo-700 dark:text-indigo-300">
+                        <p className="font-bold text-lg mt-3 text-cyan-700 dark:text-cyan-300">
                             Monthly EMI: ₹16,791
                         </p>
                         <p className="mt-2 text-sm">
@@ -214,12 +214,12 @@ export default function BlogPost() {
                         <li><strong>Monthly Interest Rate (R):</strong> 12 ÷ 12 ÷ 100 = 0.01</li>
                         <li><strong>Loan Tenure:</strong> 3 years (36 months)</li>
                     </ul>
-                    <div className="mt-4 p-3 bg-indigo-100 dark:bg-indigo-900/30 rounded">
+                    <div className="mt-4 p-3 bg-cyan-100 dark:bg-cyan-900/30 rounded">
                         <p className="font-bold">Calculation:</p>
                         <p className="font-mono text-sm mt-2">
                             EMI = [3,00,000 × 0.01 × (1.01)^36] / [(1.01)^36 - 1]
                         </p>
-                        <p className="font-bold text-lg mt-3 text-indigo-700 dark:text-indigo-300">
+                        <p className="font-bold text-lg mt-3 text-cyan-700 dark:text-cyan-300">
                             Monthly EMI: ₹9,970
                         </p>
                         <p className="mt-2 text-sm">
@@ -313,7 +313,7 @@ export default function BlogPost() {
                     </li>
                 </ol>
                 <p>
-                    <strong>Pro Tip:</strong> Use the <Link href="/calculators/emi" className="text-indigo-600 hover:underline font-semibold">OneCalculator EMI Tool</Link> to instantly calculate your EMI and visualize your payment schedule. It's free, accurate, and works on all devices.
+                    <strong>Pro Tip:</strong> Use the <Link href="/calculators/emi" className="text-cyan-700 hover:underline font-semibold">OneCalculator EMI Tool</Link> to instantly calculate your EMI and visualize your payment schedule. It's free, accurate, and works on all devices.
                 </p>
 
                 <h2 id="faqs">Frequently Asked Questions (FAQs)</h2>
@@ -354,7 +354,7 @@ export default function BlogPost() {
                     </div>
                 </div>
 
-                <div className="mt-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl border border-indigo-200 dark:border-indigo-800">
+                <div className="mt-12 p-6 bg-gradient-to-r from-cyan-50 to-teal-50 dark:from-cyan-900/20 dark:to-teal-900/20 rounded-xl border border-cyan-200 dark:border-cyan-800">
                     <h2 className="text-xl font-bold mb-4">Conclusion</h2>
                     <p className="mb-3">
                         Understanding EMI is essential for making smart borrowing decisions. Whether you're taking a home loan, car loan, or personal loan, knowing how banks calculate EMI, the impact of interest rates and tenure, and common mistakes to avoid can save you lakhs of rupees over your loan lifetime.
@@ -370,10 +370,13 @@ export default function BlogPost() {
                         <li>Understand the difference between fixed and floating rates</li>
                     </ul>
                     <p>
-                        Ready to calculate your EMI? Use our free <Link href="/calculators/emi" className="text-indigo-600 hover:underline font-bold">EMI Calculator</Link> to get instant, accurate results and make informed borrowing decisions in 2026.
+                        Ready to calculate your EMI? Use our free <Link href="/calculators/emi" className="text-cyan-700 hover:underline font-bold">EMI Calculator</Link> to get instant, accurate results and make informed borrowing decisions in 2026.
                     </p>
                 </div>
             </BlogPostWrapper>
         </>
     );
 }
+
+
+

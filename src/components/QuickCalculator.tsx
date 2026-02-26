@@ -15,7 +15,6 @@ export default function QuickCalculator() {
     const handleCalculate = () => {
         const amt = parseFloat(amount);
 
-        // Check if the amount is valid (non-empty and positive)
         if (isNaN(amt) || amt <= 0) {
             setError("Please enter a valid amount greater than zero.");
             setGstAmount(null);
@@ -23,7 +22,7 @@ export default function QuickCalculator() {
             return;
         }
 
-        setError(""); // Reset error message if valid amount is entered
+        setError("");
 
         const gst = (amt * gstRate) / 100;
         const total = amt + gst;
@@ -32,22 +31,25 @@ export default function QuickCalculator() {
     };
 
     return (
-        <Card className="w-full backdrop-blur-xl bg-white/90 dark:bg-gray-900/90 border-2 border-white/50 dark:border-gray-700/50 shadow-2xl rounded-2xl overflow-hidden hover-lift">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/10" />
-            <CardContent className="p-8 relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <Card className="w-full overflow-hidden rounded-3xl border border-white/70 bg-white/85 shadow-[0_24px_70px_-28px_rgba(8,47,73,0.55)] backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/85">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(20,184,166,0.16),transparent_55%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.14),transparent_60%)]" />
+            <CardContent className="relative z-10 p-8">
+                <div className="mb-6 flex items-center gap-3">
+                    <div className="rounded-2xl bg-gradient-to-br from-cyan-500 to-teal-500 p-2.5 shadow-lg shadow-cyan-500/25">
+                        <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Quick Calculator</h2>
+                    <div>
+                        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Quick GST Calculator</h2>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">Fast estimate in one step</p>
+                    </div>
                 </div>
-                
+
                 <div className="space-y-6">
                     <div className="space-y-2">
-                        <label htmlFor="amount" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
-                            Amount (₹)
+                        <label htmlFor="amount" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
+                            Amount (INR)
                         </label>
                         <Input
                             id="amount"
@@ -55,21 +57,21 @@ export default function QuickCalculator() {
                             placeholder="Enter amount (e.g., 10,000)"
                             value={amount}
                             onChange={(e) => setAmount(e.target.value)}
-                            onKeyPress={(e) => e.key === 'Enter' && handleCalculate()}
-                            className="text-lg py-6 border-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 dark:focus:ring-indigo-900 rounded-xl transition-all"
+                            onKeyPress={(e) => e.key === "Enter" && handleCalculate()}
+                            className="rounded-2xl border-slate-200 bg-white/90 py-6 text-lg focus-visible:ring-cyan-500 dark:border-slate-700 dark:bg-slate-950/60"
                         />
                         {error && (
-                            <p className="text-red-500 text-sm mt-2 flex items-center gap-1">
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <p className="mt-2 flex items-center gap-1 text-sm text-red-500">
+                                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                                 </svg>
                                 {error}
                             </p>
                         )}
                     </div>
-                    
+
                     <div className="space-y-2">
-                        <label htmlFor="gstRate" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                        <label htmlFor="gstRate" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
                             GST Rate (%)
                         </label>
                         <div className="grid grid-cols-4 gap-2">
@@ -78,10 +80,10 @@ export default function QuickCalculator() {
                                     key={rate}
                                     type="button"
                                     onClick={() => setGstRate(rate)}
-                                    className={`px-4 py-3 rounded-xl font-semibold transition-all ${
+                                    className={`rounded-xl px-4 py-3 font-semibold transition-all ${
                                         gstRate === rate
-                                            ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg scale-105'
-                                            : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 border-2 border-transparent hover:border-indigo-300 dark:hover:border-indigo-700'
+                                            ? "scale-105 bg-gradient-to-r from-cyan-600 to-teal-500 text-white shadow-lg shadow-cyan-700/30"
+                                            : "border border-slate-200 bg-slate-100 text-slate-700 hover:border-cyan-300 hover:bg-white dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-cyan-600 dark:hover:bg-slate-700"
                                     }`}
                                 >
                                     {rate}%
@@ -89,41 +91,36 @@ export default function QuickCalculator() {
                             ))}
                         </div>
                     </div>
-                    
-                    <Button 
+
+                    <Button
                         onClick={handleCalculate}
-                        className="w-full py-6 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover-lift rounded-xl"
+                        className="w-full rounded-2xl bg-gradient-to-r from-cyan-600 to-teal-500 py-6 text-lg font-semibold text-white shadow-xl shadow-cyan-700/30 transition-all hover:from-cyan-700 hover:to-teal-600"
                     >
-                        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                         Calculate GST
                     </Button>
 
-                    {/* Result Section */}
                     {gstAmount !== null && totalAmount !== null && (
-                        <div className="mt-8 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl border-2 border-indigo-200 dark:border-indigo-800 animate-fade-in-up space-y-4">
-                            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">Calculation Results</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="p-4 bg-white/80 dark:bg-gray-800/80 rounded-xl backdrop-blur-sm border border-gray-200 dark:border-gray-700">
-                                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">GST Amount</p>
-                                    <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-                                        ₹{gstAmount.toFixed(2)}
-                                    </p>
+                        <div className="animate-fade-in-up mt-8 space-y-4 rounded-2xl border border-cyan-100 bg-gradient-to-br from-cyan-50 to-slate-50 p-6 dark:border-cyan-900/40 dark:from-cyan-950/20 dark:to-slate-900">
+                            <h3 className="mb-4 text-lg font-bold text-slate-900 dark:text-slate-100">Calculation Results</h3>
+                            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                                <div className="rounded-xl border border-slate-200 bg-white/80 p-4 backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/80">
+                                    <p className="mb-1 text-sm text-slate-600 dark:text-slate-400">GST Amount</p>
+                                    <p className="text-2xl font-bold text-cyan-700 dark:text-cyan-400">INR {gstAmount.toFixed(2)}</p>
                                 </div>
-                                <div className="p-4 bg-white/80 dark:bg-gray-800/80 rounded-xl backdrop-blur-sm border border-gray-200 dark:border-gray-700">
-                                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Amount</p>
-                                    <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-                                        ₹{totalAmount.toFixed(2)}
-                                    </p>
+                                <div className="rounded-xl border border-slate-200 bg-white/80 p-4 backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/80">
+                                    <p className="mb-1 text-sm text-slate-600 dark:text-slate-400">Total Amount</p>
+                                    <p className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">INR {totalAmount.toFixed(2)}</p>
                                 </div>
                             </div>
-                            <div className="pt-4 border-t border-indigo-200 dark:border-indigo-800">
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                    Base Amount: <span className="font-semibold text-gray-900 dark:text-gray-100">₹{parseFloat(amount).toFixed(2)}</span>
+                            <div className="border-t border-slate-200 pt-4 dark:border-slate-700">
+                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                    Base Amount: <span className="font-semibold text-slate-900 dark:text-slate-100">INR {parseFloat(amount).toFixed(2)}</span>
                                 </p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                    GST Rate: <span className="font-semibold text-gray-900 dark:text-gray-100">{gstRate}%</span>
+                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                    GST Rate: <span className="font-semibold text-slate-900 dark:text-slate-100">{gstRate}%</span>
                                 </p>
                             </div>
                         </div>

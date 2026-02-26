@@ -113,7 +113,7 @@ export default function BlogPost() {
                 <p>
                     We have created a simple, compliant Excel template for you. It includes formulas to automatically calculate the tax amounts.
                 </p>
-                <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 text-center">
+                <div className="p-4 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
                     <p className="mb-2 font-semibold">Download GST Invoice Template (.xlsx)</p>
                     <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors">
                         Download Now
@@ -123,3 +123,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

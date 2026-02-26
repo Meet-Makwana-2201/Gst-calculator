@@ -111,7 +111,7 @@ export default function BlogPost() {
 
                 <h3 id="gst-calc">1. Professional GST Calculator</h3>
                 <p>
-                    With the complexities of modern tax structures, our <Link href="/calculators/gst" className="text-indigo-600 hover:underline font-bold">GST Calculator</Link> is the gold standard for accuracy. It handles bidirectional calculations with ease—helping you find the "Tax Exclusive" amount for billing or the "Tax Inclusive" base price for accounting.
+                    With the complexities of modern tax structures, our <Link href="/calculators/gst" className="text-cyan-700 hover:underline font-bold">GST Calculator</Link> is the gold standard for accuracy. It handles bidirectional calculations with ease—helping you find the "Tax Exclusive" amount for billing or the "Tax Inclusive" base price for accounting.
                 </p>
                 <p>
                     In 2026, as compliance audits become more automated, having a reliable tool to verify your invoices and input tax credits (ITC) is essential for any business owner or freelancer in India.
@@ -119,7 +119,7 @@ export default function BlogPost() {
 
                 <h3 id="emi-calc">2. EMI Calculator</h3>
                 <p>
-                    Taking a loan is a massive commitment. Our <Link href="/calculators/emi" className="text-indigo-600 hover:underline font-bold">EMI Calculator</Link> goes beyond just showing you a monthly number. It provides a full amortization schedule, showing how much interest you pay versus principal over time.
+                    Taking a loan is a massive commitment. Our <Link href="/calculators/emi" className="text-cyan-700 hover:underline font-bold">EMI Calculator</Link> goes beyond just showing you a monthly number. It provides a full amortization schedule, showing how much interest you pay versus principal over time.
                 </p>
                 <p>
                     In an environment where home loan rates fluctuate, this tool allows you to visualize the massive impact of making small prepayments or choosing a shorter tenure. It’s the ultimate "peace of mind" tool for future homeowners.
@@ -136,7 +136,7 @@ export default function BlogPost() {
 
                 <h3 id="percentage-calc">4. Percentage Calculator</h3>
                 <p>
-                    The most used tool in daily life. Whether you're calculating a 15% discount at a mall, a 12% salary hike, or a 5% increase in your stock portfolio, our <Link href="/calculators/percentage" className="text-indigo-600 hover:underline font-bold">Percentage Calculator</Link> provides instant clarity. It’s simple, versatile, and eliminates the "Asymmetry Trap" of percentage change.
+                    The most used tool in daily life. Whether you're calculating a 15% discount at a mall, a 12% salary hike, or a 5% increase in your stock portfolio, our <Link href="/calculators/percentage" className="text-cyan-700 hover:underline font-bold">Percentage Calculator</Link> provides instant clarity. It’s simple, versatile, and eliminates the "Asymmetry Trap" of percentage change.
                 </p>
 
                 <h2 id="who-benefits">Who Should Use These Tools?</h2>
@@ -166,14 +166,14 @@ export default function BlogPost() {
                 <p>
                     Why wait? Financial freedom begins with financial clarity. Explore our full library of tools and start making smarter decisions today.
                 </p>
-                <div className="mt-8 p-8 bg-gradient-to-r from-indigo-600 to-purple-700 rounded-3xl text-white shadow-xl text-center">
+                <div className="mt-8 p-8 bg-gradient-to-r from-cyan-700 to-teal-600 rounded-3xl text-white shadow-xl text-center">
                     <h2 className="text-2xl font-bold mb-4">Your Financial Hub Awaits</h2>
                     <p className="mb-6 opacity-90">Bookmark OneCalculator today and never settle for guesstimates again.</p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="/calculators" className="px-8 py-3 bg-white text-indigo-700 rounded-xl font-bold hover:bg-indigo-50 transition-all shadow-lg">
+                        <Link href="/calculators" className="px-8 py-3 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-lg">
                             Go to Calculators
                         </Link>
-                        <Link href="/blog" className="px-8 py-3 bg-indigo-700/50 text-white border border-indigo-400/30 rounded-xl font-bold hover:bg-indigo-700 transition-all">
+                        <Link href="/blog" className="px-8 py-3 bg-cyan-800/50 text-white border border-cyan-400/30 rounded-xl font-bold hover:bg-cyan-800 transition-all">
                             More Guides
                         </Link>
                     </div>
@@ -182,3 +182,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

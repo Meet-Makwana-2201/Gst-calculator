@@ -179,7 +179,7 @@ export default function BlogPost() {
                     The mathematical formula to <strong>remove GST from price</strong> is straightforward:
                 </p>
 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <p className="text-lg font-semibold text-center mb-2">Master Formula</p>
                     <p className="text-xl font-mono text-center">
                         Base Amount = Total Amount ÷ (1 + GST Rate/100)
@@ -190,7 +190,7 @@ export default function BlogPost() {
                     Once you have the base amount, calculating the GST component is simple:
                 </p>
 
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800 my-6">
+                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-100 dark:border-cyan-800 my-6">
                     <p className="text-lg font-mono text-center">
                         GST Amount = Total Amount − Base Amount
                     </p>
@@ -202,8 +202,8 @@ export default function BlogPost() {
                 </p>
 
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700 text-sm">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700 text-sm">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">GST Rate</th>
                                 <th className="p-3 text-left">Division Factor</th>
@@ -211,22 +211,22 @@ export default function BlogPost() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold text-green-600 dark:text-green-400">5%</td>
                                 <td className="p-3 font-mono">1.05</td>
                                 <td className="p-3">Base = Total ÷ 1.05</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
-                                <td className="p-3 font-semibold text-blue-600 dark:text-blue-400">12%</td>
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
+                                <td className="p-3 font-semibold text-cyan-700 dark:text-cyan-400">12%</td>
                                 <td className="p-3 font-mono">1.12</td>
                                 <td className="p-3">Base = Total ÷ 1.12</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
-                                <td className="p-3 font-semibold text-indigo-600 dark:text-indigo-400">18%</td>
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
+                                <td className="p-3 font-semibold text-cyan-700 dark:text-cyan-400">18%</td>
                                 <td className="p-3 font-mono">1.18</td>
                                 <td className="p-3">Base = Total ÷ 1.18</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3 font-semibold text-red-600 dark:text-red-400">28%</td>
                                 <td className="p-3 font-mono">1.28</td>
                                 <td className="p-3">Base = Total ÷ 1.28</td>
@@ -245,7 +245,7 @@ export default function BlogPost() {
                 <p>
                     You bought a smartphone for <strong>₹23,600</strong> (inclusive of 18% GST). Find the base price and GST amount.
                 </p>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 my-4">
+                <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 my-4">
                     <p className="font-semibold mb-2">Solution:</p>
                     <ol className="mb-0">
                         <li><strong>Total Amount:</strong> ₹23,600</li>
@@ -262,7 +262,7 @@ export default function BlogPost() {
                 <p>
                     Your restaurant bill shows <strong>₹1,575</strong> (inclusive of 5% GST). What&apos;s the food cost before tax?
                 </p>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 my-4">
+                <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 my-4">
                     <p className="font-semibold mb-2">Solution:</p>
                     <ol className="mb-0">
                         <li><strong>Total Amount:</strong> ₹1,575</li>
@@ -279,7 +279,7 @@ export default function BlogPost() {
                 <p>
                     A client agrees to pay you <strong>₹59,000</strong> as the final amount for a web development project. You need to create an invoice showing the breakdown.
                 </p>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 my-4">
+                <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 my-4">
                     <p className="font-semibold mb-2">Solution:</p>
                     <ol className="mb-0">
                         <li><strong>Total Amount:</strong> ₹59,000</li>
@@ -301,18 +301,18 @@ export default function BlogPost() {
                 {/* How to Use Calculator */}
                 <h2 id="how-to-use-calculator">How to Use a Reverse GST Calculator</h2>
                 <p>
-                    While manual calculation is useful for understanding the concept, a <strong>reverse GST calculator</strong> saves time and eliminates errors. Here&apos;s how to use our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">online GST calculator</Link>:
+                    While manual calculation is useful for understanding the concept, a <strong>reverse GST calculator</strong> saves time and eliminates errors. Here&apos;s how to use our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">online GST calculator</Link>:
                 </p>
 
                 <ol>
-                    <li><strong>Visit the Calculator:</strong> Go to our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator</Link> page</li>
+                    <li><strong>Visit the Calculator:</strong> Go to our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator</Link> page</li>
                     <li><strong>Select Calculation Mode:</strong> Choose &quot;GST Exclusive&quot; or &quot;Reverse GST&quot; mode</li>
                     <li><strong>Enter Total Amount:</strong> Input the GST-inclusive price (e.g., ₹11,800)</li>
                     <li><strong>Choose GST Rate:</strong> Select the applicable rate (5%, 12%, 18%, or 28%)</li>
                     <li><strong>Get Instant Results:</strong> View the base amount, GST amount, and complete breakdown</li>
                 </ol>
 
-                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl border border-indigo-100 dark:border-indigo-800 my-8">
+                <div className="p-6 bg-gradient-to-r from-cyan-50 to-teal-50 dark:from-cyan-900/30 dark:to-teal-900/30 rounded-xl border border-cyan-100 dark:border-cyan-800 my-8">
                     <h3 className="text-xl font-bold text-center mb-3">Try Our Free Reverse GST Calculator</h3>
                     <p className="text-center mb-4">
                         Skip the manual math. Get accurate results instantly with our free tool.
@@ -320,7 +320,7 @@ export default function BlogPost() {
                     <div className="text-center">
                         <Link
                             href="/calculators/gst"
-                            className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 !text-white font-semibold rounded-lg transition-colors"
+                            className="inline-block px-6 py-3 bg-cyan-700 hover:bg-cyan-800 !text-white font-semibold rounded-lg transition-colors"
                         >
                             Use Free Reverse GST Calculator at onecalculator.online →
                         </Link>
@@ -345,7 +345,7 @@ export default function BlogPost() {
 
                 <h3>2. Using Wrong GST Rate</h3>
                 <p>
-                    Different products have different GST rates. Using 18% when the product is taxed at 12% will give wrong results. Always verify the applicable GST rate for your product or service from the <Link href="/gst-rates" className="text-indigo-600 hover:underline">GST rate chart</Link>.
+                    Different products have different GST rates. Using 18% when the product is taxed at 12% will give wrong results. Always verify the applicable GST rate for your product or service from the <Link href="/gst-rates" className="text-cyan-700 hover:underline">GST rate chart</Link>.
                 </p>
 
                 <h3>3. Confusing CGST/SGST with Total GST</h3>
@@ -391,7 +391,7 @@ export default function BlogPost() {
                 </ul>
 
                 <p>
-                    For more financial calculations, explore our <Link href="/calculators" className="text-indigo-600 hover:underline">free online calculators</Link> including <Link href="/calculators/emi" className="text-indigo-600 hover:underline">EMI calculator</Link> and <Link href="/calculators/percentage" className="text-indigo-600 hover:underline">percentage calculator</Link>.
+                    For more financial calculations, explore our <Link href="/calculators" className="text-cyan-700 hover:underline">free online calculators</Link> including <Link href="/calculators/emi" className="text-cyan-700 hover:underline">EMI calculator</Link> and <Link href="/calculators/percentage" className="text-cyan-700 hover:underline">percentage calculator</Link>.
                 </p>
 
                 {/* FAQs */}
@@ -434,20 +434,23 @@ export default function BlogPost() {
                     <li>Use division (not subtraction) to extract GST from inclusive prices</li>
                     <li>Division factors: 1.05 (5%), 1.12 (12%), 1.18 (18%), 1.28 (28%)</li>
                     <li>Always verify the correct GST rate for your product/service</li>
-                    <li>Use a <Link href="/calculators/gst" className="text-indigo-600 hover:underline">reverse GST calculator</Link> for quick, error-free results</li>
+                    <li>Use a <Link href="/calculators/gst" className="text-cyan-700 hover:underline">reverse GST calculator</Link> for quick, error-free results</li>
                 </ul>
 
                 {/* Related Tools */}
-                <div className="p-5 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700 my-6">
+                <div className="p-5 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-700 my-6">
                     <h3 className="text-lg font-semibold mb-3">Related Resources</h3>
                     <ul className="mb-0">
-                        <li>Check <Link href="/gst-rates" className="text-indigo-600 hover:underline">GST rates</Link> for different products and services</li>
-                        <li>Learn about <Link href="/blog/gst-state-codes-list-2025" className="text-indigo-600 hover:underline">GST state codes</Link> for invoicing</li>
-                        <li>Calculate loan EMIs with our <Link href="/calculators/emi" className="text-indigo-600 hover:underline">EMI calculator</Link></li>
-                        <li>Explore all our <Link href="/calculators" className="text-indigo-600 hover:underline">financial calculators</Link></li>
+                        <li>Check <Link href="/gst-rates" className="text-cyan-700 hover:underline">GST rates</Link> for different products and services</li>
+                        <li>Learn about <Link href="/blog/gst-state-codes-list-2025" className="text-cyan-700 hover:underline">GST state codes</Link> for invoicing</li>
+                        <li>Calculate loan EMIs with our <Link href="/calculators/emi" className="text-cyan-700 hover:underline">EMI calculator</Link></li>
+                        <li>Explore all our <Link href="/calculators" className="text-cyan-700 hover:underline">financial calculators</Link></li>
                     </ul>
                 </div>
             </BlogPostWrapper>
         </>
     );
 }
+
+
+

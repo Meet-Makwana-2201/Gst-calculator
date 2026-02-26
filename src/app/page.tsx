@@ -6,6 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import { blogPosts } from "@/lib/blog-data";
 import Image from "next/image";
 import RelatedTools from "@/components/landing/RelatedTools";
+import { homeFaqs } from "@/lib/home-faq-data";
 
 export const metadata = {
   title: "All-in-One Financial Calculator Suite | Free GST, EMI & Math Tools",
@@ -89,6 +90,33 @@ export default function Home() {
         "sameAs": []
       },
       {
+        "@type": "WebSite",
+        "@id": "https://onecalculator.online/#website",
+        "url": "https://onecalculator.online/",
+        "name": "OneCalculator"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://onecalculator.online/#webpage",
+        "url": "https://onecalculator.online/",
+        "name": "All-in-One Financial Calculator Suite | OneCalculator",
+        "description": "Free tools for GST, EMI, Discounts, Profit margins, and interest calculations.",
+        "isPartOf": { "@id": "https://onecalculator.online/#website" },
+        "breadcrumb": { "@id": "https://onecalculator.online/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://onecalculator.online/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://onecalculator.online/"
+          }
+        ]
+      },
+      {
         "@type": "SoftwareApplication",
         "name": "OneCalculator - Financial Calculator Suite",
         "applicationCategory": "FinanceApplication",
@@ -103,6 +131,18 @@ export default function Home() {
           "ratingValue": "4.8",
           "ratingCount": "1250"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://onecalculator.online/#faq",
+        "mainEntity": homeFaqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -123,7 +163,7 @@ export default function Home() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              Free • Fast • Accurate
+              Free - Fast - Accurate
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
@@ -133,7 +173,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              From GST to EMI, solve every math problem in seconds. India&apos;s most trusted calculator platform with <strong>free tools for business and personal finance</strong>. No sign-up, no fees, just accurate calculations.
+              From GST to EMI, solve every math problem in seconds. India&apos;s most trusted calculator platform with <strong>Free - Fast - Accurate calculations.  </strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
@@ -222,7 +262,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Multiple Currencies</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Support for Indian Rupees (₹) and US Dollars ($). Perfect for <strong>GST for freelancers in India</strong> working with international clients.
+                Support for Indian Rupees (INR) and US Dollars (USD).
               </p>
             </div>
 
@@ -485,7 +525,7 @@ export default function Home() {
                 Ready to Calculate GST?
               </h2>
               <p className="text-xl text-white/90 max-w-2xl mx-auto">
-                Join thousands of businesses and individuals using our free GST calculator for accurate tax calculations.
+                Join thousands of businesses and individuals using our Free - Fast - Accurate tax calculations.
               </p>
             </div>
 
@@ -538,3 +578,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+

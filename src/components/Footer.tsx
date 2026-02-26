@@ -2,128 +2,60 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300 border-t border-slate-800">
+    <footer className="border-t border-slate-200 bg-white text-slate-600 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300">
       <div className="container mx-auto px-4 py-12">
-        {/* Main Footer Grid - 4 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-
-          {/* Column 1: Brand */}
+        <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="rounded-lg bg-cyan-700 p-2">
+                <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg text-white">GST Calculator</h3>
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white">OneCalculator</h3>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              India&apos;s most trusted free GST calculator. Fast, accurate, and easy to use for businesses and individuals.
+            <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+              Free calculator platform for GST, EMI, percentage, and business finance.
             </p>
-            {/* Social Links - Placeholder for future use */}
-            <div className="flex items-center gap-3">
-              <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors" aria-label="Social media">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
-                </svg>
-              </a>
-            </div>
           </div>
 
-          {/* Column 2: Company */}
           <div className="space-y-4">
-            <h4 className="font-bold text-sm text-white uppercase tracking-wider">Company</h4>
-            <ul className="space-y-2.5">
-              <li>
-                <Link href="/about" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  FAQ
-                </Link>
-              </li>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Company</h4>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="/about" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">About</Link></li>
+              <li><Link href="/contact" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Contact</Link></li>
+              <li><Link href="/blog" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Blog</Link></li>
+              <li><Link href="/privacy" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Privacy</Link></li>
+              <li><Link href="/faq" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">FAQ</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Tax & Business */}
           <div className="space-y-4">
-            <h4 className="font-bold text-sm text-white uppercase tracking-wider">Tax & Business</h4>
-            <ul className="space-y-2.5">
-              <li>
-                <Link href="/calculators/gst" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  GST Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/calculators/discount" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Discount Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/calculators/profit-loss" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Profit & Loss Calculator
-                </Link>
-              </li>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Business</h4>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="/calculators/gst" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">GST Calculator</Link></li>
+              <li><Link href="/calculators/discount" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Discount Calculator</Link></li>
+              <li><Link href="/calculators/profit-loss" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Profit and Loss</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Finance & Math */}
           <div className="space-y-4">
-            <h4 className="font-bold text-sm text-white uppercase tracking-wider">Finance & Math</h4>
-            <ul className="space-y-2.5">
-              <li>
-                <Link href="/calculators/emi" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  EMI Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/calculators/percentage" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Percentage Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/calculators/simple-interest" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Simple Interest Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/calculators/compound-interest" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
-                  Compound Interest Calculator
-                </Link>
-              </li>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Finance</h4>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="/calculators/emi" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">EMI Calculator</Link></li>
+              <li><Link href="/calculators/percentage" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Percentage Calculator</Link></li>
+              <li><Link href="/calculators/simple-interest" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Simple Interest</Link></li>
+              <li><Link href="/calculators/compound-interest" className="text-slate-500 transition-colors hover:text-cyan-700 dark:text-slate-400 dark:hover:text-cyan-400">Compound Interest</Link></li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-slate-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-400 text-center md:text-left">
-              Made with <span className="text-red-500">❤️</span> by <span className="font-semibold text-gray-300">Meet</span> | © {new Date().getFullYear()} | All rights reserved
+        <div className="border-t border-slate-200 pt-8 dark:border-slate-800">
+          <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+            <p className="text-center text-sm text-slate-500 md:text-left dark:text-slate-400">
+              Copyright {new Date().getFullYear()} OneCalculator. All rights reserved.
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>100% Free & Secure</span>
-            </div>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Fast, accurate, and privacy-friendly calculators</p>
           </div>
         </div>
       </div>

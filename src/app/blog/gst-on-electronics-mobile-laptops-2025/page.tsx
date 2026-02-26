@@ -108,35 +108,35 @@ export default function BlogPost() {
                     The tax rates for accessories vary:
                 </p>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full my-4 border border-gray-200 dark:border-gray-700">
-                        <thead className="bg-gray-100 dark:bg-gray-800">
+                    <table className="min-w-full my-4 border border-slate-200 dark:border-slate-700">
+                        <thead className="bg-slate-100 dark:bg-slate-800">
                             <tr>
                                 <th className="p-3 text-left">Item</th>
                                 <th className="p-3 text-left">GST Rate</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Printers & Scanners</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Monitors (up to 32 inches)</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Monitors (above 32 inches)</td>
                                 <td className="p-3">28%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Keyboards & Mice</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">USB Cables & Chargers</td>
                                 <td className="p-3">18%</td>
                             </tr>
-                            <tr className="border-t border-gray-200 dark:border-gray-700">
+                            <tr className="border-t border-slate-200 dark:border-slate-700">
                                 <td className="p-3">Power Banks</td>
                                 <td className="p-3">18%</td>
                             </tr>
@@ -157,3 +157,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

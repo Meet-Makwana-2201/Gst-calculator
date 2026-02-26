@@ -124,34 +124,34 @@ export default function BlogPost() {
                 </p>
 
                 <div className="overflow-x-auto my-8">
-                    <table className="min-w-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm">
-                        <thead className="bg-gray-50 dark:bg-gray-800">
+                    <table className="min-w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg shadow-sm">
+                        <thead className="bg-slate-50 dark:bg-slate-800">
                             <tr>
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Feature</th>
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Simple Interest</th>
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Compound Interest</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider border-b">Feature</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider border-b">Simple Interest</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider border-b">Compound Interest</th>
                             </tr>
                         </thead>
-                        <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
+                        <tbody className="divide-y divide-slate-200 dark:divide-slate-800">
                             <tr>
-                                <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">Calculation Base</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Only the Principal</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Principal + Accumulated Interest</td>
+                                <td className="px-6 py-4 text-sm font-medium text-slate-900 dark:text-slate-100">Calculation Base</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Only the Principal</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Principal + Accumulated Interest</td>
                             </tr>
                             <tr>
-                                <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">Growth Pattern</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Linear (Constant)</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Exponential (Accelerating)</td>
+                                <td className="px-6 py-4 text-sm font-medium text-slate-900 dark:text-slate-100">Growth Pattern</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Linear (Constant)</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Exponential (Accelerating)</td>
                             </tr>
                             <tr>
-                                <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">Interest Amount</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Same every year</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Increases every year</td>
+                                <td className="px-6 py-4 text-sm font-medium text-slate-900 dark:text-slate-100">Interest Amount</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Same every year</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Increases every year</td>
                             </tr>
                             <tr>
-                                <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">Main Benefit</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Easier to calculate/manage</td>
-                                <td className="px-6 py-4 text-sm text-gray-500">Maximizes long-term returns</td>
+                                <td className="px-6 py-4 text-sm font-medium text-slate-900 dark:text-slate-100">Main Benefit</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Easier to calculate/manage</td>
+                                <td className="px-6 py-4 text-sm text-slate-500">Maximizes long-term returns</td>
                             </tr>
                         </tbody>
                     </table>
@@ -174,8 +174,8 @@ export default function BlogPost() {
                         <p className="mt-4 font-bold">Total Interest: ₹1,00,000</p>
                     </div>
 
-                    <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 dark:border-blue-800">
-                        <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-3">Compound Interest Scenario</h4>
+                    <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-100 dark:border-cyan-800">
+                        <h4 className="font-bold text-cyan-800 dark:text-cyan-300 mb-3">Compound Interest Scenario</h4>
                         <p className="text-sm">Interest is added to the total each year (Annual Compounding).</p>
                         <ul className="mt-2 text-sm space-y-1">
                             <li>Year 1: ₹1,10,000</li>
@@ -209,10 +209,10 @@ export default function BlogPost() {
                     Making these calculations manually can be tedious. That's why we've built specific tools to help you visualize your financial future:
                 </p>
                 <ul>
-                    <li>Check out our <Link href="/calculators/emi" className="text-indigo-600 hover:underline font-bold">EMI Calculator</Link> to see how interest impacts your monthly loan repayments.</li>
-                    <li>Calculate growth with our <Link href="/calculators/compound-interest" className="text-indigo-600 hover:underline font-bold">Compound Interest Calculator</Link>.</li>
-                    <li>For linear loans, use the <Link href="/calculators/simple-interest" className="text-indigo-600 hover:underline font-bold">Simple Interest Calculator</Link>.</li>
-                    <li>Use our <Link href="/calculators/percentage" className="text-indigo-600 hover:underline font-bold">Percentage Calculator</Link> for quick interest rate comparisons.</li>
+                    <li>Check out our <Link href="/calculators/emi" className="text-cyan-700 hover:underline font-bold">EMI Calculator</Link> to see how interest impacts your monthly loan repayments.</li>
+                    <li>Calculate growth with our <Link href="/calculators/compound-interest" className="text-cyan-700 hover:underline font-bold">Compound Interest Calculator</Link>.</li>
+                    <li>For linear loans, use the <Link href="/calculators/simple-interest" className="text-cyan-700 hover:underline font-bold">Simple Interest Calculator</Link>.</li>
+                    <li>Use our <Link href="/calculators/percentage" className="text-cyan-700 hover:underline font-bold">Percentage Calculator</Link> for quick interest rate comparisons.</li>
                 </ul>
 
                 <div className="space-y-4 my-8">
@@ -249,3 +249,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+

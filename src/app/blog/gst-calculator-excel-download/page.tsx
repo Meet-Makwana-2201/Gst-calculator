@@ -79,10 +79,10 @@ export default function BlogPost() {
         toc={toc}
       >
         <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">
             ✅ What You&apos;ll Learn
           </h2>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <ul className="space-y-2 text-slate-700 dark:text-slate-300">
             <li>• How to create GST calculator formulas in Excel</li>
             <li>• Ready-to-use Excel template formulas</li>
             <li>• How to download GST calculation sheets</li>
@@ -92,27 +92,27 @@ export default function BlogPost() {
 
         <h2 id="why-excel">Why Use Excel for GST Calculation?</h2>
         <div className="grid md:grid-cols-2 gap-4 mb-4">
-          <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
-            <h3 className="font-semibold text-indigo-900 dark:text-indigo-100 mb-2">📊 Bulk Calculations</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
+            <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">📊 Bulk Calculations</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Excel is perfect for calculating GST for multiple invoices or items at once.
             </p>
           </div>
-          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-            <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">💾 Offline Access</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800">
+            <h3 className="font-semibold text-teal-900 dark:text-teal-100 mb-2">💾 Offline Access</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Work without internet connection and maintain your own records.
             </p>
           </div>
-          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-            <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">📈 Customizable</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
+            <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">📈 Customizable</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Customize formulas and templates to match your specific business needs.
             </p>
           </div>
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h3 className="font-semibold text-green-900 dark:text-green-100 mb-2">🔢 Advanced Features</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-slate-300">
               Use pivot tables, charts, and advanced Excel functions for analysis.
             </p>
           </div>
@@ -120,13 +120,13 @@ export default function BlogPost() {
 
         <h2 id="formulas">Excel GST Calculation Formulas</h2>
 
-        <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Basic GST Calculation Formula:</h3>
+        <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg mb-4">
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">Basic GST Calculation Formula:</h3>
           <div className="space-y-3 text-sm font-mono">
-            <div className="p-3 bg-white dark:bg-gray-900 rounded border border-gray-200 dark:border-gray-700">
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell A1: Base Amount</div>
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell B1: GST Rate (%)</div>
-              <div className="text-indigo-600 dark:text-indigo-400 font-bold mt-2">
+            <div className="p-3 bg-white dark:bg-slate-900 rounded border border-slate-200 dark:border-slate-700">
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell A1: Base Amount</div>
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell B1: GST Rate (%)</div>
+              <div className="text-cyan-700 dark:text-cyan-400 font-bold mt-2">
                 GST Amount (Cell C1): =A1*B1/100
               </div>
               <div className="text-green-600 dark:text-green-400 font-bold mt-2">
@@ -136,13 +136,13 @@ export default function BlogPost() {
           </div>
         </div>
 
-        <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-4">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Reverse GST Calculation Formula:</h3>
+        <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg mb-4">
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">Reverse GST Calculation Formula:</h3>
           <div className="space-y-3 text-sm font-mono">
-            <div className="p-3 bg-white dark:bg-gray-900 rounded border border-gray-200 dark:border-gray-700">
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell A1: Total Amount (incl. GST)</div>
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell B1: GST Rate (%)</div>
-              <div className="text-indigo-600 dark:text-indigo-400 font-bold mt-2">
+            <div className="p-3 bg-white dark:bg-slate-900 rounded border border-slate-200 dark:border-slate-700">
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell A1: Total Amount (incl. GST)</div>
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell B1: GST Rate (%)</div>
+              <div className="text-cyan-700 dark:text-cyan-400 font-bold mt-2">
                 Base Amount (Cell C1): =A1/(1+B1/100)
               </div>
               <div className="text-green-600 dark:text-green-400 font-bold mt-2">
@@ -152,16 +152,16 @@ export default function BlogPost() {
           </div>
         </div>
 
-        <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">CGST & SGST Calculation:</h3>
+        <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">CGST & SGST Calculation:</h3>
           <div className="space-y-3 text-sm font-mono">
-            <div className="p-3 bg-white dark:bg-gray-900 rounded border border-gray-200 dark:border-gray-700">
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell A1: Base Amount</div>
-              <div className="text-gray-600 dark:text-gray-400 mb-1">Cell B1: Total GST Rate (%)</div>
-              <div className="text-blue-600 dark:text-blue-400 font-bold mt-2">
+            <div className="p-3 bg-white dark:bg-slate-900 rounded border border-slate-200 dark:border-slate-700">
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell A1: Base Amount</div>
+              <div className="text-slate-600 dark:text-slate-400 mb-1">Cell B1: Total GST Rate (%)</div>
+              <div className="text-cyan-700 dark:text-cyan-400 font-bold mt-2">
                 CGST (Cell C1): =A1*(B1/2)/100
               </div>
-              <div className="text-purple-600 dark:text-purple-400 font-bold mt-2">
+              <div className="text-teal-700 dark:text-teal-400 font-bold mt-2">
                 SGST (Cell D1): =A1*(B1/2)/100
               </div>
               <div className="text-green-600 dark:text-green-400 font-bold mt-2">
@@ -177,11 +177,11 @@ export default function BlogPost() {
           Simply calculate GST using our tool and click the &quot;Download Sheet&quot; or &quot;Excel&quot; export button.
         </p>
 
-        <div className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-200 dark:border-indigo-800 mb-4">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+        <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-200 dark:border-cyan-800 mb-4">
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">
             📥 Steps to Download:
           </h3>
-          <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+          <ol className="list-decimal pl-6 space-y-2 text-slate-700 dark:text-slate-300">
             <li>Enter your amount and GST rate in our calculator</li>
             <li>Click &quot;Calculate GST&quot; to get results</li>
             <li>Click the &quot;Excel&quot; or &quot;Download Sheet&quot; button</li>
@@ -192,21 +192,21 @@ export default function BlogPost() {
 
         <h2 id="create">Creating Your Own GST Template</h2>
         <div className="space-y-4">
-          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-            <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Step 1: Set Up Columns</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border border-cyan-200 dark:border-cyan-800">
+            <h3 className="font-semibold text-cyan-900 dark:text-cyan-100 mb-2">Step 1: Set Up Columns</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mb-2">
               Create columns for: Invoice Number, Date, Description, Base Amount, GST Rate, GST Amount, Total Amount
             </p>
           </div>
-          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-            <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">Step 2: Add Formulas</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+          <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800">
+            <h3 className="font-semibold text-teal-900 dark:text-teal-100 mb-2">Step 2: Add Formulas</h3>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mb-2">
               Use the formulas provided above in your Excel sheet. Excel will automatically calculate GST when you enter amounts.
             </p>
           </div>
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h3 className="font-semibold text-green-900 dark:text-green-100 mb-2">Step 3: Add Formatting</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <p className="text-sm text-slate-700 dark:text-slate-300 mb-2">
               Format cells for currency, add borders, and create a professional-looking invoice template.
             </p>
           </div>
@@ -215,3 +215,6 @@ export default function BlogPost() {
     </>
   );
 }
+
+
+

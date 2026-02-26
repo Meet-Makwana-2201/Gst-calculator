@@ -163,16 +163,16 @@ export default function BlogPost() {
                 <p>
                     The correct formula to <strong>minus GST from price</strong> is:
                 </p>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         Base Price = Total Price ÷ (1 + GST Rate / 100)
                     </p>
                 </div>
                 <p>
                     Once you have the base price, the GST amount is simply:
                 </p>
-                <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 my-6">
-                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+                    <p className="text-center font-mono text-xl md:text-2xl font-bold text-cyan-700 dark:text-cyan-400">
                         GST Amount = Total Price − Base Price
                     </p>
                 </div>
@@ -186,7 +186,7 @@ export default function BlogPost() {
                     <li><strong>28% GST</strong> → Divide by <strong>1.28</strong></li>
                 </ul>
 
-                <div className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800 my-8">
+                <div className="p-6 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl border border-cyan-100 dark:border-cyan-800 my-8">
                     <p className="text-lg font-semibold text-center mb-2 italic">Important</p>
                     <p className="text-center">
                         Never subtract the GST percentage directly from the total. For example, 18% of ₹1,180 is ₹212.40 — but the actual GST component is only ₹180. The difference may seem small on one invoice, but it compounds significantly across hundreds of transactions.
@@ -195,10 +195,10 @@ export default function BlogPost() {
 
                 <h2 id="how-to-use-calculator">How to Use Our Minus GST Calculator</h2>
                 <p>
-                    Our free <Link href="/calculators/gst" className="text-indigo-600 hover:underline">Minus GST Calculator</Link> at <strong>onecalculator.online</strong> makes the <strong>reverse GST calculation</strong> effortless. Follow these steps:
+                    Our free <Link href="/calculators/gst" className="text-cyan-700 hover:underline">Minus GST Calculator</Link> at <strong>onecalculator.online</strong> makes the <strong>reverse GST calculation</strong> effortless. Follow these steps:
                 </p>
                 <ol>
-                    <li><strong>Open the Calculator:</strong> Visit our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">GST Calculator page</Link>.</li>
+                    <li><strong>Open the Calculator:</strong> Visit our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">GST Calculator page</Link>.</li>
                     <li><strong>Enter the Total Amount:</strong> Type the GST-inclusive price you want to break down.</li>
                     <li><strong>Select the GST Rate:</strong> Choose the applicable slab — 5%, 12%, 18%, or 28%.</li>
                     <li><strong>Choose &quot;GST Inclusive&quot;:</strong> This tells the tool that you want to <strong>remove GST from price</strong>, not add it.</li>
@@ -260,10 +260,10 @@ export default function BlogPost() {
                     <li><strong>CGST/SGST Split:</strong> It automatically divides the GST amount into CGST and SGST (or shows IGST for inter-state transactions), saving you an extra step.</li>
                     <li><strong>Time-Saving:</strong> Process invoices in seconds instead of minutes. Ideal for accountants, CA firms, and business owners handling bulk bills.</li>
                     <li><strong>Mobile-Friendly:</strong> Use it at a shop counter, in a client meeting, or while travelling — no app download needed.</li>
-                    <li><strong>Completely Free:</strong> No registration, no hidden charges, and no limits on usage at <Link href="/calculators/gst" className="text-indigo-600 hover:underline">onecalculator.online</Link>.</li>
+                    <li><strong>Completely Free:</strong> No registration, no hidden charges, and no limits on usage at <Link href="/calculators/gst" className="text-cyan-700 hover:underline">onecalculator.online</Link>.</li>
                 </ul>
                 <p>
-                    Whether you need to verify a vendor invoice, prepare a <Link href="/blog/gst-invoice-format-for-freelancers" className="text-indigo-600 hover:underline">GST-compliant invoice</Link>, or simply understand how much tax you are paying on everyday purchases, a reliable <strong>minus GST calculator</strong> is an indispensable tool.
+                    Whether you need to verify a vendor invoice, prepare a <Link href="/blog/gst-invoice-format-for-freelancers" className="text-cyan-700 hover:underline">GST-compliant invoice</Link>, or simply understand how much tax you are paying on everyday purchases, a reliable <strong>minus GST calculator</strong> is an indispensable tool.
                 </p>
 
                 <h2 id="faqs">Frequently Asked Questions (FAQs)</h2>
@@ -285,23 +285,23 @@ export default function BlogPost() {
 
                 <h3>Q4: Does the reverse GST formula work for all GST slabs?</h3>
                 <p>
-                    Yes. The formula <em>Base Price = Total ÷ (1 + Rate/100)</em> works universally for all Indian GST slabs — <strong>5%, 12%, 18%, and 28%</strong>. Simply change the rate in the formula or select the appropriate slab in our <Link href="/calculators/gst" className="text-indigo-600 hover:underline">calculator</Link>.
+                    Yes. The formula <em>Base Price = Total ÷ (1 + Rate/100)</em> works universally for all Indian GST slabs — <strong>5%, 12%, 18%, and 28%</strong>. Simply change the rate in the formula or select the appropriate slab in our <Link href="/calculators/gst" className="text-cyan-700 hover:underline">calculator</Link>.
                 </p>
 
                 <h3>Q5: Why should I use an online Remove GST Calculator instead of manual calculation?</h3>
                 <p>
-                    An online calculator eliminates rounding errors, handles decimal-heavy results accurately, and saves significant time — especially when processing multiple invoices. It also automatically splits the result into CGST and SGST, which you need for <Link href="/blog/how-to-calculate-gst-backwards" className="text-indigo-600 hover:underline">GST return filing</Link>.
+                    An online calculator eliminates rounding errors, handles decimal-heavy results accurately, and saves significant time — especially when processing multiple invoices. It also automatically splits the result into CGST and SGST, which you need for <Link href="/blog/how-to-calculate-gst-backwards" className="text-cyan-700 hover:underline">GST return filing</Link>.
                 </p>
 
-                <div className="p-8 md:p-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl text-white shadow-2xl my-12 text-center">
+                <div className="p-8 md:p-12 bg-gradient-to-br from-cyan-700 to-teal-600 rounded-3xl text-white shadow-2xl my-12 text-center">
                     <h2 className="text-3xl font-bold mb-6 text-white">Remove GST from Any Price — Free &amp; Instant</h2>
-                    <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
+                    <p className="text-cyan-100 text-lg mb-8 max-w-2xl mx-auto">
                         Stop doing manual division. Use our professional Remove GST Calculator to get the base price, CGST, SGST, and total tax amount in one click.
                     </p>
                     <div className="flex justify-center">
                         <Link
                             href="/calculators/gst"
-                            className="px-10 py-4 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                            className="px-10 py-4 bg-white text-cyan-700 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             Use our free calculator at onecalculator.online →
                         </Link>
@@ -312,3 +312,6 @@ export default function BlogPost() {
         </>
     );
 }
+
+
+
