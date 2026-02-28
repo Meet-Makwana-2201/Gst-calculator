@@ -29,10 +29,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://onecalculator.online'),
   title: {
-    default: "OneCalculator: Free GST, EMI, & Math Calculators Online",
-    template: "%s | OneCalculator - Free Financial Tools",
+    default: "Free GST & EMI Calculator India 2026 — Instant Results",
+    template: "%s | OneCalculator",
   },
-  description: "India's most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations. Privacy-focused & Instant.",
+  description: "Free GST & EMI calculator for India — calculate tax with IGST, CGST & SGST breakdown or your home/car loan EMI instantly. Updated for 2026. No signup needed.",
   keywords: [
     "financial calculator",
     "GST india",
@@ -89,22 +89,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://onecalculator.online',
-    title: 'OneCalculator: Free GST, EMI, & Math Calculators Online',
-    description: 'India\'s most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations.',
+    title: 'Free GST & EMI Calculator India 2026 — Instant Results',
+    description: 'Free GST & EMI calculator for India — calculate tax with IGST, CGST & SGST breakdown or your home/car loan EMI instantly. Updated for 2026. No signup needed.',
     siteName: 'OneCalculator',
     images: [
       {
         url: '/logo.svg',
         width: 512,
         height: 512,
-        alt: 'OneCalculator Logo',
+        alt: 'OneCalculator — Free GST & EMI Calculator India',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OneCalculator: Free GST, EMI, & Math Calculators Online',
-    description: 'India\'s most trusted calculator suite. Free tools for GST, Home Loan EMI, Discounts, Profit margins, and Interest calculations.',
+    title: 'Free GST & EMI Calculator India 2026 — Instant Results',
+    description: 'Free GST & EMI calculator for India — calculate tax with IGST, CGST & SGST breakdown or your home/car loan EMI instantly. Updated for 2026. No signup needed.',
     images: ['/logo.svg'],
     creator: '@gstcalc_india',
   },

@@ -15,6 +15,7 @@ import {
     ShieldCheck,
 } from "lucide-react";
 import { ToolCard } from "@/components/calculators/ToolCard";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
     title: "Free Online Financial & Math Calculators — GST, EMI, Interest, Percentage | OneCalculator",
@@ -40,9 +41,342 @@ export const metadata: Metadata = {
     },
 };
 
+// ─── JSON-LD Structured Data ────────────────────────────────────────────────
+const BASE_URL = "https://onecalculator.online";
+
+const calculatorItems = [
+    {
+        position: 1,
+        name: "GST Calculator",
+        description:
+            "Calculate GST, IGST, CGST, and SGST instantly. Supports forward GST calculation (add GST to base price) and reverse GST calculation (extract GST from total). Covers all Indian GST rate slabs: 5%, 12%, 18%, and 28%.",
+        url: `${BASE_URL}/calculators/gst`,
+        keywords: "GST calculator, CGST SGST calculator, reverse GST, GST India, add GST, remove GST",
+    },
+    {
+        position: 2,
+        name: "Remove GST Calculator",
+        description:
+            "Extract the base price and exact tax amount from any GST-inclusive total price. Ideal for businesses that need to separate the pre-tax amount from a GST-inclusive invoice or MRP.",
+        url: `${BASE_URL}/calculators/remove-gst`,
+        keywords: "remove GST, minus GST calculator, extract GST, GST inclusive price calculator",
+    },
+    {
+        position: 3,
+        name: "EMI Calculator",
+        description:
+            "Calculate monthly home loan, car loan, and personal loan EMI payments with a detailed amortization schedule. Uses the standard reducing balance formula trusted by banks and NBFCs across India.",
+        url: `${BASE_URL}/calculators/emi`,
+        keywords: "EMI calculator, home loan EMI, car loan EMI, loan EMI calculator India",
+    },
+    {
+        position: 4,
+        name: "Discount Calculator",
+        description:
+            "Find the final price after applying any discount percentage and instantly see how much you save. Useful for shoppers, retailers, and e-commerce sellers to calculate sale prices.",
+        url: `${BASE_URL}/calculators/discount`,
+        keywords: "discount calculator, sale price calculator, percentage discount, savings calculator",
+    },
+    {
+        position: 5,
+        name: "Percentage Calculator",
+        description:
+            "Solve everyday percentage problems: find percentage of a number, calculate percentage increase or decrease, and reverse-calculate what percentage one number is of another.",
+        url: `${BASE_URL}/calculators/percentage`,
+        keywords: "percentage calculator, percent calculator, percentage increase, percentage of number",
+    },
+    {
+        position: 6,
+        name: "Simple Interest Calculator",
+        description:
+            "Calculate simple interest on a principal amount for a given rate and time period. Suitable for short-term loans, fixed deposits, and basic finance learning.",
+        url: `${BASE_URL}/calculators/simple-interest`,
+        keywords: "simple interest calculator, SI calculator, interest on principal, SI formula India",
+    },
+    {
+        position: 7,
+        name: "Compound Interest Calculator",
+        description:
+            "Calculate compound interest with multiple compounding frequencies (annual, semi-annual, quarterly, monthly). Ideal for estimating mutual fund returns, FD maturity amounts, and long-term investment growth.",
+        url: `${BASE_URL}/calculators/compound-interest`,
+        keywords: "compound interest calculator, CI calculator, compounding interest, investment growth calculator",
+    },
+    {
+        position: 8,
+        name: "Profit Loss Calculator",
+        description:
+            "Calculate profit percentage, loss percentage, selling price, or cost price based on any two known values. Indispensable for traders, retailers, and business owners tracking product margins.",
+        url: `${BASE_URL}/calculators/profit-loss`,
+        keywords: "profit loss calculator, profit percentage calculator, loss percentage, margin calculator India",
+    },
+    {
+        position: 9,
+        name: "Margin Calculator",
+        description:
+            "Calculate gross margin and markup percentage to set competitive selling prices. Helps sellers determine the right price to achieve target profit margins on products and services.",
+        url: `${BASE_URL}/calculators/margin`,
+        keywords: "margin calculator, markup calculator, gross margin, profit margin calculator",
+    },
+    {
+        position: 10,
+        name: "Loan Calculator",
+        description:
+            "Estimate monthly EMI and total interest payout for home loans, car loans, personal loans, and business loans. Compare different loan tenures and interest rates to find the best repayment plan.",
+        url: `${BASE_URL}/calculators/loan`,
+        keywords: "loan calculator, loan EMI calculator, personal loan calculator, interest rate calculator",
+    },
+    {
+        position: 11,
+        name: "SIP Calculator",
+        description:
+            "Forecast the future value of systematic investment plan (SIP) contributions in mutual funds. Enter monthly SIP amount, expected annual return, and investment duration to see projected wealth.",
+        url: `${BASE_URL}/calculators/sip`,
+        keywords: "SIP calculator, mutual fund SIP calculator, SIP returns, monthly investment calculator",
+    },
+    {
+        position: 12,
+        name: "Lumpsum Calculator",
+        description:
+            "Estimate the future value of a one-time lumpsum investment based on expected annual returns and tenure using the compound interest formula adopted by Indian mutual funds.",
+        url: `${BASE_URL}/calculators/lumpsum`,
+        keywords: "lumpsum calculator, lump sum investment calculator, one-time investment, mutual fund return",
+    },
+    {
+        position: 13,
+        name: "EMI Preclosure Calculator",
+        description:
+            "Calculate how much interest you save and how many EMIs you reduce by making a lump-sum prepayment on your existing loan. Optimize your part-prepayment strategy.",
+        url: `${BASE_URL}/calculators/emi-preclosure`,
+        keywords: "EMI preclosure calculator, loan prepayment calculator, part payment savings, loan foreclosure",
+    },
+    {
+        position: 14,
+        name: "Amazon Seller Profit Calculator",
+        description:
+            "Analyze Amazon India marketplace fees, referral fees, GST, and shipping costs to calculate your true net profit per unit. Essential for Amazon sellers optimizing product pricing.",
+        url: `${BASE_URL}/calculators/amazon-seller-profit`,
+        keywords: "Amazon seller profit calculator, Amazon India fees, marketplace fee calculator, e-commerce profit",
+    },
+];
+
+const collectionPageSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        // ── 1. CollectionPage: primary entity for /calculators ──────────────
+        {
+            "@type": ["CollectionPage", "WebPage"],
+            "@id": `${BASE_URL}/calculators#webpage`,
+            name: "Free Online Financial & Math Calculators",
+            headline: "Free Online Financial & Math Calculators — GST, EMI, Interest & More",
+            description:
+                "India's most comprehensive free calculator suite. Access 14+ tools for GST, EMI, compound interest, SIP, discount, profit-loss, and percentage — all in one place. Instant, accurate, privacy-first.",
+            url: `${BASE_URL}/calculators`,
+            inLanguage: ["en-IN", "hi-IN"],
+            isPartOf: {
+                "@type": "WebSite",
+                "@id": `${BASE_URL}/#website`,
+                name: "OneCalculator",
+                url: BASE_URL,
+                description:
+                    "India's trusted free financial calculator suite for GST, EMI, interest, and business math.",
+                inLanguage: ["en-IN", "hi-IN"],
+                publisher: {
+                    "@type": "Organization",
+                    "@id": `${BASE_URL}/#organization`,
+                    name: "OneCalculator",
+                    url: BASE_URL,
+                    logo: {
+                        "@type": "ImageObject",
+                        url: `${BASE_URL}/logo.svg`,
+                        width: 512,
+                        height: 512,
+                    },
+                    sameAs: ["https://twitter.com/gstcalc_india"],
+                    foundingDate: "2024",
+                    areaServed: {
+                        "@type": "Country",
+                        name: "India",
+                    },
+                    knowsAbout: [
+                        "GST Calculator",
+                        "EMI Calculator",
+                        "Financial Calculators",
+                        "Indian Taxation",
+                        "Personal Finance",
+                    ],
+                },
+                potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                        "@type": "EntryPoint",
+                        urlTemplate: `${BASE_URL}/calculators/{search_term_string}`,
+                    },
+                    "query-input": "required name=search_term_string",
+                },
+            },
+            breadcrumb: {
+                "@id": `${BASE_URL}/calculators#breadcrumb`,
+            },
+            hasPart: calculatorItems.map((item) => ({
+                "@type": "SoftwareApplication",
+                "@id": `${item.url}#tool`,
+                name: item.name,
+                description: item.description,
+                url: item.url,
+                applicationCategory: "FinanceApplication",
+                operatingSystem: "Web Browser",
+                offers: {
+                    "@type": "Offer",
+                    price: "0",
+                    priceCurrency: "INR",
+                    availability: "https://schema.org/InStock",
+                },
+                featureList: item.keywords,
+                inLanguage: ["en-IN", "hi-IN"],
+                isAccessibleForFree: true,
+                author: {
+                    "@id": `${BASE_URL}/#organization`,
+                },
+            })),
+            mainEntity: {
+                "@id": `${BASE_URL}/calculators#itemlist`,
+            },
+            about: [
+                {
+                    "@type": "Thing",
+                    name: "GST (Goods and Services Tax)",
+                    description: "Indirect tax levied on supply of goods and services in India",
+                },
+                {
+                    "@type": "Thing",
+                    name: "EMI (Equated Monthly Installment)",
+                    description: "Fixed monthly payment made by borrowers to lenders",
+                },
+                {
+                    "@type": "Thing",
+                    name: "Personal Finance",
+                    description: "Financial planning including investment, saving, and tax management",
+                },
+            ],
+            audience: {
+                "@type": "Audience",
+                audienceType:
+                    "Business owners, Accountants, Homebuyers, Investors, Students, Shoppers in India",
+                geographicArea: {
+                    "@type": "Country",
+                    name: "India",
+                },
+            },
+            dateCreated: "2024-01-01",
+            dateModified: "2026-02-28",
+        },
+
+        // ── 2. BreadcrumbList ───────────────────────────────────────────────
+        {
+            "@type": "BreadcrumbList",
+            "@id": `${BASE_URL}/calculators#breadcrumb`,
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: BASE_URL,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "All Calculators",
+                    item: `${BASE_URL}/calculators`,
+                },
+            ],
+        },
+
+        // ── 3. ItemList: enables rich result eligibility ────────────────────
+        {
+            "@type": "ItemList",
+            "@id": `${BASE_URL}/calculators#itemlist`,
+            name: "Free Online Financial & Math Calculators",
+            description:
+                "Complete collection of free calculators for GST, EMI, interest, discount, and financial math — built for users in India.",
+            url: `${BASE_URL}/calculators`,
+            numberOfItems: calculatorItems.length,
+            itemListOrder: "https://schema.org/ItemListOrderAscending",
+            itemListElement: calculatorItems.map((item) => ({
+                "@type": "ListItem",
+                position: item.position,
+                name: item.name,
+                description: item.description,
+                url: item.url,
+                item: {
+                    "@id": `${item.url}#tool`,
+                },
+            })),
+        },
+    ],
+};
+// ────────────────────────────────────────────────────────────────────────────
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Which free online calculators are available on OneCalculator?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OneCalculator offers 14+ free online calculators for Indian users: GST Calculator (with reverse GST), EMI Calculator, Compound Interest Calculator, Simple Interest Calculator, SIP Calculator, Lumpsum Calculator, Profit & Loss Calculator, Discount Calculator, Percentage Calculator, Margin Calculator, Loan Calculator, EMI Preclosure Calculator, Amazon Seller Profit Calculator, and Remove GST Calculator. All tools are free, no login required, and work on mobile and desktop."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is OneCalculator free to use? Do I need to register?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all calculators on OneCalculator are 100% free with no registration required. There are no hidden charges, no subscription plans, and no login needed. You can perform unlimited calculations instantly. All calculations happen in your browser — your data is never stored or shared."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which calculator should I use for a home loan or car loan EMI?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use our EMI Calculator for calculating monthly instalments on home loans, car loans, personal loans, and education loans. It uses the standard reducing balance formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P = principal, r = monthly interest rate, n = tenure in months. For existing loans where you want to pay off early, use the EMI Preclosure Calculator to see how much interest you save."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I calculate GST on my product or invoice using this website?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Visit our GST Calculator at onecalculator.online/calculators/gst. Enter the base price and select your GST rate (5%, 12%, 18%, or 28%). The calculator instantly shows the GST amount, CGST, SGST/IGST, and the total price. For reverse GST (when you have a GST-inclusive price and want to find the base price), use the Reverse GST tab. All Indian GST slabs are supported."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which calculator is best for SIP mutual fund investment planning?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use our SIP Calculator (onecalculator.online/calculators/sip) to plan systematic investment plan returns. Enter your monthly SIP amount, expected annual return rate (typically 10%–15% for equity mutual funds), and investment duration. The calculator uses compound interest to show projected corpus. For one-time investments, use the Lumpsum Calculator instead."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Konsa calculator use karein — GST, EMI ya interest ke liye? (Which calculator to use?)",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Business owners ke liye — GST Calculator aur Profit Loss Calculator useful hai. Home/car loan ke liye — EMI Calculator use karein. Investment planning ke liye — SIP Calculator ya Compound Interest Calculator. Shopping discount ke liye — Discount Calculator. Exam marks ya salary hike ke liye — Percentage Calculator. Sab calculators free hain, koi login nahi chahiye."
+            }
+        }
+    ]
+};
+// ────────────────────────────────────────────────────────────────────────────
+
 export default function CalculatorsPage() {
     return (
         <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
+            <JsonLd data={collectionPageSchema} />
+            <JsonLd data={faqSchema} />
             {/* Hero Section */}
             <section
                 className="relative bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900 text-white py-20 md:py-32 overflow-hidden"

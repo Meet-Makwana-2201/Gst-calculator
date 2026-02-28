@@ -64,12 +64,68 @@ export default function Blog() {
     })),
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How to calculate GST on a product in India?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'To calculate GST on a product: GST Amount = (Original Price × GST Rate) ÷ 100. Total Price = Original Price + GST Amount. Example: Item costs ₹1,000 with 18% GST. GST = (1,000 × 18) ÷ 100 = ₹180. Total = ₹1,180. The 5 GST slabs in India are: 0% (essentials), 5% (basic goods), 12% (standard goods), 18% (most services), and 28% (luxury items).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between CGST, SGST, and IGST?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'CGST (Central GST) and SGST (State GST) are applied equally on intra-state transactions (sales within the same state) — each is 50% of the total GST rate. IGST (Integrated GST) = full GST rate applies on inter-state transactions (between different states) and imports. Example: 18% GST on intra-state sale = 9% CGST + 9% SGST. On inter-state sale = 18% IGST, collected by central government.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who needs to register for GST in India?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GST registration is mandatory if: (1) Annual turnover exceeds ₹40 lakhs for goods or ₹20 lakhs for services (₹10 lakhs for special category states like Manipur, Mizoram, Nagaland, Tripura). (2) You make inter-state taxable supplies. (3) You are an e-commerce operator or sell through Amazon/Flipkart. (4) You are liable to pay under reverse charge mechanism. Voluntary registration is also allowed for smaller businesses to claim Input Tax Credit.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How to reverse calculate GST — find original price from GST-inclusive price?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Reverse GST formula: Original Price = Total (GST-Inclusive) Price ÷ (1 + GST Rate ÷ 100). GST Amount = Total Price − Original Price. Example: You paid ₹1,180 for a product with 18% GST. Original Price = 1,180 ÷ 1.18 = ₹1,000. GST Amount = ₹180. Use our free GST calculator to do this instantly without any math.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is Input Tax Credit (ITC) and how does it benefit businesses?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Input Tax Credit (ITC) allows GST-registered businesses to deduct the GST paid on purchases (inputs) from the GST collected on sales (output). Tax to pay = Output GST − Input GST. Example: You collected ₹18,000 GST from customers and paid ₹12,000 GST on raw materials. You only remit ₹6,000 to the government. ITC eliminates the cascading effect (tax-on-tax) that existed before GST.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'GST kya hai aur ye kab laga? (What is GST and when was it implemented in India?)',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GST (Goods and Services Tax) ek indirect tax hai jo 1 July 2017 ko India mein lagu hua. Isse pehle VAT, Service Tax, Central Excise jaisi alag-alag taxes thi. GST ne sabko ek unified tax system mein badal diya — ek desh, ek tax. GST 5 slabs mein aata hai: 0%, 5%, 12%, 18%, aur 28%. Zyada jaankari ke liye hamare blog articles padein.',
+        },
+      },
+    ],
+  };
+
   const [featured, ...restPosts] = blogPosts;
   const categories = [...new Set(blogPosts.map((post) => post.category))].slice(0, 8);
 
   return (
     <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
       <JsonLd data={jsonLd} />
+      <JsonLd data={faqSchema} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', item: 'https://onecalculator.online' },

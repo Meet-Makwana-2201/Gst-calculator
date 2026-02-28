@@ -6,16 +6,16 @@ import { StructuredData, generateSoftwareSchema, generateBreadcrumbSchema } from
 import Link from "next/link";
 
 export const metadata = {
-    title: "GST Calculator – Add & Remove GST Instantly",
-    description: "Fast and accurate GST calculator for India. Add or remove GST instantly, calculate CGST, SGST, IGST, and reverse GST with examples. Supports 5%, 12%, 18%, and 28% rates.",
+    title: "Free GST Calculator India 2026 — IGST, CGST & SGST Instant",
+    description: "Calculate GST instantly — enter price & get IGST, CGST, SGST breakdown in seconds. Free, no login. Updated for Union Budget 2026. Reverse GST also supported.",
     keywords: [
-        "gst calculator",
         "gst calculator india",
+        "calculate gst",
+        "igst cgst sgst calculator 2026",
         "reverse gst calculator",
         "remove gst from price",
         "minus gst calculator",
         "gst tax calculator",
-        "cgst sgst igst calculator",
         "calculate gst online",
         "gst calculation online india",
         "online gst calculator",
@@ -30,8 +30,8 @@ export const metadata = {
         canonical: "https://onecalculator.online/calculators/gst",
     },
     openGraph: {
-        title: "GST Calculator Tool - Add, Remove & Reverse GST Easily",
-        description: "Use our GST calculator to add GST, remove GST from price, and calculate reverse GST amounts quickly and accurately. Customize GST rates as needed.",
+        title: "Free GST Calculator India 2026 — IGST, CGST & SGST Instant",
+        description: "Calculate GST instantly — enter price & get IGST, CGST, SGST breakdown in seconds. Free, no login. Updated for Union Budget 2026. Reverse GST also supported.",
         url: "/calculators/gst",
         siteName: "OneCalculator",
         images: [
@@ -39,7 +39,7 @@ export const metadata = {
                 url: "/logo.svg",
                 width: 512,
                 height: 512,
-                alt: "GST Calculator Tool",
+                alt: "Free GST Calculator India 2026",
             },
         ],
         locale: "en_IN",
@@ -47,8 +47,8 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "GST Calculator Tool - Add, Remove & Reverse GST Easily",
-        description: "Use our GST calculator to add GST, remove GST from price, and calculate reverse GST amounts quickly and accurately. Customize GST rates as needed.",
+        title: "Free GST Calculator India 2026 — IGST, CGST & SGST Instant",
+        description: "Calculate GST instantly — enter price & get IGST, CGST, SGST breakdown in seconds. Free, no login. Updated for Union Budget 2026. Reverse GST also supported.",
         images: ["/logo.svg"],
     },
 };
@@ -71,7 +71,7 @@ export default function CalculatorPage() {
             <StructuredData data={softwareSchema} />
             <StructuredData data={breadcrumbSchema} />
             <section className="flex-1 container mx-auto px-4 py-8 md:py-12 max-w-4xl">
-                <h1 className="sr-only">GST Calculator Tool</h1>
+                <h1 className="sr-only">GST Calculator India 2026 — Calculate IGST, CGST & SGST Instantly (Free)</h1>
                 <Tabs defaultValue="gst" className="w-full">
                     <TabsList className="mb-6 grid w-full grid-cols-3">
                         <TabsTrigger value="gst">GST Calculator</TabsTrigger>
