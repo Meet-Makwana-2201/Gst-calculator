@@ -3,3 +3,13 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 Sitemap: https://onecalculator.online/sitemap.xml
+
+# LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

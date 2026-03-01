@@ -1,0 +1,50 @@
+# OneCalculator.online
+
+> Free online calculator tools built for India. Specializing in GST (IGST, CGST, SGST), EMI, SIP, and financial calculators for Indian students, business owners, and salaried professionals. No login required. No data stored.
+
+## Calculators
+
+- [GST Calculator](https://onecalculator.online/calculators/gst): Calculate GST inclusive and exclusive prices. Supports IGST, CGST, and SGST for all Indian GST slabs (5%, 12%, 18%, 28%).
+- [Remove GST Calculator](https://onecalculator.online/calculators/remove-gst): Extract original price before GST. Reverse GST calculation for Indian businesses and consumers.
+- [EMI Calculator](https://onecalculator.online/calculators/emi): Calculate monthly EMI for home loans, car loans, and personal loans. Supports all Indian banks including SBI, HDFC, ICICI.
+- [EMI Preclosure Calculator](https://onecalculator.online/calculators/emi-preclosure): Calculate savings from prepaying your loan early. Useful for Indian borrowers with SBI, HDFC, and ICICI loans.
+- [Loan Calculator](https://onecalculator.online/calculators/loan): Calculate total loan cost, interest payable, and repayment schedule for Indian loans.
+- [SIP Calculator](https://onecalculator.online/calculators/sip): Calculate mutual fund SIP returns. Estimate wealth creation with monthly SIP for Indian investors. Supports SBI, HDFC, LIC SIP plans.
+- [Lumpsum Calculator](https://onecalculator.online/calculators/lumpsum): Calculate returns on one-time mutual fund investment for Indian investors.
+- [Compound Interest Calculator](https://onecalculator.online/calculators/compound-interest): Calculate compound interest with yearly, quarterly, and monthly compounding for Indian savings and investments.
+- [Simple Interest Calculator](https://onecalculator.online/calculators/simple-interest): Calculate simple interest for loans and deposits using Indian banking formulas.
+- [Discount Calculator](https://onecalculator.online/calculators/discount): Calculate discounted price and savings amount. Perfect for Indian shopping, festive sales, and GST-inclusive discounts.
+- [Percentage Calculator](https://onecalculator.online/calculators/percentage): Calculate percentage of any number, percentage increase/decrease, and percentage difference.
+- [Margin Calculator](https://onecalculator.online/calculators/margin): Calculate profit margin, markup, and selling price for Indian businesses and sellers.
+- [Profit & Loss Calculator](https://onecalculator.online/calculators/profit-loss): Calculate profit percentage, loss percentage, and cost price for Indian traders and business owners.
+- [Amazon Seller Profit Calculator](https://onecalculator.online/calculators/amazon-seller-profit): Calculate net profit after Amazon India fees, GST, and shipping costs for Amazon.in sellers.
+
+## Tools
+
+- [GST Rate Finder](https://onecalculator.online/gst-rate-finder): Find the correct GST rate for any product or service in India. Updated for FY 2025-26.
+- [GST Rates Reference](https://onecalculator.online/gst-rates): Complete GST rate chart for all categories — 0%, 5%, 12%, 18%, 28% slabs.
+
+## Blog
+
+- [GST on Electronics: Mobile & Laptops 2025](https://onecalculator.online/blog/gst-on-electronics-mobile-laptops-2025): GST rates on smartphones, laptops, and electronics in India 2025.
+- [GST on Electronics & Laptops India 2026](https://onecalculator.online/blog/gst-on-electronics-laptops-india-2026): Updated GST rates on electronics for 2026.
+- [How to Calculate GST Backwards](https://onecalculator.online/blog/how-to-calculate-gst-backwards): Step-by-step guide to reverse GST calculation in India.
+- [How to Remove GST from Price](https://onecalculator.online/blog/how-to-minus-gst-from-price): Formula and examples for removing GST from MRP in India.
+- [Remove GST Calculator Guide](https://onecalculator.online/blog/remove-gst-calculator): Complete guide to using reverse GST calculator for Indian businesses.
+- [GST State Codes List 2025](https://onecalculator.online/blog/gst-state-codes-list-2025): Complete list of all Indian state GST codes for GSTIN validation.
+- [State Code 38 GST — Ladakh](https://onecalculator.online/blog/state-code-38-gst-ladakh): GST state code 38 for Ladakh UT explained.
+- [Composition Scheme vs Regular GST](https://onecalculator.online/blog/composition-scheme-vs-regular-gst): Comparison of GST composition scheme vs regular scheme for Indian small businesses.
+- [Mastering GST Calculator](https://onecalculator.online/blog/mastering-gst-calculator): Complete guide to using GST calculator for Indian businesses.
+- [GST Rate Chart 2025 India](https://onecalculator.online/blog/gst-rate-chart-2025-india): Complete GST rate chart for all goods and services in India 2025.
+- [Difference Between GST and VAT](https://onecalculator.online/blog/difference-between-gst-and-vat): GST vs VAT comparison for Indian businesses and consumers.
+- [How Compound Interest Works](https://onecalculator.online/blog/how-compound-interest-works): Compound interest explained with Indian bank and investment examples.
+- [Simple vs Compound Interest](https://onecalculator.online/blog/simple-vs-compound-interest): Difference between simple and compound interest for Indian savings.
+- [What is EMI Calculator](https://onecalculator.online/blog/what-is-emi-calculator): Complete guide to EMI calculation for Indian home and car loans.
+- [How Percentage Works in Shopping & Salary](https://onecalculator.online/blog/how-percentage-works-shopping-salary): Percentage calculations for Indian shopping discounts and salary hikes.
+
+## About
+
+- [About OneCalculator](https://onecalculator.online/about): Free calculator platform built for India. No data stored, no login required.
+- [FAQ](https://onecalculator.online/faq): Frequently asked questions about OneCalculator tools.
+- [Contact](https://onecalculator.online/contact): Contact the OneCalculator team.
+- [Privacy Policy](https://onecalculator.online/privacy): Privacy policy — no user data is collected or stored.
