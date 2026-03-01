@@ -4,6 +4,8 @@
 
 ## Calculators
 
+- [All Calculators](https://onecalculator.online/calculators): Complete list of free online financial and GST calculators for Indian users.
+
 - [GST Calculator](https://onecalculator.online/calculators/gst): Calculate GST inclusive and exclusive prices. Supports IGST, CGST, and SGST for all Indian GST slabs (5%, 12%, 18%, 28%).
 - [Remove GST Calculator](https://onecalculator.online/calculators/remove-gst): Extract original price before GST. Reverse GST calculation for Indian businesses and consumers.
 - [EMI Calculator](https://onecalculator.online/calculators/emi): Calculate monthly EMI for home loans, car loans, and personal loans. Supports all Indian banks including SBI, HDFC, ICICI.
@@ -21,7 +23,7 @@
 
 ## Tools
 
-- [GST Rate Finder](https://onecalculator.online/gst-rate-finder): Find the correct GST rate for any product or service in India. Updated for FY 2025-26.
+- [GST Rate Finder](https://onecalculator.online/gst-rate-finder): Find the correct GST rate for any product or service in India. Updated with latest HSN codes for FY 2026-27.
 - [GST Rates Reference](https://onecalculator.online/gst-rates): Complete GST rate chart for all categories — 0%, 5%, 12%, 18%, 28% slabs.
 
 ## Blog
@@ -41,6 +43,14 @@
 - [Simple vs Compound Interest](https://onecalculator.online/blog/simple-vs-compound-interest): Difference between simple and compound interest for Indian savings.
 - [What is EMI Calculator](https://onecalculator.online/blog/what-is-emi-calculator): Complete guide to EMI calculation for Indian home and car loans.
 - [How Percentage Works in Shopping & Salary](https://onecalculator.online/blog/how-percentage-works-shopping-salary): Percentage calculations for Indian shopping discounts and salary hikes.
+
+
+## Upcoming Calculators (Coming Soon)
+
+- [PPF Calculator](https://onecalculator.online/calculators/ppf): Calculate Public Provident Fund (PPF) maturity amount and interest.
+- [FD Calculator](https://onecalculator.online/calculators/fd): Fixed Deposit investment returns for Indian banks.
+- [Income Tax Calculator 2026](https://onecalculator.online/calculators/income-tax): New vs Old tax regime comparison for FY 2026-27.
+- [HRA Calculator](https://onecalculator.online/calculators/hra): Calculate House Rent Allowance tax exemption for Indian employees.
 
 ## About
 

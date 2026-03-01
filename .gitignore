@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+#antigravity agents
+.agents/
+
 # testing
 /coverage
 
