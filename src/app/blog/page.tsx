@@ -1,263 +1,296 @@
-import Link from 'next/link';
-import JsonLd from '@/components/JsonLd';
-import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
-import Image from 'next/image';
-import { blogPosts } from '@/lib/blog-data';
+import Image from "next/image";
+import Link from "next/link";
+
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import JsonLd from "@/components/JsonLd";
+import { Button } from "@/components/ui/button";
+import { getAllBlogPosts } from "@/lib/blog/registry";
 
 export const metadata = {
-  title: 'GST Blog - Articles, Guides & Resources | GST Calculator India',
+  title: "Blog | GST, Tax and Finance Guides for India",
   description:
-    'Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.',
+    "Practical GST, finance, pricing, and calculator guides for freelancers, operators, and small businesses in India.",
   keywords: [
-    'GST blog',
-    'GST articles',
-    'GST guide',
-    'GST for freelancers',
-    'GST rates 2025',
-    'GST calculation guide',
+    "GST blog India",
+    "GST guides",
+    "finance articles India",
+    "pricing guides",
+    "tax help for freelancers",
   ],
   alternates: {
-    canonical: 'https://onecalculator.online/blog',
+    canonical: "https://onecalculator.online/blog",
   },
   openGraph: {
-    title: 'GST Blog - Articles, Guides & Resources | GST Calculator India',
+    title: "LedgerKit India Blog | GST, Tax and Finance Guides",
     description:
-      'Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.',
-    url: '/blog',
-    siteName: 'OneCalculator',
+      "Practical GST, finance, pricing, and calculator guides for freelancers, operators, and small businesses in India.",
+    url: "/blog",
+    siteName: "LedgerKit India",
     images: [
       {
-        url: '/logo.svg',
+        url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: 'GST Calculator Blog',
+        alt: "LedgerKit India blog",
       },
     ],
-    locale: 'en_IN',
-    type: 'website',
+    locale: "en_IN",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'GST Blog - Articles, Guides & Resources | GST Calculator India',
+    card: "summary_large_image",
+    title: "LedgerKit India Blog | GST, Tax and Finance Guides",
     description:
-      'Learn about GST calculation, GST rates, billing tools, and more with our comprehensive blog articles. Expert guides for freelancers and small businesses in India.',
-    images: ['/logo.svg'],
+      "Practical GST, finance, pricing, and calculator guides for freelancers, operators, and small businesses in India.",
+    images: ["/logo.svg"],
   },
 };
 
+const feedHighlights = [
+  "Cleaner article cards with clearer scan paths",
+  "Reading journeys connected to calculators and rate tools",
+  "Fast access to GST, pricing, lending, and business topics",
+];
+
 export default function Blog() {
+  const blogPosts = getAllBlogPosts();
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    name: 'GST Calculator Blog',
-    description: 'Expert guides and resources for GST calculation in India',
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "LedgerKit India Blog",
+    description: "Practical guides for GST, pricing, and finance workflows in India",
     blogPost: blogPosts.map((post) => ({
-      '@type': 'BlogPosting',
+      "@type": "BlogPosting",
       headline: post.title,
       description: post.description,
       datePublished: post.date,
       author: {
-        '@type': 'Organization',
-        name: 'GST Calculator India',
+        "@type": "Organization",
+        name: "LedgerKit India",
       },
       url: `https://onecalculator.online/blog/${post.slug}`,
     })),
   };
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How to calculate GST on a product in India?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'To calculate GST on a product: GST Amount = (Original Price × GST Rate) ÷ 100. Total Price = Original Price + GST Amount. Example: Item costs ₹1,000 with 18% GST. GST = (1,000 × 18) ÷ 100 = ₹180. Total = ₹1,180. The 5 GST slabs in India are: 0% (essentials), 5% (basic goods), 12% (standard goods), 18% (most services), and 28% (luxury items).',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'What is the difference between CGST, SGST, and IGST?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'CGST (Central GST) and SGST (State GST) are applied equally on intra-state transactions (sales within the same state) — each is 50% of the total GST rate. IGST (Integrated GST) = full GST rate applies on inter-state transactions (between different states) and imports. Example: 18% GST on intra-state sale = 9% CGST + 9% SGST. On inter-state sale = 18% IGST, collected by central government.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Who needs to register for GST in India?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'GST registration is mandatory if: (1) Annual turnover exceeds ₹40 lakhs for goods or ₹20 lakhs for services (₹10 lakhs for special category states like Manipur, Mizoram, Nagaland, Tripura). (2) You make inter-state taxable supplies. (3) You are an e-commerce operator or sell through Amazon/Flipkart. (4) You are liable to pay under reverse charge mechanism. Voluntary registration is also allowed for smaller businesses to claim Input Tax Credit.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How to reverse calculate GST — find original price from GST-inclusive price?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Reverse GST formula: Original Price = Total (GST-Inclusive) Price ÷ (1 + GST Rate ÷ 100). GST Amount = Total Price − Original Price. Example: You paid ₹1,180 for a product with 18% GST. Original Price = 1,180 ÷ 1.18 = ₹1,000. GST Amount = ₹180. Use our free GST calculator to do this instantly without any math.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'What is Input Tax Credit (ITC) and how does it benefit businesses?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Input Tax Credit (ITC) allows GST-registered businesses to deduct the GST paid on purchases (inputs) from the GST collected on sales (output). Tax to pay = Output GST − Input GST. Example: You collected ₹18,000 GST from customers and paid ₹12,000 GST on raw materials. You only remit ₹6,000 to the government. ITC eliminates the cascading effect (tax-on-tax) that existed before GST.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'GST kya hai aur ye kab laga? (What is GST and when was it implemented in India?)',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'GST (Goods and Services Tax) ek indirect tax hai jo 1 July 2017 ko India mein lagu hua. Isse pehle VAT, Service Tax, Central Excise jaisi alag-alag taxes thi. GST ne sabko ek unified tax system mein badal diya — ek desh, ek tax. GST 5 slabs mein aata hai: 0%, 5%, 12%, 18%, aur 28%. Zyada jaankari ke liye hamare blog articles padein.',
-        },
-      },
-    ],
-  };
-
-  const [featured, ...restPosts] = blogPosts;
+  const [featured, secondary, ...gridPosts] = blogPosts;
   const categories = [...new Set(blogPosts.map((post) => post.category))].slice(0, 8);
 
   return (
-    <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <main className="px-4 pb-16 pt-8 md:px-6 md:pb-20">
       <JsonLd data={jsonLd} />
-      <JsonLd data={faqSchema} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Home', item: 'https://onecalculator.online' },
-          { name: 'Blog', item: 'https://onecalculator.online/blog' },
+          { name: "Home", item: "https://onecalculator.online" },
+          { name: "Blog", item: "https://onecalculator.online/blog" },
         ]}
       />
 
-      <section className="relative overflow-hidden border-b border-slate-200/70 bg-[radial-gradient(circle_at_top_left,rgba(8,145,178,0.16),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(20,184,166,0.14),transparent_38%)] py-16 md:py-24 dark:border-slate-800/70">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-4xl text-center animate-fade-in-up-slow">
-            <span className="inline-flex items-center rounded-full border border-cyan-200 bg-white/80 px-4 py-1 text-sm font-semibold text-cyan-700 backdrop-blur-sm dark:border-cyan-800 dark:bg-slate-900/70 dark:text-cyan-300">
-              Insights for GST and finance
-            </span>
-            <h1 className="mt-6 text-4xl font-black tracking-tight text-slate-900 md:text-6xl dark:text-slate-100">
-              Blog That Helps You Calculate Better
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              Actionable guides, practical examples, and updates to help freelancers, shops, and growing businesses handle GST with confidence.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-2">
-              {categories.map((category) => (
-                <span
-                  key={category}
-                  className="rounded-full border border-slate-200 bg-white/85 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900/85 dark:text-slate-300"
+      <section className="mx-auto max-w-7xl">
+        <div className="surface-panel hero-grid relative overflow-hidden rounded-[2.4rem] px-6 py-10 md:px-10 md:py-14">
+          <div className="absolute inset-x-0 top-0 h-2 brand-gradient" />
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div className="animate-fade-in-up">
+              <span className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white dark:bg-white dark:text-slate-950">
+                Editorial redesign
+              </span>
+              <h1 className="mt-6 max-w-4xl text-5xl font-black tracking-tight text-slate-950 md:text-7xl dark:text-white">
+                Guides that read faster and convert into action.
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                The blog now matches the product redesign: sharper hierarchy, stronger cards, and
+                cleaner paths from reading to calculation.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href="/calculators">
+                  <Button size="lg">Open calculators</Button>
+                </Link>
+                <Link href="/gst-rates">
+                  <Button size="lg" variant="outline">
+                    Browse GST rates
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              {feedHighlights.map((item, index) => (
+                <div
+                  key={item}
+                  className="rounded-[1.75rem] border border-slate-200 bg-white/90 p-5 shadow-[0_18px_36px_-26px_rgba(15,23,42,0.35)] dark:border-slate-800 dark:bg-slate-900/90"
+                  style={{ animationDelay: `${index * 80}ms` }}
                 >
-                  {category}
-                </span>
+                  <p className="text-sm font-semibold leading-7 text-slate-700 dark:text-slate-200">
+                    {item}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto max-w-7xl px-4 py-12 md:py-16">
-        {featured && (
-          <Link href={`/blog/${featured.slug}`} className="group mb-12 block animate-fade-in-up-slow animate-delay-100">
-            <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_28px_80px_-35px_rgba(15,23,42,0.55)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_36px_90px_-35px_rgba(14,116,144,0.45)] md:grid-cols-2 dark:border-slate-800 dark:bg-slate-900">
-              <div className="relative min-h-[260px] md:min-h-[360px]">
-                {featured.image && (
-                  <Image
-                    src={featured.image}
-                    alt={featured.title}
-                    fill
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                    priority
-                  />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent md:bg-gradient-to-r" />
-              </div>
-              <div className="flex flex-col justify-between p-7 md:p-10">
-                <div>
-                  <span className="inline-flex rounded-full bg-cyan-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-700 dark:bg-cyan-950/40 dark:text-cyan-300">
-                    Featured - {featured.category}
-                  </span>
-                  <h2 className="mt-4 text-2xl font-black leading-tight text-slate-900 md:text-3xl dark:text-slate-100">
-                    {featured.title}
-                  </h2>
-                  <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-                    {featured.description}
-                  </p>
+      <section className="mx-auto mt-8 max-w-7xl">
+        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          {featured ? (
+            <Link href={`/blog/${featured.slug}`} className="group block">
+              <article className="surface-panel hover-lift overflow-hidden rounded-[2.2rem] p-4 md:p-5">
+                <div className="relative min-h-[320px] overflow-hidden rounded-[1.8rem]">
+                  {featured.image ? (
+                    <Image
+                      src={featured.image}
+                      alt={featured.title}
+                      fill
+                      priority
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  ) : null}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+                    <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-white/80">
+                      <span className="rounded-full bg-white/12 px-3 py-2 backdrop-blur-md">
+                        Featured
+                      </span>
+                      <span>{featured.category}</span>
+                      <span>{featured.readTime}</span>
+                    </div>
+                    <h2 className="mt-4 max-w-3xl text-3xl font-black tracking-tight text-white md:text-4xl">
+                      {featured.title}
+                    </h2>
+                    <p className="mt-4 max-w-2xl text-sm leading-7 text-white/80 md:text-base">
+                      {featured.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="mt-6 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
-                  <span>{featured.date}</span>
-                  <span>{featured.readTime}</span>
-                </div>
-              </div>
-            </article>
-          </Link>
-        )}
+              </article>
+            </Link>
+          ) : null}
 
-        <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {restPosts.map((post, index) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex h-full flex-col animate-fade-in-up-slow" style={{ animationDelay: `${Math.min(index, 8) * 70}ms` }}>
-              <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
-                {post.image && (
-                  <div className="relative h-52 w-full overflow-hidden">
+          {secondary ? (
+            <Link href={`/blog/${secondary.slug}`} className="group block">
+              <article className="surface-panel hover-lift flex h-full flex-col rounded-[2.2rem] p-5">
+                <div className="relative min-h-[240px] overflow-hidden rounded-[1.6rem]">
+                  {secondary.image ? (
+                    <Image
+                      src={secondary.image}
+                      alt={secondary.title}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  ) : null}
+                </div>
+                <div className="flex flex-1 flex-col pt-5">
+                  <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">
+                    <span>{secondary.category}</span>
+                    <span>{secondary.date}</span>
+                    <span>{secondary.readTime}</span>
+                  </div>
+                  <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950 group-hover:text-teal-700 dark:text-white dark:group-hover:text-teal-300">
+                    {secondary.title}
+                  </h2>
+                  <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                    {secondary.description}
+                  </p>
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-teal-700 dark:text-teal-300">
+                    Read article
+                    <svg className="h-4 w-4 transition group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          ) : null}
+        </div>
+      </section>
+
+      <section className="mx-auto mt-8 max-w-7xl">
+        <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+              Browse topics
+            </p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 dark:text-white">
+              Articles organized for fast scanning
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <span
+                key={category}
+                className="rounded-full border border-slate-200 bg-white/90 px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-600 dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-300"
+              >
+                {category}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {gridPosts.map((post, index) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group block"
+              style={{ animationDelay: `${Math.min(index, 6) * 70}ms` }}
+            >
+              <article className="surface-panel hover-lift flex h-full flex-col rounded-[1.9rem] p-4">
+                {post.image ? (
+                  <div className="relative h-56 overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={post.image}
                       alt={post.title}
                       fill
                       className="object-cover transition duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute left-4 top-4">
-                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-cyan-700 backdrop-blur-sm dark:bg-slate-900/90 dark:text-cyan-300">
-                        {post.category}
-                      </span>
-                    </div>
                   </div>
-                )}
-                <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-3 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                ) : null}
+                <div className="flex flex-1 flex-col px-1 pb-1 pt-5">
+                  <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                    <span>{post.category}</span>
                     <span>{post.date}</span>
-                    <span>|</span>
-                    <span>{post.readTime}</span>
                   </div>
-                  <h2 className="line-clamp-2 text-xl font-bold text-slate-900 transition-colors group-hover:text-cyan-700 dark:text-slate-100 dark:group-hover:text-cyan-400">
+                  <h3 className="mt-4 text-2xl font-black tracking-tight text-slate-950 transition group-hover:text-teal-700 dark:text-white dark:group-hover:text-teal-300">
                     {post.title}
-                  </h2>
-                  <p className="mt-3 line-clamp-3 flex-1 text-slate-600 dark:text-slate-300">
+                  </h3>
+                  <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
                     {post.description}
                   </p>
-                  <div className="mt-5 inline-flex items-center text-sm font-semibold text-cyan-700 dark:text-cyan-400">
-                    Read article
-                    <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                  <div className="mt-5 flex items-center justify-between text-sm">
+                    <span className="font-semibold text-slate-500 dark:text-slate-400">{post.readTime}</span>
+                    <span className="font-bold text-teal-700 dark:text-teal-300">Read more</span>
                   </div>
                 </div>
               </article>
             </Link>
           ))}
         </div>
+      </section>
 
-        <div className="relative mt-16 overflow-hidden rounded-3xl border border-cyan-200/60 bg-gradient-to-r from-cyan-700 to-teal-600 p-8 text-white shadow-2xl md:p-12 dark:border-cyan-800/50 animate-fade-in-up-slow animate-delay-200">
-          <div className="absolute -right-14 -top-16 h-52 w-52 rounded-full bg-white/15 blur-3xl" />
-          <div className="absolute -bottom-14 -left-14 h-52 w-52 rounded-full bg-slate-900/20 blur-3xl" />
-          <div className="relative z-10 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <div className="max-w-2xl">
-              <h3 className="text-2xl font-black md:text-3xl">Need instant GST calculations while reading?</h3>
-              <p className="mt-3 text-cyan-50">
-                Use our free calculator suite to apply these ideas immediately for invoices, pricing, and planning.
+      <section className="mx-auto mt-10 max-w-7xl">
+        <div className="brand-gradient overflow-hidden rounded-[2.3rem] p-8 text-white shadow-[0_26px_70px_-30px_rgba(8,145,178,0.72)] md:p-10">
+          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/70">
+                Read, then act
+              </p>
+              <h3 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
+                Apply what you read without leaving the workflow.
+              </h3>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">
+                Use the calculators right after reading a guide, or jump into GST rates when you
+                need the slab reference next.
               </p>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <Link href="/calculators" className="rounded-xl bg-white px-6 py-3 font-bold text-cyan-700 transition hover:bg-cyan-50">
-                Open Calculator
+            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+              <Link href="/calculators">
+                <Button size="lg" variant="secondary" className="w-full">
+                  Open calculators
+                </Button>
               </Link>
-              <Link
-                href="/gst-rates"
-                className="rounded-xl border border-white/40 bg-white/10 px-6 py-3 font-bold text-white transition hover:bg-white/20"
-              >
-                Check Rates
+              <Link href="/gst-rates">
+                <Button size="lg" variant="outline" className="w-full border-white/30 bg-white/12 text-white hover:bg-white/20">
+                  View GST rates
+                </Button>
               </Link>
             </div>
           </div>
@@ -266,5 +299,3 @@ export default function Blog() {
     </main>
   );
 }
-
-

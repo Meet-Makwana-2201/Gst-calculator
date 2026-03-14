@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { formatNumberForInput, unformatNumber } from '@/lib/utils';
 import CopyResultButton from '../CopyResultButton';
-import { ShieldCheck, TrendingDown, Clock, Info } from 'lucide-react';
+import { ShieldCheck, TrendingDown, Info } from 'lucide-react';
 
 export default function EMIPreclosureCalculator() {
     const [amount, setAmount] = useState<string>('');

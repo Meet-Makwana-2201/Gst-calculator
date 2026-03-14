@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "GST Rates Chart India 2025 | Complete GST Rate List | GST Calculator",
   description: "Complete GST rates chart for India 2025. Find GST rates for all goods and services: 0%, 5%, 12%, 18%, 28%. Updated GST rate list with HSN codes and categories.",
@@ -189,7 +191,7 @@ export default function GSTRates() {
         </div>
 
         <div className="mt-8 text-center">
-          <a
+          <Link
             href="/calculators"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all hover-lift shadow-lg"
           >
@@ -197,7 +199,7 @@ export default function GSTRates() {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
     </main>

@@ -1,144 +1,142 @@
-import GSTRateFinder from '@/components/GSTRateFinder';
-import JsonLd from '@/components/JsonLd';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import Link from "next/link";
+
+import GSTRateFinder from "@/components/GSTRateFinder";
+import JsonLd from "@/components/JsonLd";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
-    title: 'GST Rate Finder - Search HSN Codes & Tax Rates | GST Calculator India',
-    description: 'Find GST rates for any product or service in India. Search by HSN code, product name, or category. Instant results with current GST tax rates.',
-    keywords: [
-        'GST rate finder',
-        'HSN code search',
-        'GST rate search India',
-        'product GST rate',
-        'HSN code lookup',
-        'GST tax rate finder',
-        'find GST rate',
-        'HSN SAC code',
-    ],
-    alternates: {
-        canonical: 'https://onecalculator.online/gst-rate-finder',
-    },
-    openGraph: {
-        title: 'GST Rate Finder - Search HSN Codes & Tax Rates',
-        description: 'Find GST rates for any product or service in India. Search by HSN code, product name, or category.',
-        url: '/gst-rate-finder',
-        siteName: 'GST Calculator',
-        images: [
-            {
-                url: '/logo.svg',
-                width: 512,
-                height: 512,
-                alt: 'GST Rate Finder',
-            },
-        ],
-        locale: 'en_IN',
-        type: 'website',
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'GST Rate Finder - Search HSN Codes & Tax Rates',
-        description: 'Find GST rates for any product or service in India. Search by HSN code, product name, or category.',
-        images: ['/logo.svg'],
-    },
+  title: "GST Rate Finder | Search HSN Codes, Categories and Rates",
+  description:
+    "Search GST rates for products and services in India by HSN code, product name, or category with a cleaner lookup experience.",
+  alternates: {
+    canonical: "https://onecalculator.online/gst-rate-finder",
+  },
+  openGraph: {
+    title: "GST Rate Finder | LedgerKit India",
+    description:
+      "Search GST rates for products and services in India by HSN code, product name, or category.",
+    url: "/gst-rate-finder",
+    siteName: "LedgerKit India",
+    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "GST Rate Finder" }],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GST Rate Finder | LedgerKit India",
+    description:
+      "Search GST rates for products and services in India by HSN code, product name, or category.",
+    images: ["/logo.svg"],
+  },
 };
 
+const slabs = [
+  { rate: "0% and 5%", detail: "Essential items, staples, and some lower-tax categories" },
+  { rate: "12%", detail: "Selected processed goods, devices, and mid-tier categories" },
+  { rate: "18%", detail: "The standard slab for many goods and services" },
+  { rate: "28%", detail: "Luxury and high-tax categories" },
+];
+
 export default function GSTRateFinderPage() {
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'WebApplication',
-        name: 'GST Rate Finder',
-        applicationCategory: 'FinanceApplication',
-        operatingSystem: 'Any',
-        offers: {
-            '@type': 'Offer',
-            price: '0',
-            priceCurrency: 'INR',
-        },
-        description: 'Search and find GST rates for products and services in India using HSN/SAC codes',
-    };
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "LedgerKit India GST Rate Finder",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Any",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "INR",
+    },
+    description:
+      "Search and find GST rates for products and services in India using HSN and category-based queries.",
+  };
 
-    return (
-        <main className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-950">
-            <JsonLd data={jsonLd} />
+  return (
+    <main className="px-4 pb-16 pt-8 md:px-6 md:pb-20">
+      <JsonLd data={jsonLd} />
 
-            {/* Hero Section */}
-            <section className="relative py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
-                <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-                        GST Rate Finder
-                    </h1>
-                    <p className="text-xl text-indigo-100 max-w-2xl mx-auto leading-relaxed">
-                        Search for GST rates by product name, HSN code, or category. Get instant results with current tax rates.
-                    </p>
+      <section className="mx-auto max-w-7xl">
+        <div className="surface-panel hero-grid relative overflow-hidden rounded-[2.4rem] px-6 py-10 md:px-10 md:py-14">
+          <div className="absolute inset-x-0 top-0 h-2 brand-gradient" />
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+            <div>
+              <span className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white dark:bg-white dark:text-slate-950">
+                HSN and rate lookup
+              </span>
+              <h1 className="mt-6 text-5xl font-black tracking-tight text-slate-950 md:text-7xl dark:text-white">
+                Find the rate first, calculate second.
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                Search by HSN code, product name, or category. This page is designed to reduce the
+                friction between lookup and calculation.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {slabs.map((slab) => (
+                <div
+                  key={slab.rate}
+                  className="rounded-[1.7rem] border border-slate-200 bg-white/90 p-5 dark:border-slate-800 dark:bg-slate-900/90"
+                >
+                  <p className="text-2xl font-black tracking-tight text-slate-950 dark:text-white">
+                    {slab.rate}
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                    {slab.detail}
+                  </p>
                 </div>
-            </section>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Search Section */}
-            <section className="flex-1 container mx-auto px-4 py-16 max-w-6xl">
-                <GSTRateFinder />
-            </section>
+      <section className="mx-auto mt-8 max-w-7xl">
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <GSTRateFinder />
+        </div>
+      </section>
 
-            {/* Info Section */}
-            <section className="py-16 bg-white dark:bg-gray-900">
-                <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="space-y-8">
-                        <div>
-                            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                                What is HSN Code?
-                            </h2>
-                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                <strong>HSN (Harmonized System of Nomenclature)</strong> is an internationally standardized system of names and numbers to classify traded products. In India, HSN codes are used to classify goods under GST. Each product is assigned a unique HSN code that determines its applicable GST rate.
-                            </p>
-                        </div>
+      <section className="mx-auto mt-8 grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr]">
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+            Reference context
+          </p>
+          <div className="prose prose-lg mt-4 max-w-none dark:prose-invert">
+            <p>
+              HSN is the Harmonized System of Nomenclature used to classify traded goods. Under the
+              GST system in India, that classification is one of the key ways the applicable slab
+              is determined.
+            </p>
+            <p>
+              This finder is useful when you need to narrow your likely slab quickly before running
+              an invoice or pricing calculation. It should still be treated as a decision aid, not
+              the final authority for a sensitive filing scenario.
+            </p>
+          </div>
+        </div>
 
-                        <div>
-                            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                                GST Rate Slabs in India
-                            </h2>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800">
-                                    <div className="text-2xl font-bold text-green-600 mb-1">0% & 5%</div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        Essential items like food grains, milk, vegetables, life-saving drugs
-                                    </p>
-                                </div>
-                                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-                                    <div className="text-2xl font-bold text-blue-600 mb-1">12%</div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        Processed foods, computers, mobile phones
-                                    </p>
-                                </div>
-                                <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-200 dark:border-orange-800">
-                                    <div className="text-2xl font-bold text-orange-600 mb-1">18%</div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        Most goods and services, IT services, capital goods
-                                    </p>
-                                </div>
-                                <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200 dark:border-red-800">
-                                    <div className="text-2xl font-bold text-red-600 mb-1">28%</div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        Luxury items, automobiles, tobacco, aerated drinks
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="p-6 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl text-white">
-                            <h3 className="text-2xl font-bold mb-3">Ready to Calculate GST?</h3>
-                            <p className="text-indigo-100 mb-6">
-                                Use our calculator to compute GST amounts instantly with the rates you found.
-                            </p>
-                            <Link href="/calculators">
-                                <Button className="bg-white text-indigo-600 hover:bg-indigo-50 font-bold">
-                                    Open GST Calculator
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
+        <div className="brand-gradient rounded-[2rem] p-6 text-white shadow-[0_24px_60px_-28px_rgba(8,145,178,0.72)] md:p-8">
+          <h2 className="text-3xl font-black tracking-tight">Ready to apply the rate?</h2>
+          <p className="mt-4 text-sm leading-7 text-white/85">
+            Once you find the likely slab, move directly into the calculator flow for inclusive,
+            exclusive, CGST, SGST, or IGST calculations.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <Link href="/calculators/gst">
+              <Button size="lg" variant="secondary">
+                Open GST calculator
+              </Button>
+            </Link>
+            <Link href="/gst-rates">
+              <Button size="lg" variant="outline" className="border-white/30 bg-white/12 text-white hover:bg-white/20">
+                Browse rate chart
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

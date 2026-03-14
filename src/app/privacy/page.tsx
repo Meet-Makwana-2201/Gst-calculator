@@ -1,197 +1,143 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
-  description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
-  keywords: [
-    "easy gst calculator",
-    "gstcalc",
-    "reverse gst calculator",
-    "reverse gst",
-    "easy reverse gst",
-    "privacy policy GST calculator",
-    "data protection",
-    "GST calculator privacy",
-    "no data collection",
-  ],
+  title: "Privacy | LedgerKit India",
+  description:
+    "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
   alternates: {
     canonical: "https://onecalculator.online/privacy",
   },
   openGraph: {
-    title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
-    description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
+    title: "Privacy | LedgerKit India",
+    description:
+      "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
     url: "/privacy",
-    siteName: "OneCalculator",
-    images: [
-      {
-        url: "/logo.svg",
-        width: 512,
-        height: 512,
-        alt: "GST Calculator Privacy Policy",
-      },
-    ],
+    siteName: "LedgerKit India",
+    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "LedgerKit India Privacy" }],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy - GST Calculator India | Data Protection & Privacy",
-    description: "Privacy policy for GST Calculator India. Learn how we protect your data, what information we collect, and how we ensure your privacy. No data storage, complete privacy.",
+    title: "Privacy | LedgerKit India",
+    description:
+      "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
     images: ["/logo.svg"],
   },
 };
 
-export default function Privacy() {
+const principles = [
+  "Calculation inputs are intended to stay local in the browser for normal usage flows.",
+  "Preference data such as selected options may be stored locally on the device for convenience.",
+  "The product does not depend on account creation for basic calculator use.",
+  "Analytics, where used, should remain aggregate and non-sensitive rather than tied to personal financial entries.",
+];
+
+export default function PrivacyPage() {
+  const lastUpdated = new Date().toLocaleDateString("en-IN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
-    <main className="flex flex-col min-h-screen">
-      <section className="flex-1 container mx-auto px-4 py-12 max-w-4xl">
-        <div className="space-y-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Privacy Policy
-            </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
-              Last updated: {new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+    <main className="px-4 pb-16 pt-8 md:px-6 md:pb-20">
+      <section className="mx-auto max-w-6xl">
+        <div className="surface-panel hero-grid relative overflow-hidden rounded-[2.4rem] px-6 py-10 md:px-10 md:py-14">
+          <div className="absolute inset-x-0 top-0 h-2 brand-gradient" />
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div>
+              <span className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white dark:bg-white dark:text-slate-950">
+                Privacy
+              </span>
+              <h1 className="mt-6 text-5xl font-black tracking-tight text-slate-950 md:text-7xl dark:text-white">
+                A cleaner product should also have a clearer privacy posture.
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                This page explains the product’s current privacy expectations, what stays local,
+                and the limits of what the site should do with calculator-related data.
+              </p>
+            </div>
+            <div className="rounded-[1.8rem] bg-slate-950 p-6 text-white dark:bg-teal-500 dark:text-slate-950">
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/65 dark:text-slate-900/65">
+                Last updated
+              </p>
+              <p className="mt-3 text-2xl font-black tracking-tight">{lastUpdated}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-8 grid max-w-6xl gap-8 lg:grid-cols-[1fr_0.92fr]">
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+            Core principles
+          </p>
+          <div className="mt-5 grid gap-4">
+            {principles.map((principle) => (
+              <div
+                key={principle}
+                className="rounded-[1.6rem] border border-slate-200 bg-white/90 p-5 dark:border-slate-800 dark:bg-slate-900/90"
+              >
+                <p className="text-sm leading-7 text-slate-700 dark:text-slate-200">{principle}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <div className="prose prose-lg max-w-none dark:prose-invert">
+            <h2>What we keep minimal</h2>
+            <p>
+              The product is designed around quick calculator usage without forcing unnecessary
+              identity capture. That means no account requirement for normal calculator flows and no
+              need to store sensitive calculation inputs remotely just to deliver a result.
+            </p>
+            <h2>Preferences and local storage</h2>
+            <p>
+              Some user preferences, such as currency or tax mode selection, may be stored locally
+              in the browser to make repeat usage easier. This is device-level convenience data,
+              not the same as storing financial records in a backend system.
+            </p>
+            <h2>Third-party services</h2>
+            <p>
+              Hosting, analytics, and operational tooling may involve third-party infrastructure.
+              These integrations should be limited to operational needs and should not require
+              transmitting detailed calculator entries as user profiles.
+            </p>
+            <h2>Important boundary</h2>
+            <p>
+              For official filings, sensitive commercial workflows, or regulated reporting, users
+              should still rely on professional advice and official channels where required. This
+              site is a product tool, not a substitute for regulated tax advice.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
-            <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-                🔒 Your Privacy is Our Priority
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                At GST Calculator India, we believe in complete privacy. We don&apos;t collect, store, or share any of your calculation data.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Information We Collect
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                We collect <strong>minimal information</strong> to provide you with the best experience:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li><strong>No Calculation Data:</strong> We do NOT collect, store, or transmit any of your GST calculations. All calculations happen locally in your browser.</li>
-                <li><strong>Preferences Only:</strong> We store your preferences (like selected currency and tax type) locally on your device using browser localStorage. This data never leaves your device.</li>
-                <li><strong>Analytics:</strong> We may use anonymous analytics to understand how our tool is used (page views, features used), but this data cannot identify you personally.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                How We Use Your Information
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                We use information only to:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Remember your preferences (currency, tax type) for a better user experience</li>
-                <li>Improve our calculator tool based on anonymous usage patterns</li>
-                <li>Ensure the tool works correctly on your device</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Data Storage and Security
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                <strong>All calculations happen locally in your browser.</strong> Your data:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Never leaves your device</li>
-                <li>Is not transmitted to our servers</li>
-                <li>Is not stored in any database</li>
-                <li>Cannot be accessed by us or any third party</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Third-Party Services
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                We may use third-party services for:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li><strong>Analytics:</strong> To understand usage patterns (anonymous data only)</li>
-                <li><strong>Hosting:</strong> Our website is hosted on secure platforms</li>
-              </ul>
-              <p className="text-gray-700 dark:text-gray-300 mt-4">
-                These services comply with standard privacy practices, but they do not receive any of your calculation data.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Cookies and Local Storage
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                We use browser localStorage (not cookies) to remember:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Your preferred currency (INR or USD)</li>
-                <li>Your preferred tax type (GST, IGST, or CGST+SGST)</li>
-                <li>Your last used GST rate</li>
-              </ul>
-              <p className="text-gray-700 dark:text-gray-300 mt-4">
-                This data is stored only on your device and can be cleared at any time through your browser settings.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Your Rights
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                You have complete control:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Clear your preferences anytime through browser settings</li>
-                <li>Use the calculator without storing any preferences</li>
-                <li>No account required, so no personal information is collected</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Changes to This Policy
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                We may update this privacy policy from time to time. Any changes will be posted on this page with an updated date. We are committed to maintaining your privacy, so any changes will only enhance, not reduce, your privacy protections.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Contact Us
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                If you have any questions about this Privacy Policy, please contact us:
-              </p>
-              <Link
-                href="/contact"
-                className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
-              >
-                Visit our Contact Page →
-              </Link>
-            </div>
-
-            <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800 mt-8">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                ✅ Summary: Your Data is Safe
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300">
-                We don&apos;t collect your calculations. We don&apos;t store your data. We don&apos;t track you.
-                Use our calculator with complete confidence that your privacy is protected.
-              </p>
-            </div>
+      <section className="mx-auto mt-8 max-w-6xl">
+        <div className="brand-gradient rounded-[2.2rem] p-8 text-white shadow-[0_28px_70px_-34px_rgba(8,145,178,0.7)] md:p-10">
+          <h2 className="text-3xl font-black tracking-tight">Questions about privacy or data handling?</h2>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">
+            Use the contact page if you need clarification about data handling, preferences, or a
+            specific product interaction.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/contact"
+              className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-amber-300"
+            >
+              Contact the team
+            </Link>
+            <Link
+              href="/calculators"
+              className="inline-flex rounded-full border border-white/30 bg-white/12 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/20"
+            >
+              Back to calculators
+            </Link>
           </div>
         </div>
       </section>
     </main>
   );
 }
-

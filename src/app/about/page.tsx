@@ -1,161 +1,193 @@
+import Link from "next/link";
+
 import ShareButtons from "@/components/ShareButtons";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
-    title: "About Us - GST Calculator India | Our Mission & Story",
-    description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
-    keywords: [
-        "easy gst calculator",
-        "gstcalc",
-        "reverse gst calculator",
-        "reverse gst",
-        "easy reverse gst",
-        "About GST Calculator India",
-        "GST calculator mission",
-        "who built GST calculator",
-        "free GST calculator India",
-        "trusted GST calculator",
-        "GST calculation platform",
-        "about GST calculator tool",
-        "GST calculator story",
+  title: "About LedgerKit India | Mission, Product Direction and Trust",
+  description:
+    "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India with a cleaner product experience.",
+  keywords: [
+    "about LedgerKit India",
+    "GST calculator mission",
+    "finance tools India",
+    "calculator product story",
+  ],
+  alternates: {
+    canonical: "https://onecalculator.online/about",
+  },
+  openGraph: {
+    title: "About LedgerKit India",
+    description:
+      "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India.",
+    url: "/about",
+    siteName: "LedgerKit India",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "LedgerKit India",
+      },
     ],
-    robots: {
-        index: true,
-        follow: true,
-        nocache: false,
-        googleBot: {
-            index: true,
-            follow: true,
-            noimageindex: false,
-        },
-    },
-    alternates: {
-        canonical: "https://onecalculator.online/about",
-    },
-    openGraph: {
-        title: "About Us - GST Calculator India | Our Mission & Story",
-        description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
-        url: "/about",
-        siteName: "OneCalculator",
-        images: [
-            {
-                url: "/logo.svg",
-                width: 512,
-                height: 512,
-                alt: "About GST Calculator",
-            },
-        ],
-        locale: "en_IN",
-        type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "About Us - GST Calculator India | Our Mission & Story",
-        description: "Learn about our mission to provide simple, accurate, and free GST calculations for businesses and individuals across India. Fast, reliable, and trusted GST calculator platform.",
-        images: ["/logo.svg"],
-    },
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About LedgerKit India",
+    description:
+      "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India.",
+    images: ["/logo.svg"],
+  },
 };
 
+const principles = [
+  {
+    title: "Clarity over clutter",
+    description:
+      "We strip away template noise so users can understand inputs, outputs, and next steps faster.",
+  },
+  {
+    title: "Privacy by default",
+    description:
+      "Calculations are designed to stay local whenever possible, with minimal friction and no account walls.",
+  },
+  {
+    title: "Built for action",
+    description:
+      "Guides, calculators, and references are connected so users can move from reading to decision-making quickly.",
+  },
+  {
+    title: "Scalable publishing",
+    description:
+      "The content system now supports a larger SEO program without duplicating routing and metadata logic.",
+  },
+];
+
 export default function About() {
-    return (
-        <main className="flex flex-col min-h-screen">
-            <section className="flex-1 container mx-auto px-4 py-8 max-w-4xl space-y-8">
-                <div className="space-y-4">
-                    <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">About GST Calculator India</h1>
-                    <p className="text-lg text-gray-700 dark:text-gray-300">
-                        Welcome to GST Calculator India - your trusted, free, and easy-to-use tool for calculating GST amounts online.
-                    </p>
-                </div>
+  return (
+    <main className="px-4 pb-16 pt-8 md:px-6 md:pb-20">
+      <section className="mx-auto max-w-7xl">
+        <div className="surface-panel hero-grid relative overflow-hidden rounded-[2.4rem] px-6 py-10 md:px-10 md:py-14">
+          <div className="absolute inset-x-0 top-0 h-2 brand-gradient" />
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div>
+              <span className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white dark:bg-white dark:text-slate-950">
+                About the product
+              </span>
+              <h1 className="mt-6 text-5xl font-black tracking-tight text-slate-950 md:text-7xl dark:text-white">
+                LedgerKit India is building finance tools that feel intentional.
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                The product started as a GST utility and is being rebuilt into a cleaner decision
+                workspace for tax, lending, pricing, and business math in India.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href="/calculators">
+                  <Button size="lg">Explore calculators</Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline">
+                    Contact the team
+                  </Button>
+                </Link>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Who We Are</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            We are a team dedicated to simplifying GST calculations for businesses, professionals, and individuals across India.
-                            Our mission is to provide accurate, fast, and completely free GST calculation tools that everyone can access without any barriers.
-                        </p>
-                    </div>
+            <div className="grid gap-4">
+              <div className="rounded-[1.8rem] bg-slate-950 p-6 text-white dark:bg-teal-500 dark:text-slate-950">
+                <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/65 dark:text-slate-900/65">
+                  Mission
+                </p>
+                <p className="mt-3 text-lg leading-8">
+                  Make complex GST and finance workflows easier to understand, faster to complete,
+                  and cleaner to trust.
+                </p>
+              </div>
+              <div className="rounded-[1.8rem] border border-slate-200 bg-white/90 p-6 dark:border-slate-800 dark:bg-slate-900/90">
+                <p className="text-sm font-bold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">
+                  Focus
+                </p>
+                <p className="mt-3 text-base leading-8 text-slate-700 dark:text-slate-200">
+                  GST, EMI, pricing, interest, and the supporting content architecture needed for a
+                  serious SEO-led product.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Why We Built This</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            GST (Goods and Services Tax) calculation can be confusing and time-consuming. Many businesses and individuals struggle
-                            with manual calculations, leading to errors and wasted time. We recognized this challenge and decided to create a
-                            solution that:
-                        </p>
-                        <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                            <li><strong>Simplifies GST calculations</strong> - No complex formulas to remember</li>
-                            <li><strong>Saves time</strong> - Get instant, accurate results in seconds</li>
-                            <li><strong>Is completely free</strong> - No hidden costs, no subscriptions</li>
-                            <li><strong>Works everywhere</strong> - Access from any device, anywhere</li>
-                            <li><strong>Supports all GST rates</strong> - 5%, 12%, 18%, 28%, and custom rates</li>
-                            <li><strong>Includes reverse calculation</strong> - Calculate original price from total amount</li>
-                        </ul>
-                    </div>
+      <section className="mx-auto mt-8 max-w-7xl">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {principles.map((principle) => (
+            <article key={principle.title} className="surface-panel rounded-[1.9rem] p-6">
+              <h2 className="text-2xl font-black tracking-tight text-slate-950 dark:text-white">
+                {principle.title}
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                {principle.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">What Makes Us Different</h2>
-                        <div className="grid md:grid-cols-2 gap-4 mt-4">
-                            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                                <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">🚀 Fast & Accurate</h3>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
-                                    Instant calculations with precise results. No waiting, no errors.
-                                </p>
-                            </div>
-                            <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
-                                <h3 className="font-semibold text-green-900 dark:text-green-100 mb-2">🔒 Privacy First</h3>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
-                                    Your data stays on your device. No tracking, no storage of your calculations.
-                                </p>
-                            </div>
-                            <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-                                <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">📱 Mobile Friendly</h3>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
-                                    Optimized for all devices - desktop, tablet, and mobile phones.
-                                </p>
-                            </div>
-                            <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
-                                <h3 className="font-semibold text-orange-900 dark:text-orange-100 mb-2">💰 Always Free</h3>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
-                                    No hidden fees, no premium plans. Everything is free forever.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+      <section className="mx-auto mt-8 grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.92fr]">
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
+            Why this exists
+          </p>
+          <div className="prose prose-lg mt-4 max-w-none dark:prose-invert">
+            <p>
+              Many finance tools on the web are still built like ad-heavy utilities: hard to scan,
+              visually inconsistent, and disconnected from the content users need to understand the
+              result. LedgerKit India is being rebuilt to solve that product gap.
+            </p>
+            <p>
+              The goal is not only accurate calculation, but better decision support. That means
+              clearer inputs, calmer layouts, stronger page hierarchy, and a content system that
+              can support a few hundred search-targeted articles without duplicating page logic.
+            </p>
+            <p>
+              We also take a conservative approach to privacy and product complexity. The tool
+              should be immediately useful without forcing users into registration or unnecessary
+              data sharing.
+            </p>
+          </div>
+        </div>
 
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Our Commitment</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            We are committed to providing the best GST calculation experience possible. This tool is regularly updated
-                            to ensure accuracy and improve user experience. While we strive for perfection, we recommend verifying
-                            critical calculations using official methods, especially for tax filing purposes.
-                        </p>
-                        <p className="text-gray-700 dark:text-gray-300 mt-4">
-                            <strong>Important Note:</strong> This calculator is a helpful tool for quick calculations. For official tax
-                            purposes and critical business decisions, please consult with a certified tax professional or use official
-                            government calculators.
-                        </p>
-                    </div>
-
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Get in Touch</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Have questions, suggestions, or found a bug? We&apos;d love to hear from you! Visit our{" "}
-                            <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                                Contact Page
-                            </a>{" "}
-                            to reach out. Your feedback helps us improve the tool for everyone.
-                        </p>
-                    </div>
-
-                    <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Share with Others</h2>
-                        <p className="text-gray-700 dark:text-gray-300 mb-4">
-                            Found this tool helpful? Share it with your friends, colleagues, and business partners who might benefit from it.
-                        </p>
-                        <ShareButtons url="https://onecalculator.online" title="GST Calculator India - Free Online GST Calculation Tool" />
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
+        <div className="surface-panel rounded-[2rem] p-6 md:p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">
+            Get in touch
+          </p>
+          <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 dark:text-white">
+            Feedback directly shapes the product.
+          </h2>
+          <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
+            If you have a bug report, a content gap, or a high-value calculator idea, use the
+            contact page. That is the fastest path for corrections and roadmap suggestions.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <Link href="/contact">
+              <Button>Open contact page</Button>
+            </Link>
+            <Link href="/blog">
+              <Button variant="outline">Read the guides</Button>
+            </Link>
+          </div>
+          <div className="mt-8 border-t border-slate-200 pt-6 dark:border-slate-800">
+            <p className="mb-4 text-sm font-semibold text-slate-700 dark:text-slate-200">
+              Share LedgerKit India
+            </p>
+            <ShareButtons
+              url="https://onecalculator.online"
+              title="LedgerKit India - Modern GST and finance calculators"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
