@@ -56,11 +56,11 @@ export default function Header() {
         <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
           <Link href="/" className="flex items-center gap-3">
             <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/60 bg-white shadow-[0_12px_28px_-18px_rgba(15,23,42,0.45)] dark:border-slate-700/70 dark:bg-slate-900">
-              <Image src="/logo.svg" alt="LedgerKit India logo" width={48} height={48} className="h-11 w-11" />
+              <Image src="/logo.svg" alt="OneCalculator logo" width={48} height={48} className="h-11 w-11" />
             </div>
             <div>
               <p className="text-lg font-black tracking-tight text-slate-900 dark:text-slate-100 md:text-xl">
-                LedgerKit India
+                OneCalculator
               </p>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">
                 Faster financial decisions
@@ -147,3 +147,4 @@ export default function Header() {
     </header>
   );
 }
+

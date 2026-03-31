@@ -35,8 +35,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://onecalculator.online"),
   title: {
-    default: "LedgerKit India | Modern GST, EMI, Tax and Finance Calculators",
-    template: "%s | LedgerKit India",
+    default: "OneCalculator | Modern GST, EMI, Tax and Finance Calculators",
+    template: "%s | OneCalculator",
   },
   description:
     "Modern finance calculators for India. Calculate GST, EMI, pricing, interest, and business numbers with a cleaner workflow and instant results.",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     "interest calculator",
     "free online calculator tools",
   ],
-  authors: [{ name: "LedgerKit India" }],
-  creator: "LedgerKit India",
-  publisher: "LedgerKit India",
+  authors: [{ name: "OneCalculator" }],
+  creator: "OneCalculator",
+  publisher: "OneCalculator",
   robots: {
     index: true,
     follow: true,
@@ -73,28 +73,28 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "LedgerKit India",
+    title: "OneCalculator",
   },
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://onecalculator.online",
-    title: "LedgerKit India | Modern GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | Modern GST, EMI, Tax and Finance Calculators",
     description:
       "Modern finance calculators for India. Clean interfaces, instant answers, and zero signup friction.",
-    siteName: "LedgerKit India",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "LedgerKit India",
+        alt: "OneCalculator",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LedgerKit India | Modern GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | Modern GST, EMI, Tax and Finance Calculators",
     description:
       "Modern finance calculators for India. Clean interfaces, instant answers, and zero signup friction.",
     images: ["/logo.svg"],
@@ -117,7 +117,7 @@ export default function RootLayout({
             data={{
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "LedgerKit India",
+              name: "OneCalculator",
               url: "https://onecalculator.online",
               logo: "https://onecalculator.online/logo.svg",
               sameAs: ["https://twitter.com/gstcalc_india"],
@@ -145,3 +145,4 @@ export default function RootLayout({
     </html>
   );
 }
+

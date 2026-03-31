@@ -1,6 +1,6 @@
 {
-  "name": "LedgerKit India",
-  "short_name": "LedgerKit",
+  "name": "OneCalculator",
+  "short_name": "OneCalculator",
   "description": "Modern GST, EMI, tax, pricing, and finance calculators for India.",
   "start_url": "/",
   "display": "standalone",
@@ -39,3 +39,4 @@
     }
   ]
 }
+

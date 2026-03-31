@@ -23,7 +23,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Blog Post Not Found | LedgerKit India",
+      title: "Blog Post Not Found | OneCalculator",
       description: "The requested article could not be found.",
     };
   }
@@ -74,3 +74,4 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return <PostContent />;
 }
+

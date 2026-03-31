@@ -10,9 +10,9 @@ import { getAllBlogPosts } from "@/lib/blog/registry";
 import { homeFaqs } from "@/lib/home-faq-data";
 
 const stats = [
-  { value: "12+", label: "Core calculators" },
-  { value: "0", label: "Signup steps" },
-  { value: "<10s", label: "Typical task time" },
+  { value: "4 Slabs", label: "GST rates covered (5%, 12%, 18%, 28%)" },
+  { value: "â‚¹0", label: "Cost to use  always free" },
+  { value: "No login", label: "Open any tool instantly" },
 ];
 
 const experienceCards = [
@@ -52,31 +52,32 @@ const featuredCategories = [
 ];
 
 export const metadata = {
-  title: "LedgerKit India | GST, EMI, Tax and Finance Calculators",
+  title: "OneCalculator Ã¢â‚¬â€œ Free GST, EMI & Finance Calculators India",
   description:
-    "Modern calculator workspace for India. GST, EMI, interest, pricing, and business finance tools redesigned for speed and clarity.",
+    "Free GST, EMI, SIP & business calculators for India. No login, instant results. Trusted by freelancers & small business owners.",
   keywords: [
-    "GST calculator India",
+    "gst calculator india",
+    "online calculator india free",
     "modern calculator site",
-    "EMI calculator",
-    "business finance tools",
-    "pricing calculator India",
+    "emi calculator",
+    "sip calculator india",
+    "business calculator india",
   ],
   alternates: {
     canonical: "https://onecalculator.online/",
   },
   openGraph: {
-    title: "LedgerKit India | GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | GST, EMI, Tax and Finance Calculators",
     description:
       "A cleaner finance workspace for India with GST, EMI, tax, pricing, and interest tools.",
     url: "/",
-    siteName: "LedgerKit India",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "LedgerKit India platform preview",
+        alt: "OneCalculator platform preview",
       },
     ],
     locale: "en_IN",
@@ -84,7 +85,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LedgerKit India | GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | GST, EMI, Tax and Finance Calculators",
     description:
       "A cleaner finance workspace for India with GST, EMI, tax, pricing, and interest tools.",
     images: ["/logo.svg"],
@@ -99,7 +100,7 @@ export default function Home() {
       {
         "@type": "Organization",
         "@id": "https://onecalculator.online/#organization",
-        name: "LedgerKit India",
+        name: "OneCalculator",
         url: "https://onecalculator.online",
         logo: "https://onecalculator.online/logo.svg",
       },
@@ -107,13 +108,18 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://onecalculator.online/#website",
         url: "https://onecalculator.online/",
-        name: "LedgerKit India",
+        name: "OneCalculator",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://onecalculator.online/search?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
       },
       {
         "@type": "WebPage",
         "@id": "https://onecalculator.online/#webpage",
         url: "https://onecalculator.online/",
-        name: "LedgerKit India | GST, EMI, Tax and Finance Calculators",
+        name: "OneCalculator | GST, EMI, Tax and Finance Calculators",
         description:
           "Modern calculator workspace for India. GST, EMI, interest, pricing, and business finance tools redesigned for speed and clarity.",
         isPartOf: { "@id": "https://onecalculator.online/#website" },
@@ -142,14 +148,15 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="animate-fade-in-up">
-              <span className="inline-flex rounded-full border border-white/70 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-slate-600 shadow-[0_20px_38px_-28px_rgba(15,23,42,0.45)] dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-300">
-                Complete redesign 2026
-              </span>
               <h1 className="mt-6 max-w-4xl text-balance text-5xl font-black leading-[0.95] text-slate-950 md:text-7xl dark:text-white">
                 Finance tools that feel like a product, not a template.
               </h1>
+              <p className="mb-2 mt-3 max-w-3xl text-base font-normal text-slate-500 dark:text-slate-400 md:text-lg">
+                For freelancers, small business owners, and students who deal with GST, EMI, and
+                tax calculations daily.
+              </p>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                LedgerKit India turns GST, EMI, pricing, and business calculations into a faster,
+                OneCalculator turns GST, EMI, pricing, and business calculations into a faster,
                 cleaner workflow with stronger visual hierarchy and less noise.
               </p>
 
@@ -375,3 +382,7 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+

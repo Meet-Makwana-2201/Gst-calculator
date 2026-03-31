@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
   <defs>
-    <linearGradient id="ledgerkit-gradient" x1="96" y1="72" x2="404" y2="430" gradientUnits="userSpaceOnUse">
+    <linearGradient id="onecalculator-gradient" x1="96" y1="72" x2="404" y2="430" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0891B2" />
       <stop offset="0.5" stop-color="#14B8A6" />
       <stop offset="1" stop-color="#F59E0B" />
@@ -18,9 +18,9 @@
   </defs>
   <g filter="url(#shadow)">
     <rect x="76" y="56" width="360" height="392" rx="92" fill="#FFFDF8"/>
-    <rect x="76" y="56" width="360" height="392" rx="92" fill="url(#ledgerkit-gradient)" fill-opacity="0.12"/>
+    <rect x="76" y="56" width="360" height="392" rx="92" fill="url(#onecalculator-gradient)" fill-opacity="0.12"/>
     <rect x="112" y="98" width="288" height="316" rx="54" fill="#0F172A"/>
-    <rect x="132" y="118" width="248" height="102" rx="28" fill="url(#ledgerkit-gradient)"/>
+    <rect x="132" y="118" width="248" height="102" rx="28" fill="url(#onecalculator-gradient)"/>
     <path d="M168 288C168 257.072 193.072 232 224 232H288C318.928 232 344 257.072 344 288V344C344 374.928 318.928 400 288 400H224C193.072 400 168 374.928 168 344V288Z" fill="#111827"/>
     <path d="M206 270H244" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
     <path d="M206 316H244" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
@@ -31,3 +31,4 @@
     <path d="M322 169H286" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
   </g>
 </svg>
+

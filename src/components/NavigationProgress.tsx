@@ -28,7 +28,7 @@ export default function NavigationProgress() {
       <div className="relative flex flex-col items-center gap-6">
         <div className="surface-panel relative flex h-28 w-28 items-center justify-center overflow-hidden rounded-[2rem] animate-float">
           <div className="absolute inset-x-0 top-0 h-2 brand-gradient" />
-          <Image src="/logo.svg" alt="LedgerKit India" width={72} height={72} className="h-18 w-18" />
+          <Image src="/logo.svg" alt="OneCalculator" width={72} height={72} className="h-18 w-18" />
         </div>
 
         <div className="text-center">
@@ -49,3 +49,4 @@ export default function NavigationProgress() {
     </div>
   );
 }
+

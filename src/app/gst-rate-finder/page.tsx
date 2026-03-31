@@ -12,18 +12,18 @@ export const metadata = {
     canonical: "https://onecalculator.online/gst-rate-finder",
   },
   openGraph: {
-    title: "GST Rate Finder | LedgerKit India",
+    title: "GST Rate Finder | OneCalculator",
     description:
       "Search GST rates for products and services in India by HSN code, product name, or category.",
     url: "/gst-rate-finder",
-    siteName: "LedgerKit India",
+    siteName: "OneCalculator",
     images: [{ url: "/logo.svg", width: 512, height: 512, alt: "GST Rate Finder" }],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GST Rate Finder | LedgerKit India",
+    title: "GST Rate Finder | OneCalculator",
     description:
       "Search GST rates for products and services in India by HSN code, product name, or category.",
     images: ["/logo.svg"],
@@ -41,7 +41,7 @@ export default function GSTRateFinderPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "LedgerKit India GST Rate Finder",
+    name: "OneCalculator GST Rate Finder",
     applicationCategory: "FinanceApplication",
     operatingSystem: "Any",
     offers: {
@@ -140,3 +140,4 @@ export default function GSTRateFinderPage() {
     </main>
   );
 }
+

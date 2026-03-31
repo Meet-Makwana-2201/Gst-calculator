@@ -39,10 +39,10 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-[0_14px_34px_-20px_rgba(255,255,255,0.4)]">
-                <Image src="/logo.svg" alt="LedgerKit India logo" width={56} height={56} className="h-12 w-12" />
+                <Image src="/logo.svg" alt="OneCalculator logo" width={56} height={56} className="h-12 w-12" />
               </div>
               <div>
-                <p className="text-2xl font-black tracking-tight">LedgerKit India</p>
+                <p className="text-2xl font-black tracking-tight">OneCalculator</p>
                 <p className="text-sm text-slate-300">Clean tools for tax, pricing, and finance</p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 px-6 py-4 text-sm text-slate-400 md:px-10">
           <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-            <p>Copyright {new Date().getFullYear()} LedgerKit India. All rights reserved.</p>
+            <p>Copyright {new Date().getFullYear()} OneCalculator. All rights reserved.</p>
             <p>Built for speed, clarity, and mobile-first finance workflows.</p>
           </div>
         </div>
@@ -100,3 +100,4 @@ export default function Footer() {
     </footer>
   );
 }
+

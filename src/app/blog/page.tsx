@@ -21,17 +21,17 @@ export const metadata = {
     canonical: "https://onecalculator.online/blog",
   },
   openGraph: {
-    title: "LedgerKit India Blog | GST, Tax and Finance Guides",
+    title: "OneCalculator Blog | GST, Tax and Finance Guides",
     description:
       "Practical GST, finance, pricing, and calculator guides for freelancers, operators, and small businesses in India.",
     url: "/blog",
-    siteName: "LedgerKit India",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "LedgerKit India blog",
+        alt: "OneCalculator blog",
       },
     ],
     locale: "en_IN",
@@ -39,7 +39,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LedgerKit India Blog | GST, Tax and Finance Guides",
+    title: "OneCalculator Blog | GST, Tax and Finance Guides",
     description:
       "Practical GST, finance, pricing, and calculator guides for freelancers, operators, and small businesses in India.",
     images: ["/logo.svg"],
@@ -57,7 +57,7 @@ export default function Blog() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "LedgerKit India Blog",
+    name: "OneCalculator Blog",
     description: "Practical guides for GST, pricing, and finance workflows in India",
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
@@ -66,7 +66,7 @@ export default function Blog() {
       datePublished: post.date,
       author: {
         "@type": "Organization",
-        name: "LedgerKit India",
+        name: "OneCalculator",
       },
       url: `https://onecalculator.online/blog/${post.slug}`,
     })),
@@ -299,3 +299,4 @@ export default function Blog() {
     </main>
   );
 }
+

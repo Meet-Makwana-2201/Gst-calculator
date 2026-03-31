@@ -8,7 +8,7 @@ import { calculatorRegistry } from "@/lib/calculators/registry";
 export const metadata: Metadata = {
   title: "All Calculators | GST, EMI, Interest, Pricing and Business Tools",
   description:
-    "Browse the LedgerKit India calculator library across GST, EMI, loans, pricing, margins, interest, and investment workflows.",
+    "Browse the OneCalculator calculator library across GST, EMI, loans, pricing, margins, interest, and investment workflows.",
   alternates: {
     canonical: "https://onecalculator.online/calculators",
   },
@@ -34,7 +34,7 @@ export default function CalculatorsPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "LedgerKit India Calculator Directory",
+    name: "OneCalculator Calculator Directory",
     itemListElement: calculators.map((calculator, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -70,3 +70,4 @@ export default function CalculatorsPage() {
     </main>
   );
 }
+

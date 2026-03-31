@@ -4,11 +4,11 @@ import ShareButtons from "@/components/ShareButtons";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "About LedgerKit India | Mission, Product Direction and Trust",
+  title: "About OneCalculator | Mission, Product Direction and Trust",
   description:
-    "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India with a cleaner product experience.",
+    "Learn how OneCalculator is building clearer GST, finance, and business calculators for India with a cleaner product experience.",
   keywords: [
-    "about LedgerKit India",
+    "about OneCalculator",
     "GST calculator mission",
     "finance tools India",
     "calculator product story",
@@ -17,17 +17,17 @@ export const metadata = {
     canonical: "https://onecalculator.online/about",
   },
   openGraph: {
-    title: "About LedgerKit India",
+    title: "About OneCalculator",
     description:
-      "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India.",
+      "Learn how OneCalculator is building clearer GST, finance, and business calculators for India.",
     url: "/about",
-    siteName: "LedgerKit India",
+    siteName: "OneCalculator",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "LedgerKit India",
+        alt: "OneCalculator",
       },
     ],
     locale: "en_IN",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About LedgerKit India",
+    title: "About OneCalculator",
     description:
-      "Learn how LedgerKit India is building clearer GST, finance, and business calculators for India.",
+      "Learn how OneCalculator is building clearer GST, finance, and business calculators for India.",
     images: ["/logo.svg"],
   },
 };
@@ -77,7 +77,7 @@ export default function About() {
                 About the product
               </span>
               <h1 className="mt-6 text-5xl font-black tracking-tight text-slate-950 md:text-7xl dark:text-white">
-                LedgerKit India is building finance tools that feel intentional.
+                OneCalculator is building finance tools that feel intentional.
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
                 The product started as a GST utility and is being rebuilt into a cleaner decision
@@ -143,7 +143,7 @@ export default function About() {
             <p>
               Many finance tools on the web are still built like ad-heavy utilities: hard to scan,
               visually inconsistent, and disconnected from the content users need to understand the
-              result. LedgerKit India is being rebuilt to solve that product gap.
+              result. OneCalculator is being rebuilt to solve that product gap.
             </p>
             <p>
               The goal is not only accurate calculation, but better decision support. That means
@@ -179,11 +179,11 @@ export default function About() {
           </div>
           <div className="mt-8 border-t border-slate-200 pt-6 dark:border-slate-800">
             <p className="mb-4 text-sm font-semibold text-slate-700 dark:text-slate-200">
-              Share LedgerKit India
+              Share OneCalculator
             </p>
             <ShareButtons
               url="https://onecalculator.online"
-              title="LedgerKit India - Modern GST and finance calculators"
+              title="OneCalculator - Modern GST and finance calculators"
             />
           </div>
         </div>
@@ -191,3 +191,4 @@ export default function About() {
     </main>
   );
 }
+

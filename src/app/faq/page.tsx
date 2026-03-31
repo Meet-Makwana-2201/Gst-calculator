@@ -7,23 +7,23 @@ import { Button } from "@/components/ui/button";
 export const metadata = {
   title: "FAQ | GST, Calculator Use, Rates and Common Questions",
   description:
-    "Answers to common questions about GST calculation, reverse GST, rates, calculator usage, and privacy on LedgerKit India.",
+    "Answers to common questions about GST calculation, reverse GST, rates, calculator usage, and privacy on OneCalculator.",
   alternates: {
     canonical: "https://onecalculator.online/faq",
   },
   openGraph: {
-    title: "LedgerKit India FAQ",
+    title: "OneCalculator FAQ",
     description:
       "Answers to common questions about GST calculation, reverse GST, rates, calculator usage, and privacy.",
     url: "/faq",
-    siteName: "LedgerKit India",
-    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "LedgerKit India FAQ" }],
+    siteName: "OneCalculator",
+    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "OneCalculator FAQ" }],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LedgerKit India FAQ",
+    title: "OneCalculator FAQ",
     description:
       "Answers to common questions about GST calculation, reverse GST, rates, calculator usage, and privacy.",
     images: ["/logo.svg"],
@@ -67,7 +67,7 @@ const faqs = [
       "Check the HSN or SAC classification and confirm the rate against the official GST portal or a qualified advisor for your exact item or service.",
   },
   {
-    question: "Is LedgerKit India free?",
+    question: "Is OneCalculator free?",
     answer:
       "Yes. The calculators are currently free to use, with no sign-up needed for normal usage.",
   },
@@ -172,3 +172,4 @@ export default function FAQPage() {
     </main>
   );
 }
+

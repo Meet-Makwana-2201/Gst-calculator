@@ -1,5 +1,6 @@
 export const siteConfig = {
-  name: "LedgerKit India",
+  name: "OneCalculator",
   url: "https://onecalculator.online",
   defaultOgImage: "/logo.svg",
 };
+

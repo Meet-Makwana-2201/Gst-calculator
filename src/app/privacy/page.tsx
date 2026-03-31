@@ -1,27 +1,27 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy | LedgerKit India",
+  title: "Privacy | OneCalculator",
   description:
-    "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
+    "Read how OneCalculator handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
   alternates: {
     canonical: "https://onecalculator.online/privacy",
   },
   openGraph: {
-    title: "Privacy | LedgerKit India",
+    title: "Privacy | OneCalculator",
     description:
-      "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
+      "Read how OneCalculator handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
     url: "/privacy",
-    siteName: "LedgerKit India",
-    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "LedgerKit India Privacy" }],
+    siteName: "OneCalculator",
+    images: [{ url: "/logo.svg", width: 512, height: 512, alt: "OneCalculator Privacy" }],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy | LedgerKit India",
+    title: "Privacy | OneCalculator",
     description:
-      "Read how LedgerKit India handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
+      "Read how OneCalculator handles privacy, local preferences, analytics boundaries, and calculation data expectations.",
     images: ["/logo.svg"],
   },
 };
@@ -141,3 +141,4 @@ export default function PrivacyPage() {
     </main>
   );
 }
+
