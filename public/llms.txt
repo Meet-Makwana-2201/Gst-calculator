@@ -28,6 +28,8 @@
 
 ## Blog
 
+- [GST E-Invoicing in India](https://onecalculator.online/blog/gst-e-invoicing-india-guide): Step-by-step guide to GST e-invoice format, IRN generation, threshold rules, and compliance risks in India.
+- [CTC vs In-Hand Salary](https://onecalculator.online/blog/ctc-vs-in-hand-salary): Learn how CTC translates into actual monthly take-home pay in India with PF, TDS, and professional tax examples.
 - [GST on Electronics: Mobile & Laptops 2025](https://onecalculator.online/blog/gst-on-electronics-mobile-laptops-2025): GST rates on smartphones, laptops, and electronics in India 2025.
 - [GST on Electronics & Laptops India 2026](https://onecalculator.online/blog/gst-on-electronics-laptops-india-2026): Updated GST rates on electronics for 2026.
 - [How to Calculate GST Backwards](https://onecalculator.online/blog/how-to-calculate-gst-backwards): Step-by-step guide to reverse GST calculation in India.

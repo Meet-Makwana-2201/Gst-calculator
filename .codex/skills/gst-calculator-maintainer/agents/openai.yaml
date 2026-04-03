@@ -1,0 +1,7 @@
+interface:
+  display_name: "GST Calculator Maintainer"
+  short_description: "Repo-specific workflow for app, content, and audits"
+  default_prompt: "Use $gst-calculator-maintainer to make a safe repository change, validate it, and keep the result aligned with this Next.js calculator codebase."
+
+policy:
+  allow_implicit_invocation: true

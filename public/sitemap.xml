@@ -2,212 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://onecalculator.online</loc>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/about</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/contact</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/faq</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/gst-rates</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/privacy</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/gst</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/percentage</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/discount</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/profit-loss</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/simple-interest</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/compound-interest</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/emi</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/best-free-online-financial-calculators-2026</loc>
-    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/gst-e-invoicing-india-guide</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onecalculator.online/blog/ctc-vs-in-hand-salary</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/how-percentage-works-shopping-salary</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/how-compound-interest-works</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/simple-vs-compound-interest</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/what-is-emi-calculator</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/composition-scheme-vs-regular-gst</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/difference-between-gst-and-vat</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-calculation-for-freelancers-india</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-calculator-excel-download</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-invoice-format-for-freelancers</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-on-electronics-mobile-laptops-2025</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-rate-chart-2025-india</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-state-codes-list-2025</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/how-to-calculate-gst-backwards</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/mastering-gst-calculator</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/how-to-minus-gst-from-price</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/state-code-38-gst-ladakh</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/gst-rate-finder</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/gst-on-electronics-laptops-india-2026</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/blog/remove-gst-calculator</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/remove-gst</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/loan</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/margin</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/sip</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/amazon-seller-profit</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/lumpsum</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://onecalculator.online/calculators/emi-preclosure</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>

@@ -10,6 +10,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "gst-e-invoicing-india-guide",
+        title: "GST E-Invoicing in India: Format, Benefits & How to File",
+        description: "Everything small businesses need to know about GST e-invoicing in India. See sample e-invoice, filing steps, and the formats required.",
+        date: "April 3, 2026",
+        readTime: "11 min read",
+        category: "GST Guide",
+        image: "/blog-gst-invoice.png",
+    },
+    {
+        slug: "ctc-vs-in-hand-salary",
+        title: "CTC vs In-Hand Salary: Calculate Your Take-Home Pay",
+        description: "Learn the difference between CTC and in-hand salary in India 2026. See sample salary slip and understand PF, TDS, and professional tax deductions.",
+        date: "April 3, 2026",
+        readTime: "9 min read",
+        category: "Finance",
+        image: "/blog-percentage-shopping-salary.png",
+    },
+    {
         slug: "remove-gst-calculator",
         title: "Remove GST Calculator – Minus GST from Price Instantly",
         description: "Use our free Remove GST Calculator to minus GST from price instantly. Learn the reverse GST calculation formula, see examples, and extract the base price in seconds.",

@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Content Writer"
+  short_description: "Write rankable search-intent-led content for this repo"
+  default_prompt: "Use $seo-content-writer to write or revise SEO-friendly content that is highly rankable on Google and aligned with this Next.js calculator codebase."
+
+policy:
+  allow_implicit_invocation: true

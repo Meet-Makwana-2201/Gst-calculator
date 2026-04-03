@@ -7,12 +7,16 @@ const blogPostLoaders: Record<string, () => Promise<BlogPostModule>> = {
     import("@/content/blog/posts/best-free-online-financial-calculators-2026"),
   "composition-scheme-vs-regular-gst": () =>
     import("@/content/blog/posts/composition-scheme-vs-regular-gst"),
+  "ctc-vs-in-hand-salary": () =>
+    import("@/content/blog/posts/ctc-vs-in-hand-salary"),
   "difference-between-gst-and-vat": () =>
     import("@/content/blog/posts/difference-between-gst-and-vat"),
   "gst-calculation-for-freelancers-india": () =>
     import("@/content/blog/posts/gst-calculation-for-freelancers-india"),
   "gst-calculator-excel-download": () =>
     import("@/content/blog/posts/gst-calculator-excel-download"),
+  "gst-e-invoicing-india-guide": () =>
+    import("@/content/blog/posts/gst-e-invoicing-india-guide"),
   "gst-invoice-format-for-freelancers": () =>
     import("@/content/blog/posts/gst-invoice-format-for-freelancers"),
   "gst-on-electronics-laptops-india-2026": () =>
