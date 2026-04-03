@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+ 
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import JsonLd from "@/components/JsonLd";
 import { Button } from "@/components/ui/button";
