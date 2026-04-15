@@ -11,65 +11,68 @@ import { homeFaqs } from "@/lib/home-faq-data";
 
 const stats = [
   { value: "4 Slabs", label: "GST rates covered (5%, 12%, 18%, 28%)" },
-  { value: "â‚¹0", label: "Cost to use  always free" },
+  { value: "100%", label: "Free to use with no signup required" },
   { value: "No login", label: "Open any tool instantly" },
 ];
 
 const experienceCards = [
   {
-    title: "Clarity first",
-    description: "Sharper hierarchy, stronger contrast, and cleaner result cards reduce scan time.",
+    title: "Built for India",
+    description:
+      "GST, EMI, interest, pricing, and business math tools are organized around everyday Indian finance tasks.",
   },
   {
-    title: "Mobile ready",
-    description: "The redesigned layout is intentionally built for phones before stretching to desktop.",
+    title: "Simple to verify",
+    description:
+      "Use clear inputs, instant outputs, and practical guides that explain the method behind each calculation.",
   },
   {
-    title: "Task-focused",
-    description: "Popular tools, related actions, and content blocks are grouped by what users need next.",
+    title: "Private by default",
+    description:
+      "Calculations run in your browser, so you can check amounts quickly without creating an account.",
   },
 ];
 
 const featuredCategories = [
   {
     eyebrow: "Tax",
-    title: "GST workflows for invoices, pricing, and reverse calculations",
-    copy: "Use GST tools built for sellers, freelancers, and finance teams that need fast answers without spreadsheet friction.",
+    title: "GST calculators for invoices, inclusive pricing, and reverse tax math",
+    copy: "Calculate GST amounts, split tax components, and work backwards from GST-inclusive prices in seconds.",
     href: "/calculators/gst",
   },
   {
     eyebrow: "Lending",
-    title: "EMI and loan views that show the real cost quickly",
-    copy: "Compare repayment impact, interest burden, and monthly affordability in a cleaner flow.",
+    title: "EMI, loan, and interest tools for faster borrowing decisions",
+    copy: "Check monthly repayments, total interest, and loan affordability before you commit to a lender.",
     href: "/calculators/emi",
   },
   {
     eyebrow: "Business math",
-    title: "Margins, discounting, and percentage analysis in one place",
-    copy: "Useful for daily pricing, sales checks, marketplace decisions, and finance operations.",
+    title: "Margin, discount, and percentage calculators for daily business use",
+    copy: "Handle pricing checks, sales math, profit planning, and percentage changes without manual formulas.",
     href: "/calculators",
   },
 ];
 
 export const metadata = {
-  title: "OneCalculator Ã¢â‚¬â€œ Free GST, EMI & Finance Calculators India",
+  title: "OneCalculator | Free GST, EMI & Financial Calculators",
   description:
-    "Free GST, EMI, SIP & business calculators for India. No login, instant results. Trusted by freelancers & small business owners.",
+    "Free online GST, EMI, loan, interest, and business calculators for India. No login required, instant results, and practical guides for smarter finance decisions.",
   keywords: [
     "gst calculator india",
     "online calculator india free",
-    "modern calculator site",
+    "financial calculators india",
     "emi calculator",
-    "sip calculator india",
+    "loan calculator india",
     "business calculator india",
   ],
   alternates: {
     canonical: "https://onecalculator.online/",
   },
   openGraph: {
-    title: "OneCalculator | GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | Free GST, EMI & Financial Calculators",
     description:
-      "A cleaner finance workspace for India with GST, EMI, tax, pricing, and interest tools.",
+      "Free online GST, EMI, loan, interest, and business calculators for India with instant results and helpful guides.",
     url: "/",
     siteName: "OneCalculator",
     images: [
@@ -85,9 +88,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OneCalculator | GST, EMI, Tax and Finance Calculators",
+    title: "OneCalculator | Free GST, EMI & Financial Calculators",
     description:
-      "A cleaner finance workspace for India with GST, EMI, tax, pricing, and interest tools.",
+      "Free online GST, EMI, loan, interest, and business calculators for India with instant results and practical guides.",
     images: ["/logo.svg"],
   },
 };
@@ -119,9 +122,9 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://onecalculator.online/#webpage",
         url: "https://onecalculator.online/",
-        name: "OneCalculator | GST, EMI, Tax and Finance Calculators",
+        name: "OneCalculator | Free GST, EMI & Financial Calculators",
         description:
-          "Modern calculator workspace for India. GST, EMI, interest, pricing, and business finance tools redesigned for speed and clarity.",
+          "Free online financial calculators for India covering GST, EMI, interest, pricing, and business math with instant results and practical guides.",
         isPartOf: { "@id": "https://onecalculator.online/#website" },
       },
       {
@@ -149,24 +152,30 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="animate-fade-in-up">
               <h1 className="mt-6 max-w-4xl text-balance text-5xl font-black leading-[0.95] text-slate-950 md:text-7xl dark:text-white">
-                Finance tools that feel like a product, not a template.
+                All-in-One Financial Calculator Suite
               </h1>
               <p className="mb-2 mt-3 max-w-3xl text-base font-normal text-slate-500 dark:text-slate-400 md:text-lg">
-                For freelancers, small business owners, and students who deal with GST, EMI, and
-                tax calculations daily.
+                Free online calculators for GST, EMI, loans, interest, discounts, profit, and
+                everyday business math in India.
               </p>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                OneCalculator turns GST, EMI, pricing, and business calculations into a faster,
-                cleaner workflow with stronger visual hierarchy and less noise.
+                OneCalculator helps freelancers, business owners, students, and finance teams get
+                instant answers without spreadsheets, signups, or extra steps. Use the tools to
+                calculate tax, compare borrowing costs, check margins, and make faster finance
+                decisions.
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 dark:text-slate-300">
+                Every calculator is built to be easy to verify with clear inputs, instant results,
+                and related guides when you want to understand the formula behind the number.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Link href="/calculators">
-                  <Button size="lg">Browse calculators</Button>
+                  <Button size="lg">Open calculators</Button>
                 </Link>
                 <Link href="/calculators/gst">
                   <Button size="lg" variant="outline">
-                    Launch GST calculator
+                    Use GST calculator
                   </Button>
                 </Link>
               </div>
@@ -221,16 +230,15 @@ export default function Home() {
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
-                Core experiences
+                Core calculators
               </p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-950 dark:text-white">
-                Rebuilt around what users come here to finish
+                Start with the calculators people use most
               </h2>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300">
-              The new structure prioritizes task completion first, then deeper reading. Users can
-              jump into a tool, browse related calculators, or continue into guides without losing
-              context.
+              Open a focused tool for GST, borrowing, or pricing, then continue into related
+              calculators and guides when you need more detail.
             </p>
           </div>
 
@@ -266,43 +274,77 @@ export default function Home() {
       </section>
 
       <section className="px-4 py-14 md:px-6 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="mx-auto max-w-7xl">
           <div className="surface-panel overflow-hidden rounded-[2rem] p-8">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300">
-              Brand system
+              Why OneCalculator
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950 dark:text-white">
-              New identity, new rhythm, new interface language
+              Clear tools, practical guides, and no unnecessary friction
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600 dark:text-slate-300">
-              The redesign introduces a stronger type pairing, rounded modular surfaces, cleaner
-              contrast, a new brand mark, and calmer spacing that makes dense calculator pages more
-              usable.
+              The homepage now points directly to the tasks users care about most: calculating GST,
+              checking EMI, comparing interest, and solving day-to-day business math. It is built
+              for fast access on desktop and mobile, with supporting explanations instead of empty
+              marketing copy.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-[1.75rem] bg-slate-950 p-5 text-white dark:bg-white dark:text-slate-950">
-                <p className="text-xs font-bold uppercase tracking-[0.24em] opacity-70">Typography</p>
-                <p className="mt-3 text-2xl font-black">Space Grotesk + DM Sans</p>
+                <p className="text-xs font-bold uppercase tracking-[0.24em] opacity-70">Use case</p>
+                <p className="mt-3 text-2xl font-black">GST, loans, pricing, and finance</p>
               </div>
               <div className="brand-gradient rounded-[1.75rem] p-5 text-white">
-                <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/75">Palette</p>
-                <p className="mt-3 text-2xl font-black">Teal, amber, ink, warm neutrals</p>
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/75">Access</p>
+                <p className="mt-3 text-2xl font-black">Free, instant, and no login</p>
               </div>
             </div>
+            <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300">
+              Looking for a starting point? Visit the{" "}
+              <Link
+                href="/calculators"
+                className="font-semibold text-teal-700 transition hover:text-amber-600 dark:text-teal-300 dark:hover:text-amber-300"
+              >
+                full calculator library
+              </Link>
+              , jump straight to the{" "}
+              <Link
+                href="/calculators/gst"
+                className="font-semibold text-teal-700 transition hover:text-amber-600 dark:text-teal-300 dark:hover:text-amber-300"
+              >
+                GST calculator
+              </Link>
+              , or browse the{" "}
+              <Link
+                href="/blog"
+                className="font-semibold text-teal-700 transition hover:text-amber-600 dark:text-teal-300 dark:hover:text-amber-300"
+              >
+                finance guides
+              </Link>
+              {" "}for examples and explanations.
+            </p>
           </div>
+        </div>
+      </section>
 
+      <section className="px-4 pb-8 md:px-6 md:pb-12">
+        <div className="mx-auto max-w-7xl">
           <div className="surface-panel rounded-[2rem] p-4 md:p-6">
             <div className="overflow-hidden rounded-[1.7rem] bg-slate-950 p-6 text-white">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/55">
-                    Editorial feed
+                    Popular guides
                   </p>
-                  <h3 className="mt-2 text-3xl font-black tracking-tight">Fresh guides, cleaner cards</h3>
+                  <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
+                    Learn the logic behind the calculators
+                  </h2>
                 </div>
-                <div className="hidden rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold md:block">
-                  Learn faster
-                </div>
+                <Link
+                  href="/blog"
+                  className="hidden rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold transition hover:bg-white/15 md:block"
+                >
+                  Read next
+                </Link>
               </div>
 
               <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -313,7 +355,7 @@ export default function Home() {
                     className="group rounded-[1.5rem] bg-white/8 p-3 transition hover:bg-white/12"
                   >
                     {post.image ? (
-                      <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
+                      <div className="relative h-65 overflow-hidden rounded-[1.25rem]">
                         <Image
                           src={post.image}
                           alt={post.title}
@@ -326,9 +368,9 @@ export default function Home() {
                       <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-300">
                         {post.category}
                       </p>
-                      <h4 className="mt-3 text-xl font-black tracking-tight text-white">
+                      <h3 className="mt-3 text-xl font-black tracking-tight text-white">
                         {post.title}
-                      </h4>
+                      </h3>
                       <p className="mt-3 line-clamp-3 text-sm leading-6 text-white/70">
                         {post.description}
                       </p>
@@ -382,7 +424,4 @@ export default function Home() {
     </main>
   );
 }
-
-
-
 

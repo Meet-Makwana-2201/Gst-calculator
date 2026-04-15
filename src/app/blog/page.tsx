@@ -134,7 +134,7 @@ export default function Blog() {
           {featured ? (
             <Link href={`/blog/${featured.slug}`} className="group block">
               <article className="surface-panel hover-lift overflow-hidden rounded-[2.2rem] p-4 md:p-5">
-                <div className="relative min-h-[320px] overflow-hidden rounded-[1.8rem]">
+                <div className="relative min-h-[490px] overflow-hidden rounded-[1.8rem]">
                   {featured.image ? (
                     <Image
                       src={featured.image}
