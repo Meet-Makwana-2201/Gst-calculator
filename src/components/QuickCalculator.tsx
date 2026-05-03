@@ -33,7 +33,7 @@ export default function QuickCalculator() {
 
   return (
     <Card className="relative overflow-hidden rounded-[2rem]">
-      <div className="absolute inset-x-0 top-0 h-28 brand-gradient opacity-90" />
+      <div className="absolute inset-x-0 top-0 h-45 brand-gradient opacity-90" />
       <div className="absolute inset-x-6 top-24 h-px bg-white/50" />
       <CardContent className="relative z-10 p-0">
         <div className="px-7 pb-7 pt-6 text-white">

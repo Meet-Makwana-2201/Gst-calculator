@@ -1,5 +1,6 @@
-import type { CalculatorPageShellProps } from "@/lib/calculators/types";
+﻿import type { CalculatorPageShellProps } from "@/lib/calculators/types";
 
+import CalculatorSeoLongform from "./CalculatorSeoLongform";
 import { CalculatorFaq } from "./calculator-faq";
 import { CalculatorListCard } from "./calculator-list-card";
 
@@ -54,6 +55,7 @@ export function CalculatorPageShell({
         <div className="space-y-8">
           <CalculatorComponent />
           {ContentComponent ? <ContentComponent /> : null}
+          <CalculatorSeoLongform calculator={calculator} />
           <CalculatorFaq faqs={calculator.faqs ?? []} />
         </div>
 
