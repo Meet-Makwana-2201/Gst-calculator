@@ -5,6 +5,13 @@
 ## Calculators
 
 - [All Calculators](https://onecalculator.online/calculators): Complete list of free online financial and GST calculators for Indian users.
+- [Tax Calculators](https://onecalculator.online/calculators/category/tax): Category page for GST, reverse GST, and tax rate reference tools.
+- [Loan Calculators](https://onecalculator.online/calculators/category/loan): Category page for EMI, prepayment savings, and borrowing cost calculators.
+- [Investment Calculators](https://onecalculator.online/calculators/category/investment): Category page for mutual fund SIP and lumpsum investment calculators.
+- [Interest Calculators](https://onecalculator.online/calculators/category/interest): Category page for compound interest and simple interest calculations.
+- [Shopping Calculators](https://onecalculator.online/calculators/category/shopping): Category page for discount, percentage off, and savings calculators.
+- [Math Calculators](https://onecalculator.online/calculators/category/math): Category page for percentage, percentage change, and basic math calculators.
+- [Business Calculators](https://onecalculator.online/calculators/category/business): Category page for markup, margin, profit & loss, and Amazon seller calculations.
 
 - [GST Calculator](https://onecalculator.online/calculators/gst): Calculate GST inclusive and exclusive prices. Supports IGST, CGST, and SGST for all Indian GST slabs (5%, 12%, 18%, 28%).
 - [Remove GST Calculator](https://onecalculator.online/calculators/remove-gst): Extract original price before GST. Reverse GST calculation for Indian businesses and consumers.

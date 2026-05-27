@@ -1,10 +1,13 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
+import Link from "next/link";
 
 import { Input } from "@/components/ui/input";
 import type { CalculatorListItem } from "@/lib/calculators/types";
+import { getCategoryLabel } from "@/lib/calculators/helpers";
+import { calculatorCategories } from "@/lib/calculators/types";
 
 import { CalculatorListing } from "./calculator-listing";
 
@@ -48,7 +51,24 @@ export function CalculatorSearch({ calculators }: CalculatorSearchProps) {
 
   return (
     <div className="space-y-8">
-      <div className="surface-panel rounded-[2rem] p-5 md:p-6">
+      <div className="surface-panel rounded-[2rem] p-5 md:p-6 space-y-6">
+        <div className="space-y-3">
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">
+            Browse by Category
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {calculatorCategories.map((category) => (
+              <Link
+                key={category}
+                href={`/calculators/category/${category}`}
+                className="rounded-xl border border-slate-200 bg-white/70 px-4 py-2 text-xs font-bold text-slate-700 transition hover:border-teal-600 hover:text-teal-700 dark:border-slate-800 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:border-teal-400 dark:hover:text-teal-300"
+              >
+                {getCategoryLabel(category)}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="relative">
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
           <Input

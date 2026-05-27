@@ -100,6 +100,9 @@ export const metadata: Metadata = {
     images: ["/logo.svg"],
     creator: "@gstcalc_india",
   },
+  verification: {
+    google: "googlebcc154702bb1f397",
+  },
 };
 
 export default function RootLayout({

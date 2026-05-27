@@ -67,7 +67,7 @@ export const metadata = {
     "business calculator india",
   ],
   alternates: {
-    canonical: "https://onecalculator.online/",
+    canonical: "https://onecalculator.online",
   },
   openGraph: {
     title: "OneCalculator | Free GST, EMI & Financial Calculators",
